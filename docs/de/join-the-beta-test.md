@@ -5,7 +5,7 @@ lang: de
 slug: join-the-beta-test
 permalink: /docs/de/join-the-beta-test/
 date: 2026-07-16
-last_modified_at: 2026-10-08
+last_modified_at: 2026-10-12
 ---
 
 # Beta-Test beitreten
@@ -31,7 +31,7 @@ Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play – auf **A
 
    🟢 **[Anmeldeseite öffnen](https://screenonauto.lzn.idv.tw/join/?lang=de)**
 2. Tippe auf **Für diese Runde anmelden**. Die Seite zählt bis zu deinem Installationsfenster herunter – lass sie geöffnet; die Installations-Buttons erscheinen dort automatisch.
-3. Sobald dein Fenster öffnet, tippe auf **Tester werden** und nimm die Einladung an – danach zeigt die Seite einen Download-Link: Tippe darauf und installiere **ScreenOnAuto** wie gewohnt. Zeigt der Play Store die App noch nicht, schließe ihn und tippe erneut auf den Link – nach ein paar Versuchen erscheint sie meist. Immer noch nichts? Tippe in den letzten 5 Minuten deines Fensters auf der Anmeldeseite auf **Bis … verlängern**, dann bleibt dein Fenster eine weitere Runde offen (das geht jede Runde).
+3. Sobald dein Fenster öffnet, tippe auf **Tester werden** und nimm die Einladung an – danach zeigt die Seite einen Download-Link: Tippe darauf und installiere **ScreenOnAuto** wie gewohnt. Zeigt der Play Store die App noch nicht, schließe ihn und tippe erneut auf den Link – nach ein paar Versuchen erscheint sie meist. Klappt es dann immer noch nicht, braucht der Play Store manchmal 5–10 Minuten: Warte ein paar Minuten (innerhalb deines Fensters) und versuche es erneut. Immer noch nichts? Tippe in den letzten 5 Minuten deines Fensters auf der Anmeldeseite auf **Bis … verlängern**, dann bleibt dein Fenster eine weitere Runde offen (das geht jede Runde).
 4. **Nach der Installation** öffne **Android Auto → Launcher anpassen** und prüfe, ob die **zwei** ScreenOnAuto-Einträge erscheinen (Vollbild und Legacy). Ein dritter Eintrag, **Media Controller**, erscheint nur bei älteren Android-Auto-Versionen – bei neueren fehlt er absichtlich, und das ist in Ordnung. Siehe [In Android Auto überprüfen](/de/#verify) für die vollständige Liste und was zu tun ist, wenn einer der beiden fehlt.
 5. Fertig – siehe **[Verwendung](/docs/de/how-to-use/)** zum Starten der Spiegelung im Auto.
 
@@ -39,7 +39,7 @@ Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play – auf **A
 
 - **Fenster verpasst?** Melde dich einfach für eine weitere Runde an – es gibt keine Begrenzung.
 - **Nach Ende deines Fensters** funktioniert die installierte App ganz normal weiter.
-- **Updates:** Nach Ende deines Fensters bietet dir der Play Store keine Updates mehr an. Zum Aktualisieren meldest du dich für eine weitere Runde an und tippst während deines Fensters auf dieselben Installationslinks – auf der Play-Store-Seite steht dann **Aktualisieren** statt **Installieren**.
+- **Updates:** Nach Ende deines Fensters bietet dir der Play Store keine Updates mehr an. Zum Aktualisieren meldest du dich für eine weitere Runde an und tippst während deines Fensters erneut auf **Tester werden** und dann auf den Download-Link – auf der Play-Store-Seite steht dann **Aktualisieren** statt **Installieren**.
 - **Deine E-Mail-Adresse** wird nur verwendet, um dich auf die Testerliste deiner Runde zu setzen, und wird gelöscht, sobald das Installationsfenster dieser Runde endet.
 - Weitere Antworten findest du in den häufigen Fragen auf der [Anmeldeseite](https://screenonauto.lzn.idv.tw/join/?lang=de).
 
