@@ -5,7 +5,7 @@ lang: it
 slug: how-to-use
 permalink: /docs/it/how-to-use/
 date: 2026-07-17
-last_modified_at: 2026-09-30
+last_modified_at: 2026-10-12
 ---
 
 # Come si usa
@@ -130,8 +130,7 @@ Uno qualsiasi di questi metodi:
 - **Un server Shizuku avviato via ADB si spegne quando colleghi il telefono all'auto** —
   la connessione USB mette il telefono in modalità accessorio, il che riavvia ADB e si
   porta via Shizuku — il debug wireless passa dallo stesso ADB, quindi non aiuta.
-  Riavvia Shizuku e ScreenOnAuto si riconnette da solo; meglio ancora, usa il [fork di
-  thedjchi](https://github.com/thedjchi/Shizuku), il cui servizio watchdog lo riavvia al
+  Riavvia Shizuku e ScreenOnAuto si riconnette da solo; meglio ancora, usa il [fork Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next), il cui servizio watchdog lo riavvia al
   posto tuo. Gli utenti root e le connessioni Android Auto wireless non sono
   interessati.
 - **Come riaccendere lo schermo dopo lo spegnimento** — il touchscreen si spegne insieme

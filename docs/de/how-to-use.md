@@ -5,7 +5,7 @@ lang: de
 slug: how-to-use
 permalink: /docs/de/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-09-30
+last_modified_at: 2026-10-12
 ---
 
 # Verwendung
@@ -134,7 +134,7 @@ Jede dieser Möglichkeiten funktioniert:
   ADB neu startet und Shizuku mitnimmt – Wireless Debugging läuft über dasselbe ADB und
   hilft daher nicht. Starte Shizuku einfach neu, ScreenOnAuto verbindet sich von selbst
   wieder; besser noch: Verwende den
-  [thedjchi-Fork](https://github.com/thedjchi/Shizuku), dessen Watchdog-Dienst ihn für
+  [Shizuku-Next-Fork](https://github.com/rushiranpise/Shizuku-Next), dessen Watchdog-Dienst ihn für
   dich neu startet. Root-Nutzer und drahtlose Android-Auto-Verbindungen sind nicht
   betroffen.
 - **Den Bildschirm nach dem Ausschalten wieder aufwecken** – der Touchscreen wird

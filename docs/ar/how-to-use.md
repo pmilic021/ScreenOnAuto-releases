@@ -5,7 +5,7 @@ lang: ar
 slug: how-to-use
 permalink: /docs/ar/how-to-use/
 date: 2026-07-20
-last_modified_at: 2026-09-30
+last_modified_at: 2026-10-12
 ---
 
 # طريقة الاستخدام
@@ -125,7 +125,7 @@ last_modified_at: 2026-09-30
 - **يتوقف خادم Shizuku الذي بدأ عبر ADB عند توصيل الهاتف بالسيارة** — يضع اتصال USB
   الهاتف في وضع الملحقات، ما يعيد تشغيل ADB ويُسقط Shizuku معه — وتصحيح الأخطاء اللاسلكي
   يمر عبر ADB نفسه، لذا لا يفيد. ابدأ Shizuku من جديد وسيعيد ScreenOnAuto الاتصال
-  تلقائيًا؛ والأفضل استخدام [نسخة thedjchi](https://github.com/thedjchi/Shizuku)، التي
+  تلقائيًا؛ والأفضل استخدام [نسخة Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)، التي
   تعيد تشغيله تلقائيًا عبر خدمة المراقبة (watchdog). أما مستخدمو الروت واتصالات Android
   Auto اللاسلكية فلا يتأثرون.
 - **كيفية إيقاظ الشاشة بعد إطفائها** — تنطفئ شاشة اللمس مع الشاشة نفسها، لذا لن يفيد لمس

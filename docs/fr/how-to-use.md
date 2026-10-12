@@ -5,7 +5,7 @@ lang: fr
 slug: how-to-use
 permalink: /docs/fr/how-to-use/
 date: 2026-07-17
-last_modified_at: 2026-09-30
+last_modified_at: 2026-10-12
 ---
 
 # Comment utiliser
@@ -131,7 +131,7 @@ Au choix :
   voiture** — la connexion USB fait passer le téléphone en mode accessoire, ce qui
   redémarre ADB et emporte Shizuku avec lui — le débogage sans fil passe par le même ADB
   et n'y change rien. Relancez Shizuku et ScreenOnAuto se reconnecte tout seul ; mieux
-  encore, utilisez le [fork de thedjchi](https://github.com/thedjchi/Shizuku), dont le
+  encore, utilisez le [fork Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next), dont le
   service watchdog le relance pour vous. Les utilisateurs root et les connexions Android
   Auto sans fil ne sont pas concernés.
 - **Réveiller l'écran après son extinction** — la dalle tactile s'éteint avec l'écran,

@@ -5,7 +5,7 @@ lang: en
 slug: how-to-use
 permalink: /docs/en/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-09-30
+last_modified_at: 2026-10-12
 ---
 
 # How to Use
@@ -123,8 +123,7 @@ Any of these works:
 - **A Shizuku server started via ADB shuts down when you plug into the car** — the USB
   connection puts the phone into accessory mode, which restarts ADB and takes Shizuku
   with it — wireless debugging goes through the same ADB, so it does not help. Start
-  Shizuku again and ScreenOnAuto reconnects on its own; better still, use the [thedjchi
-  fork](https://github.com/thedjchi/Shizuku), whose watchdog service restarts it for
+  Shizuku again and ScreenOnAuto reconnects on its own; better still, use the [Shizuku-Next fork](https://github.com/rushiranpise/Shizuku-Next), whose watchdog service restarts it for
   you. Root users and wireless Android Auto connections are unaffected.
 - **Waking the screen again** — the touchscreen powers down with the panel, so tapping
   the phone does nothing. Tap the **Auto Dim** button on the car screen — toggling Auto

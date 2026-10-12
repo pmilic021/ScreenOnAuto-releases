@@ -5,7 +5,7 @@ lang: tr
 slug: how-to-use
 permalink: /docs/tr/how-to-use/
 date: 2026-07-20
-last_modified_at: 2026-09-30
+last_modified_at: 2026-10-12
 ---
 
 # Nasıl Kullanılır
@@ -129,7 +129,7 @@ verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](/docs/tr/grant-mirror-pe
   Shizuku'yu da beraberinde götürür — kablosuz hata ayıklama da aynı ADB üzerinden
   çalıştığı için işe yaramaz. Shizuku'yu yeniden başlatmanız yeterli, ScreenOnAuto
   kendiliğinden yeniden bağlanır; daha da iyisi, watchdog hizmeti onu sizin yerinize
-  yeniden başlatan [thedjchi sürümünü](https://github.com/thedjchi/Shizuku) kullanın.
+  yeniden başlatan [Shizuku-Next sürümünü](https://github.com/rushiranpise/Shizuku-Next) kullanın.
   Root kullanıcıları ve kablosuz Android Auto bağlantıları bundan etkilenmez.
 - **Ekran kapandıktan sonra tekrar uyandırma** — dokunmatik ekran panelle birlikte
   kapandığı için telefona dokunmak işe yaramaz. Araç ekranındaki **Otomatik Karartma**
