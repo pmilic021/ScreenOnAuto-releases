@@ -148,6 +148,15 @@
     return !!me && (me.state === "syncing" || (me.state === "waiting" && me.from <= n));
   }
 
+  // The end of the visitor's install window. An extension carries it into the next round
+  // (and through the :25–:30 swap); until the swap lands the backend reports the extended end
+  // as extendedUntil next to the original `until`. renderExtend alone keeps reading
+  // me.until on purpose — the extend button belongs to the original window's last minutes.
+  function windowEnd() { return me.extendedUntil || me.until; }
+  // In their install window. Every part of the page asks this one question, so the clock, the
+  // strip and the card change together when the refresh after the boundary lands.
+  function installing() { return !!me && me.state === "installable"; }
+
   function scheduleRefresh() {
     var n = now(), rs = roundStart(n);
     var boundary = collecting(n) ? rs + COLLECT_MS : rs + ROUND_MS;
@@ -265,13 +274,23 @@
 
   function renderClock() {
     var n = now(), rs = roundStart(n), open = collecting(n);
-    document.getElementById("phase").textContent = open ? t("phaseCollecting") : t("phaseSwapping");
-    document.querySelector(".clock").classList.toggle("swapping", !open);
-    document.getElementById("digits").textContent = mmss((open ? rs + COLLECT_MS : rs + ROUND_MS) - n);
-    document.getElementById("digits-label").textContent = open ? t("closesIn") : t("opensIn");
+    // Someone in their install window counts down to the end of *their* window — which an
+    // extension moves into the next round, through the :25–:30 swap — not to the round's
+    // next boundary, and the phase line says so too.
+    var mine = installing();
+    document.getElementById("phase").textContent =
+      mine ? t("phaseInstalling") : open ? t("phaseCollecting") : t("phaseSwapping");
+    var clock = document.querySelector(".clock");
+    clock.classList.toggle("installing", mine);
+    clock.classList.toggle("swapping", !mine && !open);
+    var end = mine ? windowEnd() : open ? rs + COLLECT_MS : rs + ROUND_MS;
+    document.getElementById("digits").textContent = mmss(end - n);
+    document.getElementById("digits-label").textContent =
+      mine ? t("installClosesIn") : open ? t("closesIn") : t("opensIn");
     // While the list is being swapped, this round's count is gone from the backend (and would
-    // read as "your sign-up vanished"), so say what's happening instead of showing 0 / 95.
-    document.getElementById("spots").textContent = !open ? t("spotsSwapping")
+    // read as "your sign-up vanished"). The phase line and the caption already say what is
+    // happening, so the line is left empty rather than saying it a third time.
+    document.getElementById("spots").textContent = !open ? ""
       : slots === null ? "…"
       : t("spots", { taken: taken, slots: slots }) +
         (installable > 0 ? " · " + t("spotsInstallable", { n: installable }) : "");
@@ -281,11 +300,14 @@
   // The strip under the clock: which step of a round is happening now. It follows this
   // round, except while the visitor's own install window is open (or about to be).
   function renderFlow(n, rs, open) {
-    var sync = syncing(n), mine = me && me.state === "installable";
+    var sync = syncing(n), mine = installing();
     var steps = { signup: [0, ""], swap: [0, ""], install: [0, ""] };   // [fill 0–1, class]
     var from = mine ? (me.from || me.until - COLLECT_MS) : 0;
     if (mine) {
       steps.signup[1] = steps.swap[1] = "done";
+      // The 25-minute segment, not an extension. The backend sends no `from` here, so it is
+      // `until` minus 25 min: the current window before an extension's swap lands, the next
+      // one after (until moves to its end) — the bar sits at 0 through the swap, then refills.
       steps.install = [(n - from) / (me.until - from), "on"];
     } else if (sync) {
       steps.signup[1] = "done";
@@ -305,7 +327,7 @@
     });
 
     var cap = "", vars = { close: clockTime(rs + COLLECT_MS), open: clockTime(rs + ROUND_MS) };
-    if (mine) { cap = "flowCapInstall"; vars.until = clockTime(me.extendedUntil || me.until); }
+    if (mine) { cap = "flowCapInstall"; vars.until = clockTime(windowEnd()); }
     else if (sync) cap = "";
     else if (me && me.state === "waiting") { cap = open ? "flowCapIn" : "flowCapSwap"; vars.open = clockTime(me.from); }
     else if (!open) cap = "flowCapSwap";
@@ -341,10 +363,10 @@
       renderGisButton(holder);
     } else if (!me) {
       body("…");
-    } else if (me.state === "installable") {
+    } else if (installing()) {
       box.classList.add("go");
       title("installTitle");
-      body(t("installBody", { mmss: mmss(me.until - n) }));
+      body(t("installBody", { mmss: mmss(windowEnd() - n) }));
       // One link is enough: once the invite is accepted, Play's opt-in page turns into the
       // download link. The second row is the extend button.
       var steps = el("ol", { "class": "install-steps" });

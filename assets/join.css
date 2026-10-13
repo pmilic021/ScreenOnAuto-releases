@@ -1,6 +1,11 @@
 /* /join/ page — layered on top of styles.css (tokens, theme toggle, hero, .btn, footer). */
 
 .hero .home { display: flex; }
+/* Compact hero, no eyebrow: on a phone the action card must land on the first screen.
+   The top padding stays styles.css's (72px, 76px on phones) — it clears the top-right tools. */
+.hero h1 { font-size: clamp(1.75rem, 5vw, 2.4rem); gap: 12px; margin-bottom: 10px; }
+.hero .app-icon { width: 44px; height: 44px; border-radius: 11px; }
+.hero .tagline { font-size: 1rem; margin-bottom: 18px; }
 /* One narrow column: the hero shares the main column's width so their edges line up. */
 .hero .wrap, .join, footer .wrap { max-width: 640px; }
 .join { padding-top: 8px; padding-bottom: 48px; }
@@ -19,6 +24,8 @@
 .clock.swapping .led { background: #d9a441; box-shadow: 0 0 10px rgba(217, 164, 65, 0.8); }
 .clock .phase { font-size: 0.78rem; letter-spacing: 0.14em; color: #4cb578; }
 .clock.swapping .phase { color: #d9a441; }
+.clock.installing .led { background: #5aa9e6; box-shadow: 0 0 10px rgba(90, 169, 230, 0.8); }
+.clock.installing .phase { color: #5aa9e6; }
 .clock-main { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin: 6px 0 14px; }
 .clock .digits {
   font-size: clamp(2.6rem, 11vw, 3.6rem); font-weight: 500; color: #e9eff5;
@@ -26,6 +33,8 @@
 }
 .clock .digits-label { font-size: 0.85rem; }
 .spots { font-size: 0.78rem; margin: 0; }
+/* Emptied during the swap; keep its line so the card below doesn't jump twice a round. */
+.spots:empty::before { content: "\00a0"; }
 
 /* Round flow strip: segment widths follow the minutes (25 / 5 / 25). Fixed colours —
    the panel is dark in both themes. */
@@ -76,18 +85,21 @@
 .card .notice-line { color: var(--amber); font-size: 0.92rem; margin: 12px 0 0; }
 
 .install-steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+/* Number | button | description. On a phone the description drops under the button, still
+   right of the number — never the number alone on a line of its own. */
 .install-steps li {
-  counter-increment: step; display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  counter-increment: step; display: grid; grid-template-columns: 1.2em auto 1fr;
+  align-items: center; gap: 8px 14px;
   padding: 10px 0; border-top: 1px solid var(--border);
 }
 .install-steps li:first-child { border-top: 0; }
 .install-steps li::before {
   content: counter(step); font-family: "IBM Plex Mono", ui-monospace, monospace;
-  color: var(--amber); width: 1.2em;
+  color: var(--amber);
 }
 .install-steps .btn { min-width: 12em; text-align: center; }
 .install-steps .extend .btn:disabled { cursor: not-allowed; }
-.install-steps span { color: var(--muted); font-size: 0.92rem; flex: 1 1 14em; }
+.install-steps span { color: var(--muted); font-size: 0.92rem; }
 
 .account { color: var(--muted); font-size: 0.88rem; margin: 0 0 24px; }
 
@@ -110,8 +122,11 @@
   cursor: pointer; text-decoration: underline;
 }
 
-@media (max-width: 520px) {
-  .install-steps .btn { width: 100%; }
+@media (max-width: 720px) {   /* the hero's phone breakpoint too (styles.css) */
+  .install-steps li { grid-template-columns: 1.2em 1fr; }
+  .install-steps li::before { grid-row: 1; }
+  .install-steps li > * { grid-column: 2; }
+  .install-steps .btn { width: 100%; min-width: 0; }
 }
 
 /* ============ RTL (ar) ============ */
