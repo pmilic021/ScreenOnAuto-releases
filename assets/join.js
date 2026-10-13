@@ -148,14 +148,16 @@
     return !!me && (me.state === "syncing" || (me.state === "waiting" && me.from <= n));
   }
 
-  // The end of the visitor's install window. An extension carries it into the next round
-  // (and through the :25–:30 swap); until the swap lands the backend reports the extended end
-  // as extendedUntil next to the original `until`. renderExtend alone keeps reading
+  // The end of the visitor's install window. Before :25 an extended visitor gets the extended
+  // end as extendedUntil next to the original `until`; from :25 the backend drops extendedUntil
+  // and moves `until` itself to the next window's end. renderExtend alone keeps reading
   // me.until on purpose — the extend button belongs to the original window's last minutes.
   function windowEnd() { return me.extendedUntil || me.until; }
   // In their install window. Every part of the page asks this one question, so the clock, the
-  // strip and the card change together when the refresh after the boundary lands.
-  function installing() { return !!me && me.state === "installable"; }
+  // strip and the card change together. The time check matters: from :25 until the VM reports
+  // the swap, the backend still says "installable" to everyone in the old batch, with an
+  // `until` already past for those who did not extend — their window is over.
+  function installing() { return !!me && me.state === "installable" && windowEnd() > now(); }
 
   function scheduleRefresh() {
     var n = now(), rs = roundStart(n);
@@ -302,12 +304,12 @@
   function renderFlow(n, rs, open) {
     var sync = syncing(n), mine = installing();
     var steps = { signup: [0, ""], swap: [0, ""], install: [0, ""] };   // [fill 0–1, class]
-    var from = mine ? (me.from || me.until - COLLECT_MS) : 0;
+    var from = mine ? me.until - COLLECT_MS : 0;
     if (mine) {
       steps.signup[1] = steps.swap[1] = "done";
-      // The 25-minute segment, not an extension. The backend sends no `from` here, so it is
-      // `until` minus 25 min: the current window before an extension's swap lands, the next
-      // one after (until moves to its end) — the bar sits at 0 through the swap, then refills.
+      // The 25-minute segment, not an extension: `until` minus 25 min (the backend sends no
+      // `from` for installable) — the current window before :25, the next one after for an
+      // extended visitor (until moves to its end): the bar sits at 0 through the swap.
       steps.install = [(n - from) / (me.until - from), "on"];
     } else if (sync) {
       steps.signup[1] = "done";
@@ -386,7 +388,8 @@
     } else if (me.state === "waiting") {
       title("waitingTitle");
       body(t("waitingBody", { mmss: mmss(me.from - n), time: clockTime(me.from) }));
-    } else if (me.state === "failed" || me.state === "none") {
+    } else if (me.state === "failed" || me.state === "none" || me.state === "installable") {
+      // ("installable" here = a window that has ended; the backend says so until the swap lands)
       if (me.state === "failed") {
         title("failedTitle"); body(t("failedBody"));
         var rp = el("p", { "class": "hint" }); rp.appendChild(reportLink()); box.appendChild(rp);
@@ -409,7 +412,7 @@
         box.appendChild(btn);
       }
     }
-    if (me && me.state !== "installable") box.classList.remove("go");
+    if (!installing()) box.classList.remove("go");
     if (notice) box.appendChild(el("p", { "class": "notice-line" }, notice));
   }
 
