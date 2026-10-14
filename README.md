@@ -57,7 +57,7 @@ Shizuku stopped when you plugged in, or the screen won't wake up? See [Troublesh
 
 ### Android 14 and above — install via Google Play
 
-Android Auto only runs apps installed from the Play Store, and Android 14+ blocks the KingInstaller workaround — so install through Google Play's internal testing. It's the same full app as on GitHub, but it isn't searchable on the Play Store: [**sign up on the install page**](https://screenonauto.lzn.idv.tw/join/?lang=en). A new round opens every 30 minutes, and your install link appears when the round starts. Full steps: [**Join the Beta Test**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test).
+Android Auto only runs apps installed from the Play Store, and Android 14+ blocks the KingInstaller workaround — so install through Google Play's internal testing. It's the same full app as on GitHub, but it isn't searchable on the Play Store: [**sign up on the install page**](https://screenonauto.lzn.idv.tw/join/?lang=en). A new round opens every 30 minutes, and your install link appears when the round starts. Full steps: [**Install via the Google Play Testing Program**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Install-via-the-Google-Play-Testing-Program).
 
 ### Android 13 and below — sideload with KingInstaller
 

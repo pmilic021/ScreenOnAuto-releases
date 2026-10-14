@@ -11,12 +11,12 @@ The docs/web ecosystem exists in **11 languages: en / zh-TW / pt-BR / es / de / 
 tester-roster language analysis; ko added 2026-08-14; ru added 2026-10-06) — READMEs, landing pages, docs, and
 the wiki. **Any content edit must be synced to all eleven languages.** Never update just one.
 
-Korean page names: wiki `베타-테스트-참여` / `사용-방법` / `ADB로-미러링-권한-부여`;
+Korean page names: wiki `Google-Play-테스트-프로그램으로-설치` / `사용-방법` / `ADB로-미러링-권한-부여`;
 site `ko/` + `docs/ko/<slug>`. Terminology follows the app's `values-ko` strings —
 mirroring is `미러링`, the privileged section is `특권 기능`, screen-off is
 `휴대전화 화면 끄기`, touch forwarding is `터치 전달`.
 
-Russian page names: wiki `Участие-в-бета-тестировании` / `Как-пользоваться` /
+Russian page names: wiki `Установка-через-программу-тестирования-Google-Play` / `Как-пользоваться` /
 `Выдача-разрешения-на-дублирование-через-ADB` / `Управление-дублированием-из-другого-приложения`;
 site `ru/` + `docs/ru/<slug>`. Terminology follows the app's `values-ru` strings —
 mirroring is `дублирование (экрана)`, the privileged section is `Привилегированные функции`,
@@ -30,11 +30,11 @@ The app UI itself has 16 locales (adds ja/ko/zh-CN/pl/ru/in/vi/ar). Doc terminol
 match the app's `values-<lang>` strings (e.g. fr "duplication", it "mirroring", tr "yansıtma",
 ar "النسخ المطابق").
 
-Turkish page names: wiki `Beta-Testine-Katılın` / `Nasıl-Kullanılır` /
+Turkish page names: wiki `Google-Play-Test-Programı-Üzerinden-Yükleme` / `Nasıl-Kullanılır` /
 `ADB-ile-Yansıtma-İzni-Verme`; site `tr/` + `docs/tr/<slug>`.
 
 **Arabic (ar) is the only RTL language.** Page names: wiki
-`الانضمام-إلى-الاختبار-التجريبي` / `طريقة-الاستخدام` / `منح-إذن-النسخ-المطابق-عبر-ADB`;
+`التثبيت-عبر-برنامج-اختبار-Google-Play` / `طريقة-الاستخدام` / `منح-إذن-النسخ-المطابق-عبر-ADB`;
 site `ar/` + `docs/ar/<slug>`. RTL plumbing: `i18n/ar/index.html` sets
 `<html lang="ar" dir="rtl">` (its carousel is pinned `dir="ltr"` — carousel.js
 scrollLeft math breaks under RTL); `_layouts/doc.html` emits `dir="rtl"` when
@@ -171,17 +171,17 @@ Remote: `https://github.com/slzn/ScreenOnAuto-releases.wiki.git`
 
 | Lang | `join-the-beta-test` | `how-to-use` | `grant-mirror-permission-via-adb` | `control-mirroring-from-another-app` |
 |---|---|---|---|---|
-| en | Join-the-Beta-Test | How-to-Use | Grant-Mirror-Permission-via-ADB | Control-Mirroring-from-Another-App |
-| zh-TW | 加入-Beta-測試 | 如何使用 | 使用-ADB-授予鏡像權限 | 從其他應用程式控制鏡像 |
-| pt-BR | Participar-do-Teste-Beta | Como-Usar | Conceder-Permissão-de-Espelhamento-via-ADB | Controlar-o-Espelhamento-a-partir-de-Outro-App |
-| es | Unirse-a-la-Beta | Cómo-Usar | Conceder-Permiso-de-Duplicación-por-ADB | Controlar-la-Duplicación-desde-Otra-App |
-| de | Beta-Test-beitreten | Verwendung | Spiegelungsberechtigung-per-ADB-erteilen | Spiegelung-aus-einer-anderen-App-steuern |
-| fr | Rejoindre-le-test-bêta | Comment-utiliser | Accorder-la-permission-de-duplication-via-ADB | Contrôler-la-duplication-depuis-une-autre-application |
-| it | Partecipare-al-beta-test | Come-si-usa | Concedere-il-permesso-di-mirroring-via-ADB | Controllare-il-mirroring-da-altre-app |
-| tr | Beta-Testine-Katılın | Nasıl-Kullanılır | ADB-ile-Yansıtma-İzni-Verme | Yansıtmayı-Başka-Bir-Uygulamadan-Kontrol-Etme |
-| ar | الانضمام-إلى-الاختبار-التجريبي | طريقة-الاستخدام | منح-إذن-النسخ-المطابق-عبر-ADB | التحكم-في-النسخ-المطابق-من-تطبيق-آخر |
-| ko | 베타-테스트-참여 | 사용-방법 | ADB로-미러링-권한-부여 | 다른-앱에서-미러링-제어 |
-| ru | Участие-в-бета-тестировании | Как-пользоваться | Выдача-разрешения-на-дублирование-через-ADB | Управление-дублированием-из-другого-приложения |
+| en | Install-via-the-Google-Play-Testing-Program | How-to-Use | Grant-Mirror-Permission-via-ADB | Control-Mirroring-from-Another-App |
+| zh-TW | 透過-Google-Play-測試計畫安裝 | 如何使用 | 使用-ADB-授予鏡像權限 | 從其他應用程式控制鏡像 |
+| pt-BR | Instalar-pelo-programa-de-testes-do-Google-Play | Como-Usar | Conceder-Permissão-de-Espelhamento-via-ADB | Controlar-o-Espelhamento-a-partir-de-Outro-App |
+| es | Instalar-mediante-el-programa-de-pruebas-de-Google-Play | Cómo-Usar | Conceder-Permiso-de-Duplicación-por-ADB | Controlar-la-Duplicación-desde-Otra-App |
+| de | Über-das-Google-Play-Testprogramm-installieren | Verwendung | Spiegelungsberechtigung-per-ADB-erteilen | Spiegelung-aus-einer-anderen-App-steuern |
+| fr | Installer-via-le-programme-de-test-Google-Play | Comment-utiliser | Accorder-la-permission-de-duplication-via-ADB | Contrôler-la-duplication-depuis-une-autre-application |
+| it | Installare-tramite-il-programma-di-test-di-Google-Play | Come-si-usa | Concedere-il-permesso-di-mirroring-via-ADB | Controllare-il-mirroring-da-altre-app |
+| tr | Google-Play-Test-Programı-Üzerinden-Yükleme | Nasıl-Kullanılır | ADB-ile-Yansıtma-İzni-Verme | Yansıtmayı-Başka-Bir-Uygulamadan-Kontrol-Etme |
+| ar | التثبيت-عبر-برنامج-اختبار-Google-Play | طريقة-الاستخدام | منح-إذن-النسخ-المطابق-عبر-ADB | التحكم-في-النسخ-المطابق-من-تطبيق-آخر |
+| ko | Google-Play-테스트-프로그램으로-설치 | 사용-방법 | ADB로-미러링-권한-부여 | 다른-앱에서-미러링-제어 |
+| ru | Установка-через-программу-тестирования-Google-Play | Как-пользоваться | Выдача-разрешения-на-дублирование-через-ADB | Управление-дублированием-из-другого-приложения |
 
 ### Updating the wiki — and syncing the on-site docs copies
 

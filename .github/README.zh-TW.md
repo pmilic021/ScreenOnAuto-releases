@@ -57,7 +57,7 @@
 
 ### Android 14 以上（含）— 透過 Play 商店安裝
 
-Android Auto 只接受從 Play 商店安裝的 App，而 Android 14 起 KingInstaller 已無法使用，因此請透過 Google Play 內部測試安裝。內容與 GitHub 版本相同，只是 Play 商店搜尋不到：到[**安裝頁面報名**](https://screenonauto.lzn.idv.tw/join/?lang=zh-TW)，每 30 分鐘一輪，輪次開始時就會出現安裝連結。完整步驟請見 [**加入 Beta 測試**](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)。
+Android Auto 只接受從 Play 商店安裝的 App，而 Android 14 起 KingInstaller 已無法使用，因此請透過 Google Play 內部測試安裝。內容與 GitHub 版本相同，只是 Play 商店搜尋不到：到[**安裝頁面報名**](https://screenonauto.lzn.idv.tw/join/?lang=zh-TW)，每 30 分鐘一輪，輪次開始時就會出現安裝連結。完整步驟請見 [**透過 Google Play 測試計畫安裝**](https://github.com/slzn/ScreenOnAuto-releases/wiki/透過-Google-Play-測試計畫安裝)。
 
 ### Android 13 以下（含）— 透過 KingInstaller sideload
 

@@ -57,7 +57,7 @@
 
 ### Android 14 وأحدث — التثبيت عبر Google Play
 
-لا يشغِّل Android Auto إلا التطبيقات المثبَّتة من متجر Play، ويمنع Android 14+ طريقة KingInstaller — لذا ثبّت التطبيق عبر الاختبار الداخلي في Google Play. إنه التطبيق الكامل نفسه الموجود على GitHub، لكنه لا يظهر في نتائج البحث في متجر Play: [**سجّل في صفحة التثبيت**](https://screenonauto.lzn.idv.tw/join/?lang=ar). تبدأ جولة جديدة كل 30 دقيقة، ويظهر رابط التثبيت عند بدء الجولة. الخطوات الكاملة: [**الانضمام إلى الاختبار التجريبي**](https://github.com/slzn/ScreenOnAuto-releases/wiki/الانضمام-إلى-الاختبار-التجريبي).
+لا يشغِّل Android Auto إلا التطبيقات المثبَّتة من متجر Play، ويمنع Android 14+ طريقة KingInstaller — لذا ثبّت التطبيق عبر الاختبار الداخلي في Google Play. إنه التطبيق الكامل نفسه الموجود على GitHub، لكنه لا يظهر في نتائج البحث في متجر Play: [**سجّل في صفحة التثبيت**](https://screenonauto.lzn.idv.tw/join/?lang=ar). تبدأ جولة جديدة كل 30 دقيقة، ويظهر رابط التثبيت عند بدء الجولة. الخطوات الكاملة: [**التثبيت عبر برنامج اختبار Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/التثبيت-عبر-برنامج-اختبار-Google-Play).
 
 ### Android 13 وأقدم — التثبيت اليدوي عبر KingInstaller
 

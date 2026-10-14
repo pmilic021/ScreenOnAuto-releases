@@ -57,7 +57,7 @@ Opcional — requiere [Shizuku](https://shizuku.rikka.app/) o root. Sin ellos, t
 
 ### Android 14 o superior — instalar desde Google Play
 
-Android Auto solo ejecuta apps instaladas desde Play Store, y Android 14+ bloquea el método de KingInstaller — así que instala mediante las pruebas internas de Google Play. Es la misma app completa que en GitHub, pero no aparece en las búsquedas de Play Store: [**inscríbete en la página de instalación**](https://screenonauto.lzn.idv.tw/join/?lang=es). Cada 30 minutos se abre una nueva ronda y tu enlace de instalación aparece cuando empieza la ronda. Pasos completos: [**Unirse a la Beta**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Unirse-a-la-Beta).
+Android Auto solo ejecuta apps instaladas desde Play Store, y Android 14+ bloquea el método de KingInstaller — así que instala mediante las pruebas internas de Google Play. Es la misma app completa que en GitHub, pero no aparece en las búsquedas de Play Store: [**inscríbete en la página de instalación**](https://screenonauto.lzn.idv.tw/join/?lang=es). Cada 30 minutos se abre una nueva ronda y tu enlace de instalación aparece cuando empieza la ronda. Pasos completos: [**Instalar mediante el programa de pruebas de Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Instalar-mediante-el-programa-de-pruebas-de-Google-Play).
 
 ### Android 13 o inferior — sideload con KingInstaller
 

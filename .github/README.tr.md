@@ -57,7 +57,7 @@ Araca takınca Shizuku durdu mu, ya da ekran uyanmıyor mu? [Sorun Giderme](http
 
 ### Android 14 ve üzeri — Google Play üzerinden kurulum
 
-Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve Android 14+ KingInstaller yöntemini engeller — bu yüzden Google Play dahili testi üzerinden yükleyin. GitHub'dakiyle aynı tam uygulamadır, ancak Play Store aramalarında görünmez: [**yükleme sayfasından kaydolun**](https://screenonauto.lzn.idv.tw/join/?lang=tr). Her 30 dakikada yeni bir tur açılır ve tur başladığında yükleme bağlantınız görünür. Tüm adımlar: [**Beta Testine Katılın**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Beta-Testine-Katılın).
+Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve Android 14+ KingInstaller yöntemini engeller — bu yüzden Google Play dahili testi üzerinden yükleyin. GitHub'dakiyle aynı tam uygulamadır, ancak Play Store aramalarında görünmez: [**yükleme sayfasından kaydolun**](https://screenonauto.lzn.idv.tw/join/?lang=tr). Her 30 dakikada yeni bir tur açılır ve tur başladığında yükleme bağlantınız görünür. Tüm adımlar: [**Google Play Test Programı Üzerinden Yükleme**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Google-Play-Test-Programı-Üzerinden-Yükleme).
 
 ### Android 13 ve altı — KingInstaller ile elle yükleme
 
