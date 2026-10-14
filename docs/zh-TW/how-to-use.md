@@ -11,9 +11,6 @@ last_modified_at: 2026-10-12
 # 如何使用
 
 
-本指南說明**手機連上車機之後如何啟動鏡像**——兩個鏡像入口與差異，以及逐步的啟動
-流程。
-
 > **ℹ️ 說明**
 > **開始前請先確認：**
 > - 已安裝 ScreenOnAuto，且 Android Auto 啟動器中看得到 ScreenOnAuto 的項目。
@@ -21,39 +18,36 @@ last_modified_at: 2026-10-12
 
 ## 兩個鏡像入口
 
-Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都是同一個手機畫面——差別
-在於鏡像**如何顯示**在車機上：
+Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都是同一個手機畫面——差別在於鏡像**如何顯示**在車機上：
 
 ![Android Auto 啟動器中的 ScreenOnAuto 項目](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
-|---|---|---|
-| 顯示方式 | 全螢幕——佔用地圖區域 | 車機螢幕**夠大**時，分割檢視可**與地圖並排**；螢幕較小時地圖會退到背景、畫面上只顯示鏡像（並**不會**取代地圖） |
+<table class="entry-pair" role="presentation">
+<tr>
+<td width="50%" valign="top">
+<img src="/images/icon_launcher.png" width="32" align="middle" alt=""> <b>ScreenOnAuto</b><br>
+<p><img src="/images/how-to-use/nav-fullscreen.png" width="100%" alt="ScreenOnAuto 全螢幕鏡像"></p>
+全螢幕——佔用地圖區域
+</td>
+<td width="50%" valign="top">
+<img src="/images/icon_legacy.png" width="32" align="middle" alt=""> <b>ScreenOnAuto (Legacy)</b><br>
+<p><img src="/images/how-to-use/legacy-split.png" width="100%" alt="ScreenOnAuto (Legacy) 與地圖並排顯示"></p>
+車機螢幕<b>夠大</b>時，分割檢視可<b>與地圖並排</b>；螢幕較小時地圖會退到背景、畫面上只顯示鏡像（並<b>不會</b>取代地圖）
+</td>
+</tr>
+</table>
 
-**ScreenOnAuto**——全螢幕，佔用地圖區域：
-
-![ScreenOnAuto 全螢幕鏡像](/images/how-to-use/nav-fullscreen.png)
-
-**ScreenOnAuto (Legacy)**——與地圖並排：
-
-![ScreenOnAuto (Legacy) 與地圖並排顯示](/images/how-to-use/legacy-split.png)
-
-兩個都試試，哪個在你的車機上表現好就用哪個。兩者顯示的是同一個鏡像，隨時可以切換——
-鏡像啟動後，打開另一個入口會直接顯示，不會再次要求權限。
+兩個都試試，哪個在你的車機上表現好就用哪個。兩者顯示的是同一個鏡像，隨時可以切換——鏡像啟動後，打開另一個入口會直接顯示，不會再次要求權限。
 
 > **💡 小技巧**
-> 如果之前開過 **ScreenOnAuto**（全螢幕入口），現在想改用 **ScreenOnAuto (Legacy)**，
-> 建議先在車機上打開地圖 app（例如 Google 地圖）再啟動 Legacy 鏡像。這樣車機會把地圖
-> app 重新設回預設地圖，地圖相關的操作就不會被全螢幕鏡像佔用。
+> 如果之前開過 **ScreenOnAuto**（全螢幕入口），現在想改用 **ScreenOnAuto (Legacy)**，建議先在車機上打開地圖 app（例如 Google 地圖）再啟動 Legacy 鏡像。這樣車機會把地圖 app 重新設回預設地圖，地圖相關的操作就不會被全螢幕鏡像佔用。
 
 ## 開始鏡像
 
 ### 開啟「自動開始鏡像」（建議）
 
 1. 在手機的 app 中開啟**自動開始鏡像**（只需設定一次）。
-2. 把手機連上車機，在 Android Auto 啟動器點任一個 ScreenOnAuto 入口
-   （<img src="/images/icon_launcher.png" width="24" align="center" alt="ScreenOnAuto 圖示"> 或
-   <img src="/images/icon_legacy.png" width="24" align="center" alt="ScreenOnAuto (Legacy) 圖示">）。
+2. 把手機連上車機，在 Android Auto 啟動器點任一個 ScreenOnAuto 入口（<img src="/images/icon_launcher.png" width="24" align="middle" alt="ScreenOnAuto 圖示"> 或 <img src="/images/icon_legacy.png" width="24" align="middle" alt="ScreenOnAuto (Legacy) 圖示">）。
 3. 手機會自動跳出螢幕擷取權限對話框——拿起手機點**立即開始**（Start now）：
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="手機上的螢幕擷取權限對話框">
@@ -63,24 +57,20 @@ Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都�
    ![手機畫面鏡像到車機](/images/how-to-use/mirror-active.png)
 
 > **ℹ️ 說明**
-> 權限對話框是 Android 的規定——每次開始鏡像時出現一次，不是每次切換畫面都會跳。
-> 若未開啟「自動開始鏡像」，點入口只會打開鏡像畫面；在你自己啟動之前不會擷取任何
-> 內容。
+> 權限對話框是 Android 的規定——每次開始鏡像時出現一次，不是每次切換畫面都會跳。若未開啟「自動開始鏡像」，點入口只會打開鏡像畫面；在你自己啟動之前不會擷取任何內容。
 
 ### 手動開始
 
 如果想維持**自動開始鏡像**關閉：
 
-1. 在手機上打開 ScreenOnAuto，開啟**鏡像傳輸**開關，並在權限對話框點**立即開始**
-   (Start now)。
+1. 在手機上打開 ScreenOnAuto，開啟**鏡像傳輸**開關，並在權限對話框點**立即開始** (Start now)。
 2. 在車機上打開任一個 ScreenOnAuto 入口——鏡像已在執行，會立即顯示。
 
 （順序不拘——也可以先在車機上打開入口，再回手機開**鏡像傳輸**開關。）
 
 ### 跳過權限對話框
 
-不想每個工作階段都跳對話框？可以用 ADB 預先授權一次——見
-[使用 ADB 授予鏡像權限](/docs/zh-TW/grant-mirror-permission-via-adb/)。
+不想每個工作階段都跳對話框？可以用 ADB 預先授權一次——見 [使用 ADB 授予鏡像權限](/docs/zh-TW/grant-mirror-permission-via-adb/)。
 
 ## 停止鏡像
 
@@ -92,18 +82,33 @@ Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都�
 
 ## 疑難排解
 
-- **入口打開了但畫面空白** — 鏡像尚未啟動；看看手機上是否有權限對話框，或用**鏡像
-  傳輸**開關啟動。
-- **畫面周圍有黑邊** — 手機和車機螢幕比例不同所致；點鏡像畫面上的**強制橫向**按鈕
-  （或開啟 app 設定中的**自動啟動強制橫向**）通常能大幅改善。若仍有細縫或邊緣被裁切，
-  可用**設定 → 進階 → 調整鏡像寬度/調整鏡像高度**微調（正值收回被裁切的邊、負值往外
-  填補黑邊）。
-- **版面變動後畫面被拉伸/變形**（例如分割檢視中可視區域變大或變小）— 開啟**設定 →
-  進階 → 固定鏡像尺寸**，鏡像會維持原尺寸不變形（可能被部分遮住）。適用於全螢幕的
-  **ScreenOnAuto** 入口。
-- **分割檢視變形的另一種解法** — 開啟**設定 → 進階 →
-  自繪鏡像（實驗性）**。鏡像畫面改由 app
-  自行繪製，不再交給系統縮放，分割檢視時就不會變形，鏡像寬度／高度的微調也不論在連線前或連線中設定都有相同效果。耗電略增，切換後於下次開始鏡像時生效。它不能與**讓手機畫面比例對齊車機**（特權功能）同時開啟——兩者以不同方式解決同一個問題。
-- 車機畫面上的 **Android Auto 導覽列**是 Android Auto 自己繪製的，app 無法隱藏。
-- **以 ADB 啟動的 Shizuku 會在插上車機時被關閉** — USB 連線會讓手機進入配件模式，這會重啟 ADB 並一併帶走 Shizuku——無線偵錯走的是同一個 ADB，所以一樣沒用。重新啟動 Shizuku 即可，ScreenOnAuto 會自行重新連線；更省事的做法是改用 [Shizuku-Next 分支版](https://github.com/rushiranpise/Shizuku-Next)，它的 watchdog 服務會自動幫你重啟。root 使用者與無線 Android Auto 連線不受影響。
-- **螢幕關閉後如何再喚醒** — 觸控面板會隨螢幕一同斷電，因此點手機不會有反應。點車機畫面上的**自動調暗**按鈕即可——切換自動調暗會喚醒螢幕（前提是已在**畫面按鈕 → 功能按鈕**中開啟它，該按鈕預設為關閉）；或連按手機電源鍵**兩次**，因為第一下是讓系統進入休眠。停止鏡像或中斷 Android Auto 也會讓螢幕恢復。
+### 鏡像與畫面
+
+#### 入口打開了但畫面空白
+
+鏡像尚未啟動；看看手機上是否有權限對話框，或用**鏡像傳輸**開關啟動。
+
+#### 畫面周圍有黑邊
+
+手機和車機螢幕比例不同所致；點鏡像畫面上的**強制橫向**按鈕（或開啟 app 設定中的**自動啟動強制橫向**）通常能大幅改善。若仍有細縫或邊緣被裁切，可用**設定 → 進階 → 調整鏡像寬度/調整鏡像高度**微調（正值收回被裁切的邊、負值往外填補黑邊）。
+
+#### 版面變動後畫面被拉伸/變形
+
+分割檢視中可視區域變大或變小時就會發生。有兩個設定可以改善：
+
+- 開啟**設定 → 進階 → 固定鏡像尺寸**，鏡像會維持原尺寸不變形（可能被部分遮住）。適用於全螢幕的 **ScreenOnAuto** 入口。
+- 開啟**設定 → 進階 → 自繪鏡像（實驗性）**。鏡像畫面改由 app 自行繪製，不再交給系統縮放，分割檢視時就不會變形，鏡像寬度／高度的微調也不論在連線前或連線中設定都有相同效果。耗電略增，切換後於下次開始鏡像時生效。它不能與**讓手機畫面比例對齊車機**（特權功能）同時開啟——兩者以不同方式解決同一個問題。
+
+#### Android Auto 導覽列無法隱藏
+
+車機畫面上的 **Android Auto 導覽列**是 Android Auto 自己繪製的，app 無法隱藏。
+
+### 特權功能（Shizuku / root）
+
+#### 以 ADB 啟動的 Shizuku 會在插上車機時被關閉
+
+USB 連線會讓手機進入配件模式，這會重啟 ADB 並一併帶走 Shizuku——無線偵錯走的是同一個 ADB，所以一樣沒用。重新啟動 Shizuku 即可，ScreenOnAuto 會自行重新連線；更省事的做法是改用 [Shizuku-Next 分支版](https://github.com/rushiranpise/Shizuku-Next)，它的 watchdog 服務會自動幫你重啟。root 使用者與無線 Android Auto 連線不受影響。
+
+#### 螢幕關閉後如何再喚醒
+
+觸控面板會隨螢幕一同斷電，因此點手機不會有反應。點車機畫面上的**自動調暗**按鈕即可——切換自動調暗會喚醒螢幕（前提是已在**畫面按鈕 → 功能按鈕**中開啟它，該按鈕預設為關閉）；或連按手機電源鍵**兩次**，因為第一下是讓系統進入休眠。停止鏡像或中斷 Android Auto 也會讓螢幕恢復。

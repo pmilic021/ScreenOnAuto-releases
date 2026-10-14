@@ -11,8 +11,7 @@ last_modified_at: 2026-09-23
 # 使用 ADB 授予鏡像權限
 
 
-預設情況下，每次 ScreenOnAuto 開始螢幕鏡像時，Android 都會顯示權限確認對話框。
-透過 ADB 預先授予**螢幕擷取（MediaProjection）**權限，可讓此對話框不再出現。
+預設情況下，每次 ScreenOnAuto 開始螢幕鏡像時，Android 都會顯示權限確認對話框。透過 ADB 預先授予**螢幕擷取（MediaProjection）權限**，可讓此對話框不再出現。
 
 這也是使用**只鏡像這個應用程式**（Android 15+）的必要條件——沒有預先授權，這項功能無法運作。
 

@@ -44,7 +44,7 @@
 | **手機導覽按鈕** | 返回/主畫面/最近應用程式按鈕**完全不需要啟用無障礙服務**。請在**畫面按鈕 → 功能按鈕**中開啟這些按鈕 |
 | **讓手機畫面比例對齊車機** | 鏡像期間將手機畫面調整為車機的長寬比，從源頭消除黑邊與分割畫面的變形——車機尺寸會自動偵測 |
 
-插上車機後 Shizuku 停止了、螢幕關閉後不知道怎麼喚醒？請見[疑難排解](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用#疑難排解)。
+插上車機後 Shizuku 停止了、螢幕關閉後不知道怎麼喚醒？請見[疑難排解](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用#特權功能shizuku--root)。
 
 ## 系統需求
 
@@ -62,10 +62,7 @@ Android Auto 只接受從 Play 商店安裝的 App，而 Android 14 起 KingInst
 ### Android 13 以下（含）— 透過 KingInstaller sideload
 
 > **為什麼需要 KingInstaller？**  
-> Android Auto 要求 app 必須透過 Google Play 商店安裝。
-> 直接安裝 APK 會讓系統記錄安裝來源為瀏覽器或檔案管理器，
-> 導致 Android Auto 拒絕使用。KingInstaller 能以 Google Play 商店身份安裝 APK，
-> 解決此限制。
+> Android Auto 要求 app 必須透過 Google Play 商店安裝。直接安裝 APK 會讓系統記錄安裝來源為瀏覽器或檔案管理器，導致 Android Auto 拒絕使用。KingInstaller 能以 Google Play 商店身份安裝 APK，解決此限制。
 
 #### 第一步 — 安裝 KingInstaller
 
@@ -87,16 +84,14 @@ Android Auto 只接受從 Play 商店安裝的 App，而 Android 14 起 KingInst
 
 **無論你用哪種方式安裝**——KingInstaller sideload 或 Play 商店——都適用此段。
 
-在手機上前往 **設定 → 已連結的裝置 → Android Auto → 自訂啟動器**。
-您應可看到這 **兩個** ScreenOnAuto 項目：
+在手機上前往 **設定 → 已連結的裝置 → Android Auto → 自訂啟動器**。您應可看到這 **兩個** ScreenOnAuto 項目：
 
 | 圖示 | 名稱 | 功能 |
 |---|---|---|
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | 將手機螢幕鏡像至 Android Auto，取代地圖位置達到全螢幕顯示 |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | 使用舊版投影路徑鏡像手機螢幕，可與地圖並列顯示 |
 
-較舊的 Android Auto 還會多列一個 **ScreenOnAuto Media Controller**；沒看到也正常，媒體控制照樣能用。
-若上述**兩個**項目有任何一個缺失：sideload 安裝請重新透過 KingInstaller 安裝，Play 安裝請確認已安裝完成，再重新開啟 Android Auto。
+較舊的 Android Auto 還會多列一個 **ScreenOnAuto Media Controller**；沒看到也正常，媒體控制照樣能用。若上述**兩個**項目有任何一個缺失：sideload 安裝請重新透過 KingInstaller 安裝，Play 安裝請確認已安裝完成，再重新開啟 Android Auto。
 
 安裝完成後，請見 **[如何使用](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用)** 了解如何在車上啟動鏡像。
 

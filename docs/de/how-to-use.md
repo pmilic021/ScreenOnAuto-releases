@@ -11,10 +11,6 @@ last_modified_at: 2026-10-12
 # Verwendung
 
 
-Diese Anleitung erklärt, **wie du die Spiegelung startest, sobald das Telefon mit dem
-Auto verbunden ist** – die beiden Spiegelungs-Einträge und ihre Unterschiede sowie der
-Startablauf Schritt für Schritt.
-
 > **ℹ️ Hinweis**
 > **Bevor du beginnst**, stelle sicher:
 > - ScreenOnAuto ist installiert und seine Einträge erscheinen im Android-Auto-Launcher.
@@ -28,17 +24,20 @@ dem Fahrzeugbildschirm dargestellt wird:
 
 ![Android-Auto-Launcher mit den ScreenOnAuto-Einträgen](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
-|---|---|---|
-| Darstellung | Vollbild – belegt den Kartenbereich | Auf einem **ausreichend großen Fahrzeugbildschirm** kann er in geteilter Ansicht **neben der Karte** stehen; auf kleineren Bildschirmen wandert die Karte in den Hintergrund und nur die Spiegelung wird angezeigt (die Karte wird **nicht** ersetzt) |
-
-**ScreenOnAuto** – Vollbild, belegt den Kartenbereich:
-
-![ScreenOnAuto-Spiegelung im Vollbild](/images/how-to-use/nav-fullscreen.png)
-
-**ScreenOnAuto (Legacy)** – neben der Karte:
-
-![ScreenOnAuto (Legacy) neben der Karte](/images/how-to-use/legacy-split.png)
+<table class="entry-pair" role="presentation">
+<tr>
+<td width="50%" valign="top">
+<img src="/images/icon_launcher.png" width="32" align="middle" alt=""> <b>ScreenOnAuto</b><br>
+<p><img src="/images/how-to-use/nav-fullscreen.png" width="100%" alt="ScreenOnAuto-Spiegelung im Vollbild"></p>
+Vollbild – belegt den Kartenbereich
+</td>
+<td width="50%" valign="top">
+<img src="/images/icon_legacy.png" width="32" align="middle" alt=""> <b>ScreenOnAuto (Legacy)</b><br>
+<p><img src="/images/how-to-use/legacy-split.png" width="100%" alt="ScreenOnAuto (Legacy) neben der Karte"></p>
+Auf einem <b>ausreichend großen Fahrzeugbildschirm</b> kann er in geteilter Ansicht <b>neben der Karte</b> stehen; auf kleineren Bildschirmen wandert die Karte in den Hintergrund und nur die Spiegelung wird angezeigt (die Karte wird <b>nicht</b> ersetzt)
+</td>
+</tr>
+</table>
 
 Probiere beide aus und nutze den, der auf deiner Head-Unit besser funktioniert. Beide
 zeigen dieselbe Spiegelung, und du kannst jederzeit wechseln – läuft die Spiegelung
@@ -59,8 +58,8 @@ fragen.
 1. Aktiviere in der App auf dem Telefon **Automatisch starten** (einmalige Einrichtung).
 2. Verbinde das Telefon mit dem Auto und tippe im Android-Auto-Launcher auf einen
    ScreenOnAuto-Eintrag
-   (<img src="/images/icon_launcher.png" width="24" align="center" alt="ScreenOnAuto-Symbol"> oder
-   <img src="/images/icon_legacy.png" width="24" align="center" alt="ScreenOnAuto-(Legacy)-Symbol">).
+   (<img src="/images/icon_launcher.png" width="24" align="middle" alt="ScreenOnAuto-Symbol"> oder
+   <img src="/images/icon_legacy.png" width="24" align="middle" alt="ScreenOnAuto-(Legacy)-Symbol">).
 3. Das Telefon zeigt automatisch den Berechtigungsdialog für die Bildschirmaufnahme –
    nimm das Telefon und tippe auf **Jetzt starten** (Start now):
 
@@ -104,44 +103,61 @@ Jede dieser Möglichkeiten funktioniert:
 
 ## Fehlerbehebung
 
-- **Eintrag öffnet sich, bleibt aber leer** – die Spiegelung hat noch nicht begonnen;
-  prüfe das Telefon auf den Berechtigungsdialog oder starte sie über den Schalter
-  **Bildschirmspiegelung**.
-- **Schwarze Balken um das Bild** – Telefon- und Fahrzeugbildschirm haben
-  unterschiedliche Seitenverhältnisse; die Taste **Querformat erzwingen** auf dem
-  Spiegelbildschirm (oder **Querformat automatisch erzwingen** in den
-  App-Einstellungen) füllt den Bildschirm meist deutlich besser. Bleiben schmale
-  Lücken oder abgeschnittene Ränder, justiere unter **Einstellungen → Erweitert →
-  Spiegelungsbreite anpassen / Spiegelungshöhe anpassen** nach (positive Pixel holen
-  einen abgeschnittenen Rand herein, negative füllen einen schwarzen Balken auf).
-- **Das Bild wirkt gestreckt oder verzerrt, nachdem sich das Layout geändert hat**
-  (z. B. wächst oder schrumpft der sichtbare Bereich in der geteilten Ansicht) –
-  aktiviere **Einstellungen → Erweitert → Feste Spiegelungsgröße**. Die Spiegelung
-  behält dann ihre Größe statt zu verzerren (ein Teil kann verdeckt sein). Gilt für
-  den Vollbild-Eintrag **ScreenOnAuto**.
-- **Eine andere Lösung gegen Verzerrung in der geteilten Ansicht** – aktiviere
-  **Einstellungen → Erweitert → Selbstgezeichnete Spiegelung (experimentell)**. Die App
-  zeichnet das Bild der Spiegelung dann selbst, statt es vom System skalieren zu lassen,
-  sodass es in der geteilten Ansicht nicht mehr verzerrt; die Breiten-/Höhenanpassung
-  wirkt zudem gleich, ob vor oder während der Verbindung eingestellt. Das kostet etwas
-  mehr Akku und greift beim nächsten Start der Spiegelung. Sie kann nicht zusammen mit
-  **Telefonbildschirm an das Auto anpassen** (Privilegierte Funktionen) aktiv sein, das
-  dasselbe Problem auf andere Weise löst.
-- Die **Android-Auto-Navigationsleiste** auf dem Fahrzeugbildschirm wird von Android
-  Auto selbst gezeichnet und kann von der App nicht ausgeblendet werden.
-- **Ein per ADB gestarteter Shizuku-Server wird beendet, sobald du das Telefon ans Auto
-  anschließt** – die USB-Verbindung versetzt das Telefon in den Zubehörmodus, wodurch
-  ADB neu startet und Shizuku mitnimmt – Wireless Debugging läuft über dasselbe ADB und
-  hilft daher nicht. Starte Shizuku einfach neu, ScreenOnAuto verbindet sich von selbst
-  wieder; besser noch: Verwende den
-  [Shizuku-Next-Fork](https://github.com/rushiranpise/Shizuku-Next), dessen Watchdog-Dienst ihn für
-  dich neu startet. Root-Nutzer und drahtlose Android-Auto-Verbindungen sind nicht
-  betroffen.
-- **Den Bildschirm nach dem Ausschalten wieder aufwecken** – der Touchscreen wird
-  zusammen mit dem Display abgeschaltet, Tippen auf das Telefon bewirkt also nichts.
-  Tippe auf dem Autobildschirm auf die Schaltfläche **Automatisches Abdunkeln** – das
-  Umschalten des automatischen Abdunkelns weckt den Bildschirm auf (aktiviere die
-  Schaltfläche zuerst unter **Bildschirm-Schaltflächen → Funktionsschaltflächen**; sie
-  ist standardmäßig aus). Oder drücke die Ein-/Aus-Taste des Telefons **zweimal**, denn
-  der erste Druck versetzt das System erst in den Ruhezustand. Auch das Beenden der
-  Spiegelung oder das Trennen von Android Auto schaltet den Bildschirm wieder ein.
+### Spiegelung und Bild
+
+#### Eintrag öffnet sich, bleibt aber leer
+
+Die Spiegelung hat noch nicht begonnen; prüfe das Telefon auf den Berechtigungsdialog
+oder starte sie über den Schalter **Bildschirmspiegelung**.
+
+#### Schwarze Balken um das Bild
+
+Telefon- und Fahrzeugbildschirm haben unterschiedliche Seitenverhältnisse; die Taste
+**Querformat erzwingen** auf dem Spiegelbildschirm (oder **Querformat automatisch
+erzwingen** in den App-Einstellungen) füllt den Bildschirm meist deutlich besser.
+Bleiben schmale Lücken oder abgeschnittene Ränder, justiere unter **Einstellungen →
+Erweitert → Spiegelungsbreite anpassen / Spiegelungshöhe anpassen** nach (positive Pixel
+holen einen abgeschnittenen Rand herein, negative füllen einen schwarzen Balken auf).
+
+#### Das Bild wirkt gestreckt oder verzerrt, nachdem sich das Layout geändert hat
+
+Das passiert, wenn der sichtbare Bereich in der geteilten Ansicht wächst oder schrumpft.
+Zwei Einstellungen können helfen:
+
+- aktiviere **Einstellungen → Erweitert → Feste Spiegelungsgröße**. Die Spiegelung
+  behält dann ihre Größe statt zu verzerren (ein Teil kann verdeckt sein). Gilt für den
+  Vollbild-Eintrag **ScreenOnAuto**.
+- Aktiviere **Einstellungen → Erweitert → Selbstgezeichnete Spiegelung
+  (experimentell)**. Die App zeichnet das Bild der Spiegelung dann selbst, statt es vom
+  System skalieren zu lassen, sodass es in der geteilten Ansicht nicht mehr verzerrt;
+  die Breiten-/Höhenanpassung wirkt zudem gleich, ob vor oder während der Verbindung
+  eingestellt. Das kostet etwas mehr Akku und greift beim nächsten Start der Spiegelung.
+  Sie kann nicht zusammen mit **Telefonbildschirm an das Auto anpassen** (Privilegierte
+  Funktionen) aktiv sein, das dasselbe Problem auf andere Weise löst.
+
+#### Die Android-Auto-Navigationsleiste bleibt sichtbar
+
+Die **Android-Auto-Navigationsleiste** auf dem Fahrzeugbildschirm wird von Android Auto
+selbst gezeichnet und kann von der App nicht ausgeblendet werden.
+
+### Privilegierte Funktionen (Shizuku / Root)
+
+#### Ein per ADB gestarteter Shizuku-Server wird beendet, sobald du das Telefon ans Auto anschließt
+
+Die USB-Verbindung versetzt das Telefon in den Zubehörmodus, wodurch ADB neu startet und
+Shizuku mitnimmt – Wireless Debugging läuft über dasselbe ADB und hilft daher nicht.
+Starte Shizuku einfach neu, ScreenOnAuto verbindet sich von selbst wieder; besser noch:
+Verwende den [Shizuku-Next-Fork](https://github.com/rushiranpise/Shizuku-Next), dessen
+Watchdog-Dienst ihn für dich neu startet. Root-Nutzer und drahtlose
+Android-Auto-Verbindungen sind nicht betroffen.
+
+#### Den Bildschirm nach dem Ausschalten wieder aufwecken
+
+Der Touchscreen wird zusammen mit dem Display abgeschaltet, Tippen auf das Telefon
+bewirkt also nichts. Tippe auf dem Autobildschirm auf die Schaltfläche **Automatisches
+Abdunkeln** – das Umschalten des automatischen Abdunkelns weckt den Bildschirm auf
+(aktiviere die Schaltfläche zuerst unter **Bildschirm-Schaltflächen →
+Funktionsschaltflächen**; sie ist standardmäßig aus). Oder drücke die Ein-/Aus-Taste des
+Telefons **zweimal**, denn der erste Druck versetzt das System erst in den Ruhezustand.
+Auch das Beenden der Spiegelung oder das Trennen von Android Auto schaltet den
+Bildschirm wieder ein.

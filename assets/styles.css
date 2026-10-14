@@ -245,6 +245,9 @@ footer .updated { border-top: 0; margin-top: 0; padding-top: 0; }
 .doc h1 { font-family: "Chakra Petch", system-ui, sans-serif; font-size: 1.9rem; letter-spacing: 0.01em; margin-bottom: 0.4em; }
 .doc h2 { font-family: "Chakra Petch", system-ui, sans-serif; margin-top: 2em; font-size: 1.4rem; letter-spacing: 0.01em; }
 .doc h3 { margin-top: 1.6em; }
+/* Troubleshooting entries: one heading per problem, so each can be linked to */
+.doc h4 { margin: 1.5em 0 0.35em; font-size: 1.02rem; }
+.doc h4 + p, .doc h4 + ul { margin-top: 0; }
 .doc blockquote { margin: 16px 0; padding: 10px 16px; background: var(--bg-alt); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; }
 .doc blockquote p { margin: 6px 0; }
 .doc pre { background: var(--bg-alt); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; overflow-x: auto; }
@@ -260,6 +263,22 @@ footer .updated { border-top: 0; margin-top: 0; padding-top: 0; }
   border-radius: 14px; padding: 10px; box-shadow: var(--shadow);
 }
 .doc p:has(> img:only-child) img { display: block; clip-path: inset(3px 0 0 0 round 8px); }
+/* How to Use: the two mirror entries side by side. A plain HTML table so the wiki shows
+   them side by side too; here it drops the borders and stacks on a phone. Each screenshot
+   sits in its own <p>, so it gets the screen frame and top-edge crop above, unchanged. */
+.doc table.entry-pair { display: table; table-layout: fixed; width: 100%; margin: 18px 0 24px; }
+.doc .entry-pair td { border: 0; padding: 0; vertical-align: top; }
+.doc .entry-pair td + td { padding-inline-start: 20px; }   /* the gutter */
+.doc .entry-pair p:has(> img:only-child) { margin: 10px 0 8px; }
+@media (max-width: 640px) {
+  /* tbody too: left as a table section it wraps the block cells in an anonymous table
+     sized to its content instead of the page */
+  .doc table.entry-pair, .doc .entry-pair tbody, .doc .entry-pair tr, .doc .entry-pair td {
+    display: block; width: 100%;
+  }
+  .doc .entry-pair td { padding-bottom: 22px; }
+  .doc .entry-pair td + td { padding-inline-start: 0; }
+}
 
 /* Beta-test form links. The 44-character form id was rendered in full and is pure noise
    to a reader — but the destination is not: this page asks people to sign in with their

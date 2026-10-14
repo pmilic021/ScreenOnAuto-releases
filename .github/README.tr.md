@@ -44,7 +44,7 @@
 | **Telefon gezinme düğmeleri** | Geri / Ana ekran / Son uygulamalar **hiçbir Erişilebilirlik Hizmeti etkin olmadan** çalışır. Düğmeleri **Ekran düğmeleri → İşlev düğmeleri** bölümünden açın |
 | **Telefon ekranını arabaya uydur** | Yansıtma sırasında telefon ekranını araba ünitesinin en boy oranına dönüştürür, böylece siyah kenarlıklar ve bölünmüş ekrandaki bozulma kaynağında ortadan kalkar — araba ekranı otomatik olarak ölçülür |
 
-Araca takınca Shizuku durdu mu, ya da ekran uyanmıyor mu? [Sorun Giderme](https://github.com/slzn/ScreenOnAuto-releases/wiki/Nasıl-Kullanılır#sorun-giderme) bölümüne bakın.
+Araca takınca Shizuku durdu mu, ya da ekran uyanmıyor mu? [Sorun Giderme](https://github.com/slzn/ScreenOnAuto-releases/wiki/Nasıl-Kullanılır#ayrıcalıklı-özellikler-shizuku--root) bölümüne bakın.
 
 ## Gereksinimler
 

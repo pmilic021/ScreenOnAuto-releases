@@ -11,9 +11,6 @@ last_modified_at: 2026-10-12
 # How to Use
 
 
-This guide covers **starting the mirror once your phone is connected to the car** — the
-two mirror entries and how they differ, and the start-up flow step by step.
-
 > **ℹ️ Note**
 > **Before you start**, make sure:
 > - ScreenOnAuto is installed and its entries appear in Android Auto's launcher.
@@ -26,17 +23,20 @@ screen — they differ in *how* the mirror is shown on the car screen:
 
 ![Android Auto launcher showing the ScreenOnAuto entries](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
-|---|---|---|
-| Display | Full-screen — takes over the map area | On a **large enough car screen** it can sit **side-by-side with the map** in split view; on a smaller screen the map simply goes to the background and only the mirror is shown (it does **not** replace the map) |
-
-**ScreenOnAuto** — full-screen, taking over the map area:
-
-![ScreenOnAuto full-screen mirror](/images/how-to-use/nav-fullscreen.png)
-
-**ScreenOnAuto (Legacy)** — side-by-side with the map:
-
-![ScreenOnAuto (Legacy) side-by-side with the map](/images/how-to-use/legacy-split.png)
+<table class="entry-pair" role="presentation">
+<tr>
+<td width="50%" valign="top">
+<img src="/images/icon_launcher.png" width="32" align="middle" alt=""> <b>ScreenOnAuto</b><br>
+<p><img src="/images/how-to-use/nav-fullscreen.png" width="100%" alt="ScreenOnAuto full-screen mirror"></p>
+Full-screen — takes over the map area
+</td>
+<td width="50%" valign="top">
+<img src="/images/icon_legacy.png" width="32" align="middle" alt=""> <b>ScreenOnAuto (Legacy)</b><br>
+<p><img src="/images/how-to-use/legacy-split.png" width="100%" alt="ScreenOnAuto (Legacy) side-by-side with the map"></p>
+On a <b>large enough car screen</b> it can sit <b>side-by-side with the map</b> in split view; on a smaller screen the map simply goes to the background and only the mirror is shown (it does <b>not</b> replace the map)
+</td>
+</tr>
+</table>
 
 Try both and use whichever works better on your head unit. Both show the same mirror,
 and you can switch between them at any time — once mirroring is running, opening the
@@ -54,8 +54,8 @@ other entry shows it right away without asking for permission again.
 
 1. In the app on the phone, turn on **Auto Start Mirror** (one-time setup).
 2. Connect the phone to the car and tap a ScreenOnAuto entry
-   (<img src="/images/icon_launcher.png" width="24" align="center" alt="ScreenOnAuto icon"> or
-   <img src="/images/icon_legacy.png" width="24" align="center" alt="ScreenOnAuto (Legacy) icon">) in the Android Auto
+   (<img src="/images/icon_launcher.png" width="24" align="middle" alt="ScreenOnAuto icon"> or
+   <img src="/images/icon_legacy.png" width="24" align="middle" alt="ScreenOnAuto (Legacy) icon">) in the Android Auto
    launcher.
 3. The phone brings up the screen-capture permission dialog automatically — pick up the
    phone and tap **Start now**:
@@ -99,35 +99,56 @@ Any of these works:
 
 ## Troubleshooting
 
-- **Entry opens but stays blank** — mirroring hasn't started yet; check the phone for
-  the permission dialog, or start it via the **Mirror** switch.
-- **Black bars around the image** — the phone and car screens have different aspect
-  ratios; the **Force Landscape** button on the mirror screen (or **Auto-start Force
-  Landscape** in the app's settings) usually fills the screen much better. If thin gaps
-  or cut-off edges remain, fine-tune them with **Settings → Advanced → Adjust mirror
-  width / Adjust mirror height** (positive pixels pull in a cut-off edge, negative
-  pixels push out to fill a black bar).
-- **Image looks stretched or distorted after the layout changes** (e.g. the visible
-  area grows or shrinks in split view) — turn on **Settings → Advanced → Fixed mirror
-  size**. The mirror then keeps its size instead of distorting (part of it may be
-  hidden). Applies to the full-screen **ScreenOnAuto** entry.
-- **Another fix for split-view distortion** — turn on **Settings → Advanced → Self-drawn
-  mirror (experimental)**. The app then draws the mirror image itself instead of letting
-  the system scale it, so the image no longer distorts in split view, and the
-  width/height adjustments behave the same whether you set them before or during a
-  connection. It uses slightly more battery and takes effect the next time mirroring
-  starts. It cannot be on together with **Match the phone screen to the car**
-  (Privileged Features), which fixes the same problem a different way.
-- The **Android Auto navigation bar** on the car screen is drawn by Android Auto itself
-  and cannot be hidden by the app.
-- **A Shizuku server started via ADB shuts down when you plug into the car** — the USB
-  connection puts the phone into accessory mode, which restarts ADB and takes Shizuku
-  with it — wireless debugging goes through the same ADB, so it does not help. Start
-  Shizuku again and ScreenOnAuto reconnects on its own; better still, use the [Shizuku-Next fork](https://github.com/rushiranpise/Shizuku-Next), whose watchdog service restarts it for
-  you. Root users and wireless Android Auto connections are unaffected.
-- **Waking the screen again** — the touchscreen powers down with the panel, so tapping
-  the phone does nothing. Tap the **Auto Dim** button on the car screen — toggling Auto
-  Dim wakes the screen (turn the button on first in **On-screen buttons → Control
-  buttons**; it is off by default). Or press the phone's power button **twice**, since
-  the first press is what puts the system to sleep. Stopping the mirror or disconnecting
-  Android Auto also brings the screen back.
+### Mirroring and display
+
+#### Entry opens but stays blank
+
+Mirroring hasn't started yet; check the phone for the permission dialog, or start it via
+the **Mirror** switch.
+
+#### Black bars around the image
+
+The phone and car screens have different aspect ratios; the **Force Landscape** button
+on the mirror screen (or **Auto-start Force Landscape** in the app's settings) usually
+fills the screen much better. If thin gaps or cut-off edges remain, fine-tune them with
+**Settings → Advanced → Adjust mirror width / Adjust mirror height** (positive pixels
+pull in a cut-off edge, negative pixels push out to fill a black bar).
+
+#### Image looks stretched or distorted after the layout changes
+
+This happens when the visible area grows or shrinks in split view. Two settings can fix
+it:
+
+- Turn on **Settings → Advanced → Fixed mirror size**. The mirror then keeps its size
+  instead of distorting (part of it may be hidden). Applies to the full-screen
+  **ScreenOnAuto** entry.
+- Turn on **Settings → Advanced → Self-drawn mirror (experimental)**. The app then draws
+  the mirror image itself instead of letting the system scale it, so the image no longer
+  distorts in split view, and the width/height adjustments behave the same whether you
+  set them before or during a connection. It uses slightly more battery and takes effect
+  the next time mirroring starts. It cannot be on together with **Match the phone screen
+  to the car** (Privileged Features), which fixes the same problem a different way.
+
+#### The Android Auto navigation bar stays on screen
+
+The **Android Auto navigation bar** on the car screen is drawn by Android Auto itself
+and cannot be hidden by the app.
+
+### Privileged Features (Shizuku / root)
+
+#### A Shizuku server started via ADB shuts down when you plug into the car
+
+The USB connection puts the phone into accessory mode, which restarts ADB and takes
+Shizuku with it — wireless debugging goes through the same ADB, so it does not help.
+Start Shizuku again and ScreenOnAuto reconnects on its own; better still, use the
+[Shizuku-Next fork](https://github.com/rushiranpise/Shizuku-Next), whose watchdog
+service restarts it for you. Root users and wireless Android Auto connections are
+unaffected.
+
+#### Waking the screen again
+
+The touchscreen powers down with the panel, so tapping the phone does nothing. Tap the
+**Auto Dim** button on the car screen — toggling Auto Dim wakes the screen (turn the
+button on first in **On-screen buttons → Control buttons**; it is off by default). Or
+press the phone's power button **twice**, since the first press is what puts the system
+to sleep. Stopping the mirror or disconnecting Android Auto also brings the screen back.

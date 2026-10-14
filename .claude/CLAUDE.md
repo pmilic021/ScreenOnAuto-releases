@@ -115,6 +115,11 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   `.doc p:has(> img:only-child)` (top 3px clipped — source images carry a dashed
   artifact); `.doc ol` reuses the circled step counters; portrait images cap at
   560px height (capture-dialog.jpg is pre-cropped to just the dialog).
+  How to Use shows its two mirror entries in `<table class="entry-pair">` (a plain HTML
+  table, so the wiki puts them side by side too; the docs CSS drops its borders and stacks
+  it at ≤640px). Each screenshot in it sits in its own `<p>`, so it picks up the same frame
+  and crop — keep it that way rather than styling the cells' images separately.
+  Troubleshooting is one `####` per problem under two `###` groups, so each is linkable.
 - Any future structural edit to one landing page must still be replicated to all eleven.
 
 ## Website (GitHub Pages)
@@ -193,11 +198,16 @@ conversion rules:
 - image references → `/images/` paths (copy new images into `images/`)
 - do **not** hand-edit the layout — `_config.yml` defaults + `_layouts/doc.html` handle
   SEO head, hreflang, and JSON-LD automatically
-- **do** bump `last_modified_at:` in the front matter of every docs file you touched, and
-  the matching `<lastmod>` in `sitemap.xml`. The layout renders it as both the visible
-  "Last updated" stamp and the `TechArticle` `dateModified` (added 2026-07-30 — these
-  three must agree, or Google ignores the date). `date:` is the first-published date and
-  never changes; new pages get today's date for both.
+- `last_modified_at:` in the front matter and the matching `<lastmod>` in `sitemap.xml`
+  are stamped **automatically** after a push to `main` by the Sync content dates workflow
+  (`tools/sync-content-dates.py`, from the last commit that changed each file's content),
+  so a docs edit does not need to touch them. The layout renders the date as both the
+  visible "Last updated" stamp and the `TechArticle` `dateModified`; the three must agree
+  or Google ignores the date. Pull after pushing — the workflow commits on top. `date:` is
+  the first-published date and never changes; a new page sets it (and may set
+  `last_modified_at` to the same day). (The release steps below still stamp the *landing
+  pages* by hand on purpose: the workflow would only add its dates after the tag, and the
+  tagged commit has to carry them. It derives the same date, so it then changes nothing.)
 
 Every wiki guide page carries a localized `*🌐 [Web version …](docs URL)*` line right
 after the language-switcher line — keep it when editing, and add one to any new guide
@@ -244,6 +254,11 @@ All eleven READMEs share one structure (en at the root, the other ten in `.githu
   absence is normal. Do not describe it as a required entry.
 - **Privileged Features**: a one-line intro, the table, and a single line linking to
   How to Use → Troubleshooting (the Shizuku-over-USB and screen-wake notes live there).
+  Since 2026-10-14 that link, here and on the landing pages, targets the troubleshooting
+  group's own heading, "Privileged Features (Shizuku / root)" — `#privileged-features-shizuku--root`
+  and its counterpart in each language, generated from the heading text by both GitHub and
+  Jekyll. **Rewording that heading in any language breaks its two links** (README +
+  landing page); read the new anchor from a local build before changing them.
 - The READMEs keep the full Features list. The landing pages carry the condensed
   9-card version. Keep the two consistent in substance, not in length.
 

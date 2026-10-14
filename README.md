@@ -44,7 +44,7 @@ Optional — needs [Shizuku](https://shizuku.rikka.app/) or root. Without either
 | **Phone Navigation Buttons** | Back / Home / Recent apps work with **no Accessibility Service enabled at all**. Turn the buttons on in **On-screen buttons → Control buttons** |
 | **Match the Phone Screen to the Car** | Reshapes the phone's display to the head unit's aspect ratio while mirroring, so the black bars and the split-view distortion are gone at the source — the car screen is measured automatically |
 
-Shizuku stopped when you plugged in, or the screen won't wake up? See [Troubleshooting](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use#troubleshooting).
+Shizuku stopped when you plugged in, or the screen won't wake up? See [Troubleshooting](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use#privileged-features-shizuku--root).
 
 ## Requirements
 

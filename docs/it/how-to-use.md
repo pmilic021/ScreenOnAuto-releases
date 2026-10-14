@@ -11,10 +11,6 @@ last_modified_at: 2026-10-12
 # Come si usa
 
 
-Questa guida spiega **come avviare il mirroring una volta collegato il telefono
-all'auto** — le due voci di mirroring e le loro differenze, e la procedura di avvio
-passo passo.
-
 > **ℹ️ Nota**
 > **Prima di iniziare**, assicurati che:
 > - ScreenOnAuto sia installato e le sue voci compaiano nel launcher di Android Auto.
@@ -28,17 +24,20 @@ mostrato sullo schermo dell'auto:
 
 ![Launcher di Android Auto con le voci ScreenOnAuto](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
-|---|---|---|
-| Visualizzazione | Schermo intero — occupa l'area della mappa | Su uno **schermo dell'auto abbastanza grande** può stare **affiancato alla mappa** in vista divisa; su uno schermo più piccolo la mappa passa semplicemente in secondo piano e viene mostrato solo il mirroring (non **sostituisce** la mappa) |
-
-**ScreenOnAuto** — schermo intero, occupa l'area della mappa:
-
-![Mirroring ScreenOnAuto a schermo intero](/images/how-to-use/nav-fullscreen.png)
-
-**ScreenOnAuto (Legacy)** — affiancato alla mappa:
-
-![ScreenOnAuto (Legacy) affiancato alla mappa](/images/how-to-use/legacy-split.png)
+<table class="entry-pair" role="presentation">
+<tr>
+<td width="50%" valign="top">
+<img src="/images/icon_launcher.png" width="32" align="middle" alt=""> <b>ScreenOnAuto</b><br>
+<p><img src="/images/how-to-use/nav-fullscreen.png" width="100%" alt="Mirroring ScreenOnAuto a schermo intero"></p>
+Schermo intero — occupa l'area della mappa
+</td>
+<td width="50%" valign="top">
+<img src="/images/icon_legacy.png" width="32" align="middle" alt=""> <b>ScreenOnAuto (Legacy)</b><br>
+<p><img src="/images/how-to-use/legacy-split.png" width="100%" alt="ScreenOnAuto (Legacy) affiancato alla mappa"></p>
+Su uno <b>schermo dell'auto abbastanza grande</b> può stare <b>affiancato alla mappa</b> in vista divisa; su uno schermo più piccolo la mappa passa semplicemente in secondo piano e viene mostrato solo il mirroring (non <b>sostituisce</b> la mappa)
+</td>
+</tr>
+</table>
 
 Provale entrambe e usa quella che funziona meglio sulla tua unità. Mostrano lo stesso
 mirroring e puoi passare dall'una all'altra in qualsiasi momento — quando il mirroring è
@@ -57,8 +56,8 @@ attivo, aprire l'altra voce lo mostra subito senza richiedere di nuovo l'autoriz
 
 1. Nell'app sul telefono, attiva l'**Avvio automatico** (impostazione una tantum).
 2. Collega il telefono all'auto e tocca una voce ScreenOnAuto
-   (<img src="/images/icon_launcher.png" width="24" align="center" alt="Icona ScreenOnAuto"> oppure
-   <img src="/images/icon_legacy.png" width="24" align="center" alt="Icona ScreenOnAuto (Legacy)">) nel launcher di
+   (<img src="/images/icon_launcher.png" width="24" align="middle" alt="Icona ScreenOnAuto"> oppure
+   <img src="/images/icon_legacy.png" width="24" align="middle" alt="Icona ScreenOnAuto (Legacy)">) nel launcher di
    Android Auto.
 3. Il telefono mostra automaticamente la finestra di autorizzazione alla cattura dello
    schermo — prendi il telefono e tocca **Avvia adesso**:
@@ -102,42 +101,61 @@ Uno qualsiasi di questi metodi:
 
 ## Risoluzione dei problemi
 
-- **La voce si apre ma resta vuota** — il mirroring non è ancora partito; controlla la
-  finestra di autorizzazione sul telefono, oppure avvialo con l'interruttore del
-  **mirroring**.
-- **Bande nere attorno all'immagine** — telefono e schermo dell'auto hanno proporzioni
-  diverse; il pulsante **Forza orizzontale** sulla schermata di mirroring (o la
-  **Forza automaticamente la modalità orizzontale** nelle impostazioni dell'app) di solito riempie
-  molto meglio lo schermo. Se restano sottili spazi o bordi tagliati, rifinisci con
-  **Impostazioni → Avanzate → Regola larghezza / altezza del mirroring** (pixel positivi
-  per recuperare un bordo tagliato, negativi per riempire una banda nera).
-- **Immagine allungata o distorta dopo un cambio di layout** (per es. l'area visibile
-  cresce o si riduce in vista divisa) — attiva **Impostazioni → Avanzate → Dimensione
-  fissa del mirroring**. Il mirroring mantiene così le sue dimensioni invece di
-  distorcersi (una parte può restare nascosta). Si applica alla voce a schermo intero
-  **ScreenOnAuto**.
-- **Un'altra soluzione alla distorsione nella vista divisa** — attiva **Impostazioni →
-  Avanzate → Immagine del mirroring disegnata dall'app (sperimentale)**. L'app disegna
-  allora da sé l'immagine del mirroring invece di lasciarne il ridimensionamento al
-  sistema, così non si distorce più nella vista divisa, e le regolazioni di
-  larghezza/altezza hanno lo stesso effetto sia impostate prima sia durante la
-  connessione. Consuma un po' più di batteria e ha effetto al prossimo avvio del
-  mirroring. Non può essere attiva insieme ad **Adattare lo schermo del telefono a
-  quello dell'auto** (Funzioni privilegiate), che risolve lo stesso problema in un altro
-  modo.
-- La **barra di navigazione di Android Auto** sullo schermo dell'auto è disegnata da
-  Android Auto stesso e l'app non può nasconderla.
-- **Un server Shizuku avviato via ADB si spegne quando colleghi il telefono all'auto** —
-  la connessione USB mette il telefono in modalità accessorio, il che riavvia ADB e si
-  porta via Shizuku — il debug wireless passa dallo stesso ADB, quindi non aiuta.
-  Riavvia Shizuku e ScreenOnAuto si riconnette da solo; meglio ancora, usa il [fork Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next), il cui servizio watchdog lo riavvia al
-  posto tuo. Gli utenti root e le connessioni Android Auto wireless non sono
-  interessati.
-- **Come riaccendere lo schermo dopo lo spegnimento** — il touchscreen si spegne insieme
-  al pannello, quindi toccare il telefono non produce alcun effetto. Tocca il pulsante
-  **Oscuramento automatico** sullo schermo dell'auto: attivare o disattivare
-  l'oscuramento automatico riaccende lo schermo (prima attiva il pulsante in **Pulsanti
-  sullo schermo → Pulsanti funzione**; è disattivato per impostazione predefinita).
-  Oppure premi **due volte** il tasto di accensione del telefono, perché la prima
-  pressione è quella che mette il sistema in sospensione. Anche interrompere il
-  mirroring o scollegare Android Auto riaccende lo schermo.
+### Mirroring e immagine
+
+#### La voce si apre ma resta vuota
+
+Il mirroring non è ancora partito; controlla la finestra di autorizzazione sul telefono,
+oppure avvialo con l'interruttore del **mirroring**.
+
+#### Bande nere attorno all'immagine
+
+Telefono e schermo dell'auto hanno proporzioni diverse; il pulsante **Forza
+orizzontale** sulla schermata di mirroring (o la **Forza automaticamente la modalità
+orizzontale** nelle impostazioni dell'app) di solito riempie molto meglio lo schermo. Se
+restano sottili spazi o bordi tagliati, rifinisci con **Impostazioni → Avanzate → Regola
+larghezza / altezza del mirroring** (pixel positivi per recuperare un bordo tagliato,
+negativi per riempire una banda nera).
+
+#### Immagine allungata o distorta dopo un cambio di layout
+
+Succede quando l'area visibile cresce o si riduce in vista divisa. Due impostazioni
+possono risolverlo:
+
+- Attiva **Impostazioni → Avanzate → Dimensione fissa del mirroring**. Il mirroring
+  mantiene così le sue dimensioni invece di distorcersi (una parte può restare
+  nascosta). Si applica alla voce a schermo intero **ScreenOnAuto**.
+- Attiva **Impostazioni → Avanzate → Immagine del mirroring disegnata dall'app
+  (sperimentale)**. L'app disegna allora da sé l'immagine del mirroring invece di
+  lasciarne il ridimensionamento al sistema, così non si distorce più nella vista
+  divisa, e le regolazioni di larghezza/altezza hanno lo stesso effetto sia impostate
+  prima sia durante la connessione. Consuma un po' più di batteria e ha effetto al
+  prossimo avvio del mirroring. Non può essere attiva insieme ad **Adattare lo schermo
+  del telefono a quello dell'auto** (Funzioni privilegiate), che risolve lo stesso
+  problema in un altro modo.
+
+#### La barra di navigazione di Android Auto resta visibile
+
+La **barra di navigazione di Android Auto** sullo schermo dell'auto è disegnata da
+Android Auto stesso e l'app non può nasconderla.
+
+### Funzioni privilegiate (Shizuku / root)
+
+#### Un server Shizuku avviato via ADB si spegne quando colleghi il telefono all'auto
+
+la connessione USB mette il telefono in modalità accessorio, il che riavvia ADB e si
+porta via Shizuku — il debug wireless passa dallo stesso ADB, quindi non aiuta. Riavvia
+Shizuku e ScreenOnAuto si riconnette da solo; meglio ancora, usa il [fork
+Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next), il cui servizio watchdog lo
+riavvia al posto tuo. Gli utenti root e le connessioni Android Auto wireless non sono
+interessati.
+
+#### Come riaccendere lo schermo dopo lo spegnimento
+
+Il touchscreen si spegne insieme al pannello, quindi toccare il telefono non produce
+alcun effetto. Tocca il pulsante **Oscuramento automatico** sullo schermo dell'auto:
+attivare o disattivare l'oscuramento automatico riaccende lo schermo (prima attiva il
+pulsante in **Pulsanti sullo schermo → Pulsanti funzione**; è disattivato per
+impostazione predefinita). Oppure premi **due volte** il tasto di accensione del
+telefono, perché la prima pressione è quella che mette il sistema in sospensione. Anche
+interrompere il mirroring o scollegare Android Auto riaccende lo schermo.

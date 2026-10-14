@@ -44,7 +44,7 @@ Opcional — requer [Shizuku](https://shizuku.rikka.app/) ou root. Sem eles, tod
 | **Botões de navegação do celular** | Voltar / Início / Apps recentes funcionam **sem nenhum Serviço de acessibilidade ativado**. Ative os botões em **Botões na tela → Botões de função** |
 | **Ajustar a tela do telefone à do carro** | Remodela a tela do celular para a proporção da unidade do carro durante o espelhamento, eliminando na origem as barras pretas e a distorção na tela dividida — a tela do carro é medida automaticamente |
 
-O Shizuku parou ao conectar no carro, ou a tela não acorda? Veja [Solução de problemas](https://github.com/slzn/ScreenOnAuto-releases/wiki/Como-Usar#solução-de-problemas).
+O Shizuku parou ao conectar no carro, ou a tela não acorda? Veja [Solução de problemas](https://github.com/slzn/ScreenOnAuto-releases/wiki/Como-Usar#recursos-privilegiados-shizuku--root).
 
 ## Requisitos
 

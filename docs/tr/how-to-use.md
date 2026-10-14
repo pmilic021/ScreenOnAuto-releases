@@ -11,9 +11,6 @@ last_modified_at: 2026-10-12
 # Nasıl Kullanılır
 
 
-Bu kılavuz, **telefonunuz arabaya bağlıyken yansıtmayı başlatmayı** anlatır — iki
-yansıtma girişi ve farkları ile adım adım başlatma akışı.
-
 > **ℹ️ Not**
 > **Başlamadan önce** şunlardan emin olun:
 > - ScreenOnAuto yüklü ve girişleri Android Auto başlatıcısında görünüyor.
@@ -27,17 +24,20 @@ gösterildiğidir:
 
 ![ScreenOnAuto girişlerini gösteren Android Auto başlatıcısı](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
-|---|---|---|
-| Görünüm | Tam ekran — harita alanının yerini alır | **Yeterince büyük bir araç ekranında** bölünmüş görünümde **haritayla yan yana** durabilir; daha küçük ekranlarda harita arka plana geçer ve yalnızca yansıtma gösterilir (haritanın yerini **almaz**) |
-
-**ScreenOnAuto** — tam ekran, harita alanının yerini alır:
-
-![ScreenOnAuto tam ekran yansıtma](/images/how-to-use/nav-fullscreen.png)
-
-**ScreenOnAuto (Legacy)** — haritayla yan yana:
-
-![Haritayla yan yana ScreenOnAuto (Legacy)](/images/how-to-use/legacy-split.png)
+<table class="entry-pair" role="presentation">
+<tr>
+<td width="50%" valign="top">
+<img src="/images/icon_launcher.png" width="32" align="middle" alt=""> <b>ScreenOnAuto</b><br>
+<p><img src="/images/how-to-use/nav-fullscreen.png" width="100%" alt="ScreenOnAuto tam ekran yansıtma"></p>
+Tam ekran — harita alanının yerini alır
+</td>
+<td width="50%" valign="top">
+<img src="/images/icon_legacy.png" width="32" align="middle" alt=""> <b>ScreenOnAuto (Legacy)</b><br>
+<p><img src="/images/how-to-use/legacy-split.png" width="100%" alt="Haritayla yan yana ScreenOnAuto (Legacy)"></p>
+<b>Yeterince büyük bir araç ekranında</b> bölünmüş görünümde <b>haritayla yan yana</b> durabilir; daha küçük ekranlarda harita arka plana geçer ve yalnızca yansıtma gösterilir (haritanın yerini <b>almaz</b>)
+</td>
+</tr>
+</table>
 
 İkisini de deneyin ve araç ekranınızda hangisi daha iyi çalışıyorsa onu kullanın.
 İkisi de aynı yansıtmayı gösterir ve aralarında istediğiniz an geçiş yapabilirsiniz —
@@ -57,8 +57,8 @@ gösterir.
 
 1. Telefondaki uygulamada **Yansıtmayı otomatik başlat**'ı açın (tek seferlik ayar).
 2. Telefonu arabaya bağlayın ve Android Auto başlatıcısında bir ScreenOnAuto
-   girişine (<img src="/images/icon_launcher.png" width="24" align="center" alt="ScreenOnAuto simgesi"> veya
-   <img src="/images/icon_legacy.png" width="24" align="center" alt="ScreenOnAuto (Legacy) simgesi">) dokunun.
+   girişine (<img src="/images/icon_launcher.png" width="24" align="middle" alt="ScreenOnAuto simgesi"> veya
+   <img src="/images/icon_legacy.png" width="24" align="middle" alt="ScreenOnAuto (Legacy) simgesi">) dokunun.
 3. Telefon, ekran kaydı izin penceresini otomatik olarak açar — telefonu elinize
    alın ve **Şimdi başlat**'a dokunun:
 
@@ -102,39 +102,59 @@ verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](/docs/tr/grant-mirror-pe
 
 ## Sorun Giderme
 
-- **Giriş açılıyor ama boş kalıyor** — yansıtma henüz başlamamıştır; telefonda izin
-  penceresini kontrol edin veya **Ekran yansıtma** anahtarıyla başlatın.
-- **Görüntünün etrafında siyah bantlar var** — telefon ve araç ekranlarının en-boy
-  oranları farklıdır; yansıtma ekranındaki **Yatay modu zorla** düğmesi (veya
-  uygulama ayarlarındaki **Yatay modu otomatik olarak zorla**) genellikle ekranı çok daha
-  iyi doldurur. İnce boşluklar veya kesilen kenarlar kalırsa **Ayarlar → Gelişmiş →
-  Yansıtma genişliğini ayarla / Yansıtma yüksekliğini ayarla** ile ince ayar yapın
-  (pozitif pikseller kesilen kenarı içeri çeker, negatif pikseller siyah bandı
-  doldurmak için dışarı genişletir).
-- **Düzen değiştikten sonra görüntü gerilmiş veya bozulmuş görünüyor** (ör. bölünmüş
-  görünümde görünür alan büyüyüp küçüldüğünde) — **Ayarlar → Gelişmiş → Sabit
-  yansıtma boyutu**'nu açın. Yansıtma bozulmak yerine boyutunu korur (bir kısmı
-  gizlenebilir). Tam ekran **ScreenOnAuto** girişi için geçerlidir.
-- **Bölünmüş görünümdeki bozulmaya başka bir çözüm** — **Ayarlar → Gelişmiş →
-  Uygulamanın çizdiği yansıtma (deneysel)** seçeneğini açın. Uygulama bu durumda
-  ölçeklendirmeyi sisteme bırakmak yerine yansıtma görüntüsünü kendisi çizer; böylece
-  görüntü bölünmüş görünümde artık bozulmaz ve genişlik/yükseklik ayarları bağlantıdan
-  önce de bağlantı sırasında da aynı şekilde çalışır. Biraz daha fazla pil tüketir ve
-  yansıtma bir sonraki başlatılışında etkinleşir. Aynı sorunu farklı bir yolla çözen
-  **Telefon ekranını arabaya uydur** (Ayrıcalıklı özellikler) ile birlikte açık olamaz.
-- Araç ekranındaki **Android Auto gezinme çubuğu** Android Auto'nun kendisi
-  tarafından çizilir ve uygulama tarafından gizlenemez.
-- **ADB ile başlatılan bir Shizuku sunucusu, telefonu arabaya taktığınızda kapanır** —
-  USB bağlantısı telefonu aksesuar moduna alır; bu da ADB'yi yeniden başlatır ve
-  Shizuku'yu da beraberinde götürür — kablosuz hata ayıklama da aynı ADB üzerinden
-  çalıştığı için işe yaramaz. Shizuku'yu yeniden başlatmanız yeterli, ScreenOnAuto
-  kendiliğinden yeniden bağlanır; daha da iyisi, watchdog hizmeti onu sizin yerinize
-  yeniden başlatan [Shizuku-Next sürümünü](https://github.com/rushiranpise/Shizuku-Next) kullanın.
-  Root kullanıcıları ve kablosuz Android Auto bağlantıları bundan etkilenmez.
-- **Ekran kapandıktan sonra tekrar uyandırma** — dokunmatik ekran panelle birlikte
-  kapandığı için telefona dokunmak işe yaramaz. Araç ekranındaki **Otomatik Karartma**
-  düğmesine dokunun — Otomatik Karartma'yı açıp kapatmak ekranı uyandırır (düğmeyi önce
-  **Ekran düğmeleri → İşlev düğmeleri** bölümünden açın; varsayılan olarak kapalıdır).
-  Ya da telefonun güç düğmesine **iki kez** basın, çünkü ilk basış sistemi uyku moduna
-  alan basıştır. Yansıtmayı durdurmak veya Android Auto bağlantısını kesmek de ekranı
-  geri getirir.
+### Yansıtma ve görüntü
+
+#### Giriş açılıyor ama boş kalıyor
+
+Yansıtma henüz başlamamıştır; telefonda izin penceresini kontrol edin veya **Ekran
+yansıtma** anahtarıyla başlatın.
+
+#### Görüntünün etrafında siyah bantlar var
+
+Telefon ve araç ekranlarının en-boy oranları farklıdır; yansıtma ekranındaki **Yatay
+modu zorla** düğmesi (veya uygulama ayarlarındaki **Yatay modu otomatik olarak zorla**)
+genellikle ekranı çok daha iyi doldurur. İnce boşluklar veya kesilen kenarlar kalırsa
+**Ayarlar → Gelişmiş → Yansıtma genişliğini ayarla / Yansıtma yüksekliğini ayarla** ile
+ince ayar yapın (pozitif pikseller kesilen kenarı içeri çeker, negatif pikseller siyah
+bandı doldurmak için dışarı genişletir).
+
+#### Düzen değiştikten sonra görüntü gerilmiş veya bozulmuş görünüyor
+
+Bu, bölünmüş görünümde görünür alan büyüyüp küçüldüğünde olur. İki ayar bunu
+düzeltebilir:
+
+- **Ayarlar → Gelişmiş → Sabit yansıtma boyutu**'nu açın. Yansıtma bozulmak yerine
+  boyutunu korur (bir kısmı gizlenebilir). Tam ekran **ScreenOnAuto** girişi için
+  geçerlidir.
+- **Ayarlar → Gelişmiş → Uygulamanın çizdiği yansıtma (deneysel)** seçeneğini açın.
+  Uygulama bu durumda ölçeklendirmeyi sisteme bırakmak yerine yansıtma görüntüsünü
+  kendisi çizer; böylece görüntü bölünmüş görünümde artık bozulmaz ve genişlik/yükseklik
+  ayarları bağlantıdan önce de bağlantı sırasında da aynı şekilde çalışır. Biraz daha
+  fazla pil tüketir ve yansıtma bir sonraki başlatılışında etkinleşir. Aynı sorunu
+  farklı bir yolla çözen **Telefon ekranını arabaya uydur** (Ayrıcalıklı özellikler) ile
+  birlikte açık olamaz.
+
+#### Android Auto gezinme çubuğu ekranda kalıyor
+
+Araç ekranındaki **Android Auto gezinme çubuğu** Android Auto'nun kendisi tarafından
+çizilir ve uygulama tarafından gizlenemez.
+
+### Ayrıcalıklı özellikler (Shizuku / root)
+
+#### ADB ile başlatılan bir Shizuku sunucusu, telefonu arabaya taktığınızda kapanır
+
+USB bağlantısı telefonu aksesuar moduna alır; bu da ADB'yi yeniden başlatır ve
+Shizuku'yu da beraberinde götürür — kablosuz hata ayıklama da aynı ADB üzerinden
+çalıştığı için işe yaramaz. Shizuku'yu yeniden başlatmanız yeterli, ScreenOnAuto
+kendiliğinden yeniden bağlanır; daha da iyisi, watchdog hizmeti onu sizin yerinize
+yeniden başlatan [Shizuku-Next sürümünü](https://github.com/rushiranpise/Shizuku-Next)
+kullanın. Root kullanıcıları ve kablosuz Android Auto bağlantıları bundan etkilenmez.
+
+#### Ekran kapandıktan sonra tekrar uyandırma
+
+Dokunmatik ekran panelle birlikte kapandığı için telefona dokunmak işe yaramaz. Araç
+ekranındaki **Otomatik Karartma** düğmesine dokunun — Otomatik Karartma'yı açıp kapatmak
+ekranı uyandırır (düğmeyi önce **Ekran düğmeleri → İşlev düğmeleri** bölümünden açın;
+varsayılan olarak kapalıdır). Ya da telefonun güç düğmesine **iki kez** basın, çünkü ilk
+basış sistemi uyku moduna alan basıştır. Yansıtmayı durdurmak veya Android Auto
+bağlantısını kesmek de ekranı geri getirir.

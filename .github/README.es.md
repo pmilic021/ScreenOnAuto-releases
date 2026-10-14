@@ -44,7 +44,7 @@ Opcional — requiere [Shizuku](https://shizuku.rikka.app/) o root. Sin ellos, t
 | **Botones de navegación del teléfono** | Atrás / Inicio / Apps recientes funcionan **sin ningún Servicio de accesibilidad activado**. Activa los botones en **Botones en pantalla → Botones de función** |
 | **Ajustar la pantalla del teléfono a la del coche** | Remodela la pantalla del teléfono a la relación de aspecto de la unidad del coche durante la duplicación, eliminando de raíz las barras negras y la distorsión en pantalla dividida — la pantalla del coche se mide automáticamente |
 
-¿Shizuku se detuvo al conectar el coche, o la pantalla no se despierta? Consulta [Solución de problemas](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cómo-Usar#solución-de-problemas).
+¿Shizuku se detuvo al conectar el coche, o la pantalla no se despierta? Consulta [Solución de problemas](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cómo-Usar#funciones-con-privilegios-shizuku--root).
 
 ## Requisitos
 

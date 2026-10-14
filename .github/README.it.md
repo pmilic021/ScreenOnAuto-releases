@@ -44,7 +44,7 @@ Facoltativo — richiede [Shizuku](https://shizuku.rikka.app/) o root. Senza, tu
 | **Pulsanti di navigazione del telefono** | Indietro / Home / App recenti funzionano **senza alcun Servizio di accessibilità attivo**. Attiva i pulsanti in **Pulsanti sullo schermo → Pulsanti funzione** |
 | **Adattare lo schermo del telefono a quello dell'auto** | Rimodella lo schermo del telefono sulle proporzioni dell'unità dell'auto durante il mirroring, eliminando all'origine le bande nere e la distorsione a schermo diviso — lo schermo dell'auto viene misurato automaticamente |
 
-Shizuku si è fermato collegando l'auto, o lo schermo non si riattiva? Vedi [Risoluzione dei problemi](https://github.com/slzn/ScreenOnAuto-releases/wiki/Come-si-usa#risoluzione-dei-problemi).
+Shizuku si è fermato collegando l'auto, o lo schermo non si riattiva? Vedi [Risoluzione dei problemi](https://github.com/slzn/ScreenOnAuto-releases/wiki/Come-si-usa#funzioni-privilegiate-shizuku--root).
 
 ## Requisiti
 

@@ -11,10 +11,6 @@ last_modified_at: 2026-10-12
 # Comment utiliser
 
 
-Ce guide explique **comment démarrer la duplication une fois le téléphone connecté à la
-voiture** — les deux entrées de duplication et leurs différences, puis le démarrage pas
-à pas.
-
 > **ℹ️ Remarque**
 > **Avant de commencer**, vérifiez que :
 > - ScreenOnAuto est installé et que ses entrées apparaissent dans le lanceur d'Android Auto.
@@ -28,17 +24,20 @@ duplication s'affiche sur l'écran de la voiture :
 
 ![Lanceur Android Auto affichant les entrées ScreenOnAuto](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
-|---|---|---|
-| Affichage | Plein écran — occupe la zone de carte | Sur un **écran de voiture assez grand**, peut s'afficher **côte à côte avec la carte** en vue partagée ; sur un écran plus petit, la carte passe simplement à l'arrière-plan et seule la duplication est affichée (elle ne **remplace pas** la carte) |
-
-**ScreenOnAuto** — plein écran, occupe la zone de carte :
-
-![Duplication ScreenOnAuto en plein écran](/images/how-to-use/nav-fullscreen.png)
-
-**ScreenOnAuto (Legacy)** — côte à côte avec la carte :
-
-![ScreenOnAuto (Legacy) côte à côte avec la carte](/images/how-to-use/legacy-split.png)
+<table class="entry-pair" role="presentation">
+<tr>
+<td width="50%" valign="top">
+<img src="/images/icon_launcher.png" width="32" align="middle" alt=""> <b>ScreenOnAuto</b><br>
+<p><img src="/images/how-to-use/nav-fullscreen.png" width="100%" alt="Duplication ScreenOnAuto en plein écran"></p>
+Plein écran — occupe la zone de carte
+</td>
+<td width="50%" valign="top">
+<img src="/images/icon_legacy.png" width="32" align="middle" alt=""> <b>ScreenOnAuto (Legacy)</b><br>
+<p><img src="/images/how-to-use/legacy-split.png" width="100%" alt="ScreenOnAuto (Legacy) côte à côte avec la carte"></p>
+Sur un <b>écran de voiture assez grand</b>, peut s'afficher <b>côte à côte avec la carte</b> en vue partagée ; sur un écran plus petit, la carte passe simplement à l'arrière-plan et seule la duplication est affichée (elle ne <b>remplace pas</b> la carte)
+</td>
+</tr>
+</table>
 
 Essayez les deux et gardez celle qui fonctionne le mieux sur votre unité. Les deux
 montrent la même duplication, et vous pouvez passer de l'une à l'autre à tout moment —
@@ -58,8 +57,8 @@ redemander de permission.
 
 1. Dans l'app sur le téléphone, activez **Démarrage automatique** (réglage à faire une fois).
 2. Connectez le téléphone à la voiture et touchez une entrée ScreenOnAuto
-   (<img src="/images/icon_launcher.png" width="24" align="center" alt="Icône ScreenOnAuto"> ou
-   <img src="/images/icon_legacy.png" width="24" align="center" alt="Icône ScreenOnAuto (Legacy)">) dans le lanceur
+   (<img src="/images/icon_launcher.png" width="24" align="middle" alt="Icône ScreenOnAuto"> ou
+   <img src="/images/icon_legacy.png" width="24" align="middle" alt="Icône ScreenOnAuto (Legacy)">) dans le lanceur
    Android Auto.
 3. Le téléphone affiche automatiquement la boîte de dialogue de capture d'écran —
    prenez le téléphone et touchez **Commencer** :
@@ -104,40 +103,61 @@ Au choix :
 
 ## Dépannage
 
-- **L'entrée s'ouvre mais reste vide** — la duplication n'a pas encore démarré ;
-  vérifiez la boîte de dialogue de permission sur le téléphone, ou lancez-la via
-  l'interrupteur de **duplication**.
-- **Bandes noires autour de l'image** — le téléphone et l'écran de la voiture ont des
-  formats différents ; le bouton **Forcer paysage** sur l'écran de duplication (ou
-  **Forcer le paysage automatiquement** dans les réglages de l'app) remplit
-  généralement bien mieux l'écran. S'il reste de fins espaces ou des bords coupés,
-  affinez avec **Réglages → Avancé → Régler la largeur / la hauteur de la duplication**
-  (pixels positifs pour ramener un bord coupé, négatifs pour combler une bande noire).
-- **Image étirée ou déformée après un changement de disposition** (par ex. la zone
-  visible grandit ou rétrécit en vue partagée) — activez **Réglages → Avancé → Taille
-  fixe de la duplication**. La duplication garde alors sa taille au lieu de se déformer
-  (une partie peut être masquée). S'applique à l'entrée plein écran **ScreenOnAuto**.
-- **Une autre solution à la déformation en vue partagée** — activez **Réglages → Avancé
-  → Duplication dessinée par l'application (expérimental)**. L'application dessine alors
-  elle-même l'image de la duplication au lieu de laisser le système la redimensionner :
-  elle ne se déforme plus en vue partagée, et les réglages de largeur/hauteur donnent le
-  même résultat, qu'ils soient définis avant ou pendant la connexion. Cela consomme un
-  peu plus de batterie et prend effet au prochain démarrage de la duplication. Elle ne
-  peut pas être activée en même temps que **Adapter l'écran du téléphone à celui de la
-  voiture** (Fonctions privilégiées), qui résout le même problème autrement.
-- La **barre de navigation Android Auto** sur l'écran de la voiture est dessinée par
-  Android Auto lui-même et ne peut pas être masquée par l'app.
-- **Un serveur Shizuku démarré via ADB s'arrête lorsque vous branchez le téléphone à la
-  voiture** — la connexion USB fait passer le téléphone en mode accessoire, ce qui
-  redémarre ADB et emporte Shizuku avec lui — le débogage sans fil passe par le même ADB
-  et n'y change rien. Relancez Shizuku et ScreenOnAuto se reconnecte tout seul ; mieux
-  encore, utilisez le [fork Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next), dont le
-  service watchdog le relance pour vous. Les utilisateurs root et les connexions Android
-  Auto sans fil ne sont pas concernés.
-- **Réveiller l'écran après son extinction** — la dalle tactile s'éteint avec l'écran,
-  toucher le téléphone ne fait donc rien. Touchez le bouton **Atténuation automatique**
-  sur l'écran de la voiture — basculer l'atténuation automatique réveille l'écran
-  (activez d'abord le bouton dans **Boutons à l'écran → Boutons de fonction** ; il est
-  désactivé par défaut). Ou appuyez **deux fois** sur le bouton d'alimentation du
-  téléphone, car la première pression est celle qui met le système en veille. Arrêter la
-  duplication ou déconnecter Android Auto rallume aussi l'écran.
+### Duplication et affichage
+
+#### L'entrée s'ouvre mais reste vide
+
+La duplication n'a pas encore démarré ; vérifiez la boîte de dialogue de permission sur
+le téléphone, ou lancez-la via l'interrupteur de **duplication**.
+
+#### Bandes noires autour de l'image
+
+Le téléphone et l'écran de la voiture ont des formats différents ; le bouton **Forcer
+paysage** sur l'écran de duplication (ou **Forcer le paysage automatiquement** dans les
+réglages de l'app) remplit généralement bien mieux l'écran. S'il reste de fins espaces
+ou des bords coupés, affinez avec **Réglages → Avancé → Régler la largeur / la hauteur
+de la duplication** (pixels positifs pour ramener un bord coupé, négatifs pour combler
+une bande noire).
+
+#### Image étirée ou déformée après un changement de disposition
+
+Cela se produit quand la zone visible grandit ou rétrécit en vue partagée. Deux réglages
+peuvent corriger cela :
+
+- Activez **Réglages → Avancé → Taille fixe de la duplication**. La duplication garde
+  alors sa taille au lieu de se déformer (une partie peut être masquée). S'applique à
+  l'entrée plein écran **ScreenOnAuto**.
+- Activez **Réglages → Avancé → Duplication dessinée par l'application (expérimental)**.
+  L'application dessine alors elle-même l'image de la duplication au lieu de laisser le
+  système la redimensionner : elle ne se déforme plus en vue partagée, et les réglages
+  de largeur/hauteur donnent le même résultat, qu'ils soient définis avant ou pendant la
+  connexion. Cela consomme un peu plus de batterie et prend effet au prochain démarrage
+  de la duplication. Elle ne peut pas être activée en même temps que **Adapter l'écran
+  du téléphone à celui de la voiture** (Fonctions privilégiées), qui résout le même
+  problème autrement.
+
+#### La barre de navigation Android Auto reste affichée
+
+La **barre de navigation Android Auto** sur l'écran de la voiture est dessinée par
+Android Auto lui-même et ne peut pas être masquée par l'app.
+
+### Fonctions privilégiées (Shizuku / root)
+
+#### Un serveur Shizuku démarré via ADB s'arrête lorsque vous branchez le téléphone à la voiture
+
+La connexion USB fait passer le téléphone en mode accessoire, ce qui redémarre ADB et
+emporte Shizuku avec lui — le débogage sans fil passe par le même ADB et n'y change
+rien. Relancez Shizuku et ScreenOnAuto se reconnecte tout seul ; mieux encore, utilisez
+le [fork Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next), dont le service
+watchdog le relance pour vous. Les utilisateurs root et les connexions Android Auto sans
+fil ne sont pas concernés.
+
+#### Réveiller l'écran après son extinction
+
+La dalle tactile s'éteint avec l'écran, toucher le téléphone ne fait donc rien. Touchez
+le bouton **Atténuation automatique** sur l'écran de la voiture — basculer l'atténuation
+automatique réveille l'écran (activez d'abord le bouton dans **Boutons à l'écran →
+Boutons de fonction** ; il est désactivé par défaut). Ou appuyez **deux fois** sur le
+bouton d'alimentation du téléphone, car la première pression est celle qui met le
+système en veille. Arrêter la duplication ou déconnecter Android Auto rallume aussi
+l'écran.

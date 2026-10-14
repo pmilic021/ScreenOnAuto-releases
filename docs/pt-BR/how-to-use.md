@@ -11,10 +11,6 @@ last_modified_at: 2026-10-12
 # Como Usar
 
 
-Este guia explica **como iniciar o espelhamento depois que o celular está conectado ao
-carro** — as duas entradas de espelhamento e suas diferenças, e o fluxo de início passo
-a passo.
-
 > **ℹ️ Nota**
 > **Antes de começar**, confirme que:
 > - O ScreenOnAuto está instalado e suas entradas aparecem no launcher do Android Auto.
@@ -28,17 +24,20 @@ do carro:
 
 ![Launcher do Android Auto com as entradas do ScreenOnAuto](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
-|---|---|---|
-| Exibição | Tela cheia — ocupa a área do mapa | Em uma **tela de carro grande o suficiente** pode ficar **lado a lado com o mapa** em vista dividida; em telas menores o mapa vai para o fundo e só o espelhamento é mostrado (ele **não** substitui o mapa) |
-
-**ScreenOnAuto** — tela cheia, ocupando a área do mapa:
-
-![Espelhamento ScreenOnAuto em tela cheia](/images/how-to-use/nav-fullscreen.png)
-
-**ScreenOnAuto (Legacy)** — lado a lado com o mapa:
-
-![ScreenOnAuto (Legacy) lado a lado com o mapa](/images/how-to-use/legacy-split.png)
+<table class="entry-pair" role="presentation">
+<tr>
+<td width="50%" valign="top">
+<img src="/images/icon_launcher.png" width="32" align="middle" alt=""> <b>ScreenOnAuto</b><br>
+<p><img src="/images/how-to-use/nav-fullscreen.png" width="100%" alt="Espelhamento ScreenOnAuto em tela cheia"></p>
+Tela cheia — ocupa a área do mapa
+</td>
+<td width="50%" valign="top">
+<img src="/images/icon_legacy.png" width="32" align="middle" alt=""> <b>ScreenOnAuto (Legacy)</b><br>
+<p><img src="/images/how-to-use/legacy-split.png" width="100%" alt="ScreenOnAuto (Legacy) lado a lado com o mapa"></p>
+Em uma <b>tela de carro grande o suficiente</b> pode ficar <b>lado a lado com o mapa</b> em vista dividida; em telas menores o mapa vai para o fundo e só o espelhamento é mostrado (ele <b>não</b> substitui o mapa)
+</td>
+</tr>
+</table>
 
 Experimente os dois e use o que funcionar melhor na sua central. Ambos mostram o mesmo
 espelhamento e você pode alternar a qualquer momento — com o espelhamento já em
@@ -57,8 +56,8 @@ execução, abrir a outra entrada o exibe na hora, sem pedir permissão de novo.
 
 1. No app do celular, ative **Início automático** (configuração única).
 2. Conecte o celular ao carro e toque em uma entrada do ScreenOnAuto
-   (<img src="/images/icon_launcher.png" width="24" align="center" alt="Ícone do ScreenOnAuto"> ou
-   <img src="/images/icon_legacy.png" width="24" align="center" alt="Ícone do ScreenOnAuto (Legacy)">) no launcher do
+   (<img src="/images/icon_launcher.png" width="24" align="middle" alt="Ícone do ScreenOnAuto"> ou
+   <img src="/images/icon_legacy.png" width="24" align="middle" alt="Ícone do ScreenOnAuto (Legacy)">) no launcher do
    Android Auto.
 3. O celular mostra automaticamente o diálogo de permissão de captura de tela — pegue o
    celular e toque em **Começar agora** (Start now):
@@ -103,39 +102,59 @@ Qualquer uma destas opções funciona:
 
 ## Solução de problemas
 
-- **A entrada abre mas fica em branco** — o espelhamento ainda não começou; verifique
-  se há um diálogo de permissão no celular, ou inicie pela chave **Espelhar tela**.
-- **Barras pretas ao redor da imagem** — as telas do celular e do carro têm proporções
-  diferentes; o botão **Forçar paisagem** na tela de espelhamento (ou **Forçar paisagem
-  automaticamente** nas configurações do app) costuma preencher a tela muito melhor. Se
-  restarem frestas finas ou bordas cortadas, ajuste fino em **Configurações → Avançado →
-  Ajustar largura do espelhamento / Ajustar altura do espelhamento** (pixels positivos
-  recolhem uma borda cortada, negativos empurram para preencher uma barra preta).
-- **A imagem fica esticada ou distorcida depois que o layout muda** (ex.: a área
-  visível cresce ou encolhe na vista dividida) — ative **Configurações → Avançado →
-  Tamanho fixo do espelhamento**. O espelhamento mantém o tamanho em vez de distorcer
-  (parte dele pode ficar oculta). Vale para a entrada de tela cheia **ScreenOnAuto**.
-- **Outra solução para a distorção na vista dividida** — ative **Configurações →
-  Avançado → Espelhamento desenhado pelo app (experimental)**. O app passa a desenhar a
-  imagem do espelhamento em vez de deixar o sistema redimensioná-la, então ela não
-  distorce mais na vista dividida, e os ajustes de largura/altura funcionam igual,
-  definidos antes ou durante a conexão. Consome um pouco mais de bateria e passa a valer
-  no próximo início do espelhamento. Não pode ficar ativo junto com **Ajustar a tela do
-  telefone à do carro** (Recursos privilegiados), que resolve o mesmo problema de outro
-  jeito.
-- A **barra de navegação do Android Auto** na tela do carro é desenhada pelo próprio
-  Android Auto e o app não pode ocultá-la.
-- **Um servidor Shizuku iniciado via ADB é encerrado quando você conecta ao carro** — a
-  conexão USB coloca o celular em modo acessório, o que reinicia o ADB e derruba o
-  Shizuku junto — a depuração sem fio passa pelo mesmo ADB, então não ajuda. Basta
-  iniciar o Shizuku de novo e o ScreenOnAuto reconecta sozinho; melhor ainda, use o
-  [fork Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next), cujo serviço de watchdog o
-  reinicia para você. Usuários com root e conexões sem fio do Android Auto não são
-  afetados.
-- **Como acordar a tela depois do desligamento** — a tela sensível ao toque desliga
-  junto com o painel, então tocar no celular não faz nada. Toque no botão
-  **Escurecimento automático** na tela do carro — alternar o escurecimento automático
-  acorda a tela (ative o botão antes em **Botões na tela → Botões de função**; ele vem
-  desligado). Ou pressione o botão liga/desliga do celular **duas vezes**, já que o
-  primeiro toque é o que coloca o sistema para dormir. Parar o espelhamento ou
-  desconectar o Android Auto também traz a tela de volta.
+### Espelhamento e imagem
+
+#### A entrada abre mas fica em branco
+
+O espelhamento ainda não começou; verifique se há um diálogo de permissão no celular, ou
+inicie pela chave **Espelhar tela**.
+
+#### Barras pretas ao redor da imagem
+
+As telas do celular e do carro têm proporções diferentes; o botão **Forçar paisagem** na
+tela de espelhamento (ou **Forçar paisagem automaticamente** nas configurações do app)
+costuma preencher a tela muito melhor. Se restarem frestas finas ou bordas cortadas,
+ajuste fino em **Configurações → Avançado → Ajustar largura do espelhamento / Ajustar
+altura do espelhamento** (pixels positivos recolhem uma borda cortada, negativos
+empurram para preencher uma barra preta).
+
+#### A imagem fica esticada ou distorcida depois que o layout muda
+
+Isso acontece quando a área visível cresce ou encolhe na vista dividida. Duas
+configurações podem resolver:
+
+- Ative **Configurações → Avançado → Tamanho fixo do espelhamento**. O espelhamento
+  mantém o tamanho em vez de distorcer (parte dele pode ficar oculta). Vale para a
+  entrada de tela cheia **ScreenOnAuto**.
+- Ative **Configurações → Avançado → Espelhamento desenhado pelo app (experimental)**. O
+  app passa a desenhar a imagem do espelhamento em vez de deixar o sistema
+  redimensioná-la, então ela não distorce mais na vista dividida, e os ajustes de
+  largura/altura funcionam igual, definidos antes ou durante a conexão. Consome um pouco
+  mais de bateria e passa a valer no próximo início do espelhamento. Não pode ficar
+  ativo junto com **Ajustar a tela do telefone à do carro** (Recursos privilegiados),
+  que resolve o mesmo problema de outro jeito.
+
+#### A barra de navegação do Android Auto continua na tela
+
+A **barra de navegação do Android Auto** na tela do carro é desenhada pelo próprio
+Android Auto e o app não pode ocultá-la.
+
+### Recursos privilegiados (Shizuku / root)
+
+#### Um servidor Shizuku iniciado via ADB é encerrado quando você conecta ao carro
+
+A conexão USB coloca o celular em modo acessório, o que reinicia o ADB e derruba o
+Shizuku junto — a depuração sem fio passa pelo mesmo ADB, então não ajuda. Basta iniciar
+o Shizuku de novo e o ScreenOnAuto reconecta sozinho; melhor ainda, use o [fork
+Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next), cujo serviço de watchdog o
+reinicia para você. Usuários com root e conexões sem fio do Android Auto não são
+afetados.
+
+#### Como acordar a tela depois do desligamento
+
+A tela sensível ao toque desliga junto com o painel, então tocar no celular não faz
+nada. Toque no botão **Escurecimento automático** na tela do carro — alternar o
+escurecimento automático acorda a tela (ative o botão antes em **Botões na tela → Botões
+de função**; ele vem desligado). Ou pressione o botão liga/desliga do celular **duas
+vezes**, já que o primeiro toque é o que coloca o sistema para dormir. Parar o
+espelhamento ou desconectar o Android Auto também traz a tela de volta.

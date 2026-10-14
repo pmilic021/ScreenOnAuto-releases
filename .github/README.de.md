@@ -44,7 +44,7 @@ Optional – erfordert [Shizuku](https://shizuku.rikka.app/) oder Root. Ohne bei
 | **Telefon-Navigationstasten** | Zurück / Startbildschirm / Letzte Apps funktionieren **ganz ohne aktivierten Bedienungshilfen-Dienst**. Aktiviere die Tasten unter **Bildschirm-Schaltflächen → Funktionsschaltflächen** |
 | **Telefonbildschirm an das Auto anpassen** | Passt den Telefonbildschirm während der Spiegelung an das Seitenverhältnis des Autodisplays an, sodass schwarze Balken und die Verzerrung im geteilten Bildschirm an der Quelle verschwinden – der Autobildschirm wird automatisch vermessen |
 
-Shizuku wurde beim Anstecken ans Auto beendet, oder der Bildschirm wacht nicht auf? Siehe [Fehlerbehebung](https://github.com/slzn/ScreenOnAuto-releases/wiki/Verwendung#fehlerbehebung).
+Shizuku wurde beim Anstecken ans Auto beendet, oder der Bildschirm wacht nicht auf? Siehe [Fehlerbehebung](https://github.com/slzn/ScreenOnAuto-releases/wiki/Verwendung#privilegierte-funktionen-shizuku--root).
 
 ## Voraussetzungen
 
