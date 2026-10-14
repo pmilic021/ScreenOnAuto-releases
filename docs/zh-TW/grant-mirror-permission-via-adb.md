@@ -5,7 +5,7 @@ lang: zh-TW
 slug: grant-mirror-permission-via-adb
 permalink: /docs/zh-TW/grant-mirror-permission-via-adb/
 date: 2026-07-16
-last_modified_at: 2026-09-23
+last_modified_at: 2026-10-14
 ---
 
 # 使用 ADB 授予鏡像權限
