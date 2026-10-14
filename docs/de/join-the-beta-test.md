@@ -1,14 +1,14 @@
 ---
-title: "Beta-Test beitreten"
+title: "Über das Google-Play-Testprogramm installieren"
 description: "ScreenOnAuto über Google Play installieren (unter Android 14+ erforderlich) – so funktionieren die 30-Minuten-Anmelderunden, Schritt für Schritt."
 lang: de
 slug: join-the-beta-test
 permalink: /docs/de/join-the-beta-test/
 date: 2026-07-16
-last_modified_at: 2026-10-12
+last_modified_at: 2026-10-14
 ---
 
-# Beta-Test beitreten
+# Über das Google-Play-Testprogramm installieren
 
 Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play – auf **Android 14 und höher erforderlich**.
 
@@ -29,11 +29,19 @@ Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play – auf **A
 
 1. Öffne auf deinem Handy die Anmeldeseite und **melde dich mit dem Google-Konto an, das der Play Store auf deinem Handy nutzt** – nur dieses Konto sieht die App:
 
-   🟢 **[Anmeldeseite öffnen](https://screenonauto.lzn.idv.tw/join/?lang=de)**
+   <a class="formcta join" href="https://screenonauto.lzn.idv.tw/join/?lang=de"><span class="lab">Anmeldeseite öffnen</span><span class="host">screenonauto.lzn.idv.tw</span></a>
 2. Tippe auf **Für diese Runde anmelden**. Die Seite zählt bis zu deinem Installationsfenster herunter – lass sie geöffnet; die Installations-Buttons erscheinen dort automatisch.
-3. Sobald dein Fenster öffnet, tippe auf **Tester werden** und nimm die Einladung an – danach zeigt die Seite einen Download-Link: Tippe darauf und installiere **ScreenOnAuto** wie gewohnt. Zeigt der Play Store die App noch nicht, schließe ihn und tippe erneut auf den Link – nach ein paar Versuchen erscheint sie meist. Klappt es dann immer noch nicht, braucht der Play Store manchmal 5–10 Minuten: Warte ein paar Minuten (innerhalb deines Fensters) und versuche es erneut. Immer noch nichts? Tippe in den letzten 5 Minuten deines Fensters auf der Anmeldeseite auf **Bis … verlängern**, dann bleibt dein Fenster eine weitere Runde offen (das geht jede Runde).
+3. Sobald dein Fenster öffnet, tippe auf **Tester werden** und nimm die Einladung an. Danach zeigt die Seite einen Download-Link: Tippe darauf und installiere **ScreenOnAuto** wie gewohnt. Zeigt der Play Store die App nicht, siehe unten **Wenn der Play Store die App nicht zeigt**.
 4. **Nach der Installation** öffne **Android Auto → Launcher anpassen** und prüfe, ob die **zwei** ScreenOnAuto-Einträge erscheinen (Vollbild und Legacy). Ein dritter Eintrag, **Media Controller**, erscheint nur bei älteren Android-Auto-Versionen – bei neueren fehlt er absichtlich, und das ist in Ordnung. Siehe [In Android Auto überprüfen](/de/#verify) für die vollständige Liste und was zu tun ist, wenn einer der beiden fehlt.
 5. Fertig – siehe **[Verwendung](/docs/de/how-to-use/)** zum Starten der Spiegelung im Auto.
+
+### Wenn der Play Store die App nicht zeigt
+
+1. Schließe den Play Store und tippe erneut auf den Download-Link – nach ein paar Versuchen erscheint die App meist.
+2. Immer noch nichts? Der Play Store braucht manchmal 5–10 Minuten. Warte ein paar Minuten (innerhalb deines Fensters) und versuche es erneut.
+3. Klappt es immer noch nicht? Tippe in den letzten 5 Minuten deines Fensters auf der Anmeldeseite auf **Bis … verlängern**, dann bleibt es eine weitere Runde offen. Verlängern kannst du jede Runde.
+
+Sobald die App installiert ist, geht es oben mit Schritt 4 weiter.
 
 ## Gut zu wissen
 

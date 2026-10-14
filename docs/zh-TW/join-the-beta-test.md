@@ -1,5 +1,5 @@
 ---
-title: "加入 Beta 測試"
+title: "透過 Google Play 測試計畫安裝"
 description: "透過 Google Play 安裝 ScreenOnAuto（Android 14 以上必須）——每 30 分鐘一輪的報名方式與逐步說明。"
 lang: zh-TW
 slug: join-the-beta-test
@@ -8,7 +8,7 @@ date: 2026-07-16
 last_modified_at: 2026-10-14
 ---
 
-# 加入 Beta 測試
+# 透過 Google Play 測試計畫安裝
 
 透過 Google Play 的 beta 測試者名單安裝 ScreenOnAuto——**Android 14 以上（含）必須**用此方式。
 
@@ -26,11 +26,19 @@ last_modified_at: 2026-10-14
 
 1. 在手機上打開報名頁，**用手機 Play 商店登入的那個 Google 帳號登入**——app 只會對那個帳號顯示：
 
-   🟢 **[打開報名頁](https://screenonauto.lzn.idv.tw/join/?lang=zh-TW)**
+   <a class="formcta join" href="https://screenonauto.lzn.idv.tw/join/?lang=zh-TW"><span class="lab">打開報名頁</span><span class="host">screenonauto.lzn.idv.tw</span></a>
 2. 點「**報名這一輪**」。頁面會倒數到你的安裝時段——請保持頁面開著，安裝按鈕會自動出現在頁面上。
-3. 安裝時段開始後，點「**成為測試人員**」並接受邀請，接受後頁面會出現下載連結，點它照平常的方式安裝 **ScreenOnAuto**。如果 Play 商店還看不到 app，就關掉 Play 商店、再點一次連結，重複幾次通常就會出現。如果還是不行，Play 商店有時要 5–10 分鐘才會生效：在安裝時段內稍等幾分鐘再試一次。再不行的話，在安裝時段的最後 5 分鐘按報名頁上的「**延長到…**」，安裝時間就會延續一輪（每一輪都可以再延長）。
+3. 安裝時段開始後，點「**成為測試人員**」並接受邀請，接受後頁面會出現下載連結，點它照平常的方式安裝 **ScreenOnAuto**。如果 Play 商店看不到 app，請見下方「**Play 商店看不到 app 時**」。
 4. **安裝完成後**，到手機的 **Android Auto → 自訂啟動器**，確認看得到**兩個** ScreenOnAuto 項目（全螢幕、Legacy）。第三個項目「**媒體控制器**」只在較舊的 Android Auto 上出現，新版不會列出，這是正常的。完整清單與缺項處理請見 [在 Android Auto 中驗證](/zh-TW/#verify)。
 5. 到這裡就完成了——上車後如何啟動鏡像，請見<b>[如何使用](/docs/zh-TW/how-to-use/)</b>。
+
+### Play 商店看不到 app 時
+
+1. 關掉 Play 商店，再點一次下載連結，重複幾次通常就會出現。
+2. 還是沒有？Play 商店有時要 5–10 分鐘才會生效：在安裝時段內稍等幾分鐘再試一次。
+3. 還是看不到？在安裝時段的最後 5 分鐘按報名頁上的「**延長到…**」，安裝時間就會延續一輪。每一輪都可以再延長。
+
+安裝完成後，回到上面的步驟 4 繼續。
 
 ## 小提醒
 

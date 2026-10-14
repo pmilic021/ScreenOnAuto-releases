@@ -1,14 +1,14 @@
 ---
-title: "Beta Testine Katılın"
+title: "Google Play Test Programı Üzerinden Yükleme"
 description: "ScreenOnAuto'yu Google Play'den yükleyin (Android 14+ için zorunlu) — 30 dakikalık kayıt turlarının işleyişi, adım adım."
 lang: tr
 slug: join-the-beta-test
 permalink: /docs/tr/join-the-beta-test/
 date: 2026-07-20
-last_modified_at: 2026-10-12
+last_modified_at: 2026-10-14
 ---
 
-# Beta Testine Katılın
+# Google Play Test Programı Üzerinden Yükleme
 
 
 ScreenOnAuto'yu Google Play beta test kullanıcısı listesi üzerinden yükleyin — **Android 14 ve üzerinde zorunludur**.
@@ -30,11 +30,19 @@ ScreenOnAuto'yu Google Play beta test kullanıcısı listesi üzerinden yükleyi
 
 1. Telefonunuzda kayıt sayfasını açın ve **telefonunuzdaki Play Store'un kullandığı Google hesabıyla giriş yapın** — uygulama yalnızca o hesaba görünür:
 
-   🟢 **[Kayıt sayfasını aç](https://screenonauto.lzn.idv.tw/join/?lang=tr)**
+   <a class="formcta join" href="https://screenonauto.lzn.idv.tw/join/?lang=tr"><span class="lab">Kayıt sayfasını aç</span><span class="host">screenonauto.lzn.idv.tw</span></a>
 2. **Bu tura kaydolun** düğmesine dokunun. Sayfa, yükleme sürenize kadar geri sayar — sayfayı açık tutun; yükleme düğmeleri orada otomatik olarak görünür.
-3. Süreniz başladığında **Test kullanıcısı ol** düğmesine dokunup daveti kabul edin; ardından sayfada bir indirme bağlantısı görünür: ona dokunun ve **ScreenOnAuto**'yu normal şekilde yükleyin. Play Store uygulamayı henüz göstermiyorsa Play Store'u kapatıp bağlantıya tekrar dokunun; birkaç denemeden sonra genellikle görünür. Hâlâ görünmüyorsa Play Store'un sizi etkinleştirmesi 5–10 dakika sürebilir: süreniz içinde birkaç dakika bekleyip tekrar deneyin. Hâlâ yok mu? Sürenizin son 5 dakikasında kayıt sayfasındaki **… saatine kadar uzat** düğmesine dokunarak sürenizi bir tur daha açık tutun (bunu her turda yapabilirsiniz).
+3. Süreniz başladığında **Test kullanıcısı ol** düğmesine dokunup daveti kabul edin. Ardından sayfada bir indirme bağlantısı görünür: ona dokunun ve **ScreenOnAuto**'yu normal şekilde yükleyin. Play Store uygulamayı göstermiyorsa aşağıdaki **Play Store Uygulamayı Göstermiyorsa** bölümüne bakın.
 4. **Yükledikten sonra** **Android Auto → Başlatıcıyı özelleştir**'i açın ve **iki** ScreenOnAuto girişini gördüğünüzü doğrulayın (tam ekran ve Legacy). Üçüncü bir giriş olan **Media Controller** yalnızca eski Android Auto sürümlerinde görünür; yeni sürümlerde tasarım gereği görünmez ve bu normaldir. Tam liste ve bu iki girişten biri eksik olursa yapılacaklar için [Android Auto'da doğrulama](/tr/#verify) bölümüne bakın.
 5. Hazırsınız — arabada yansıtmayı başlatmak için **[Nasıl Kullanılır](/docs/tr/how-to-use/)** kılavuzuna bakın.
+
+### Play Store Uygulamayı Göstermiyorsa
+
+1. Play Store'u kapatıp indirme bağlantısına tekrar dokunun; birkaç denemeden sonra uygulama genellikle görünür.
+2. Hâlâ yok mu? Play Store'un sizi etkinleştirmesi 5–10 dakika sürebilir. Süreniz içinde birkaç dakika bekleyip tekrar deneyin.
+3. Hâlâ görünmüyor mu? Sürenizin son 5 dakikasında kayıt sayfasındaki **… saatine kadar uzat** düğmesine dokunarak sürenizi bir tur daha açık tutun. Bunu her turda yapabilirsiniz.
+
+Yükleme bittikten sonra yukarıdaki 4. adımla devam edin.
 
 ## Bilmekte Fayda Var
 

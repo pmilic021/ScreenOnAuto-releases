@@ -1,14 +1,14 @@
 ---
-title: "Join the Beta Test"
+title: "Install via the Google Play Testing Program"
 description: "Install ScreenOnAuto from Google Play (required on Android 14+) — how the 30-minute sign-up rounds work, step by step."
 lang: en
 slug: join-the-beta-test
 permalink: /docs/en/join-the-beta-test/
 date: 2026-07-16
-last_modified_at: 2026-10-12
+last_modified_at: 2026-10-14
 ---
 
-# Join the Beta Test
+# Install via the Google Play Testing Program
 
 Install ScreenOnAuto through the Google Play beta-tester list — **required on Android 14 and above**.
 
@@ -29,11 +29,19 @@ Install ScreenOnAuto through the Google Play beta-tester list — **required on 
 
 1. On your phone, open the sign-up page and **sign in with the Google account your phone's Play Store uses** — the app is only visible to that account:
 
-   🟢 **[Open the sign-up page](https://screenonauto.lzn.idv.tw/join/?lang=en)**
+   <a class="formcta join" href="https://screenonauto.lzn.idv.tw/join/?lang=en"><span class="lab">Open the sign-up page</span><span class="host">screenonauto.lzn.idv.tw</span></a>
 2. Tap **Sign me up for this round**. The page counts down to your install window — keep it open; the install buttons appear there automatically.
-3. When your window opens, tap **Become a tester** and accept the invitation — the page then shows a download link: tap it and install **ScreenOnAuto** as usual. If the Play Store doesn't show the app yet, close the Play Store and tap the link again — it usually appears after a few tries. If it still doesn't, the Play Store can take 5–10 minutes to catch up: wait a few minutes (within your window) and try again. Still not there? In the last 5 minutes of your window, tap **Extend to …** on the sign-up page to keep your window open for another round (you can do this every round).
+3. When your window opens, tap **Become a tester** and accept the invitation. The page then shows a download link: tap it and install **ScreenOnAuto** as usual. If the Play Store doesn't show the app, see **If the Play Store Doesn't Show the App** below.
 4. **After installing**, open **Android Auto → Customize Launcher** and confirm you see the **two** ScreenOnAuto entries (full-screen and Legacy). A third entry, **Media Controller**, appears only on older Android Auto versions — on newer ones it is absent by design, and that is fine. See [Verify in Android Auto](/#verify) for the full list and what to do if one of the two is missing.
 5. You're all set — see **[How to Use](/docs/en/how-to-use/)** for starting the mirror in the car.
+
+### If the Play Store Doesn't Show the App
+
+1. Close the Play Store and tap the download link again — the app usually appears after a few tries.
+2. Still missing? The Play Store can take 5–10 minutes to catch up. Wait a few minutes (within your window) and try again.
+3. Still not there? In the last 5 minutes of your window, tap **Extend to …** on the sign-up page to keep your window open for another round. You can extend every round.
+
+Once it's installed, continue with step 4 above.
 
 ## Good to Know
 
