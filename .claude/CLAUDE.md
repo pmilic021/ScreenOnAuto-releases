@@ -96,7 +96,9 @@ ScreenOnAuto-releases/
 ├── _config.yml             ← Jekyll config; defaults apply _layouts/doc.html to docs/
 ├── _layouts/doc.html       ← doc layout: SEO head, hreflang (Liquid, from slug+lang), TechArticle JSON-LD
 ├── images/                 ← site images (incl. how-to-use screenshots)
-├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 60 URLs)
+├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 65 URLs)
+├── tools/                  ← sync-content-dates.py (run by CI) and bold_check.py (lists * / ** that
+│                             GitHub won't render as emphasis — run it on CJK wiki/README copy: `tools/bold_check.py <files>`)
 ├── .claude/CLAUDE.md       ← This file (tracked; Jekyll skips dot-dirs, so it is
 │                             never published as a page)
 ├── .claude/settings.local.json ← personal Claude Code settings (gitignored)
