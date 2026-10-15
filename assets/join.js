@@ -35,6 +35,7 @@
       var base = w.split("-")[0].toLowerCase();
       if (base === "zh" && STRINGS["zh-TW"]) return "zh-TW";
       if (base === "pt" && STRINGS["pt-BR"]) return "pt-BR";
+      if (base === "in" && STRINGS.id) return "id";  // Android's legacy code for Indonesian
       if (STRINGS[base]) return base;
     }
     return "en";
