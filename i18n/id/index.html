@@ -1,0 +1,227 @@
+---
+layout: null
+permalink: /id/
+---
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScreenOnAuto — Cerminkan layar ponsel ke Android Auto</title>
+<meta name="description" content="ScreenOnAuto mencerminkan layar ponsel Android Anda ke layar Android Auto di mobil — dengan kontrol media, penerusan sentuhan, mulai otomatis, dan banyak lagi. Gratis, tanpa fitur berbayar.">
+<link rel="canonical" href="https://screenonauto.lzn.idv.tw/id/">
+<link rel="icon" type="image/png" href="../images/icon_launcher.png">
+{% include hreflang.html %}
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://screenonauto.lzn.idv.tw/id/">
+<meta property="og:title" content="ScreenOnAuto — Cerminkan layar ponsel ke Android Auto">
+<meta property="og:description" content="Cerminkan layar ponsel Android Anda ke layar Android Auto di mobil — dengan kontrol media, penerusan sentuhan, mulai otomatis, dan banyak lagi. Gratis.">
+<meta property="og:image" content="https://screenonauto.lzn.idv.tw/images/screenshot-legacy-split.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ScreenOnAuto",
+  "url": "https://screenonauto.lzn.idv.tw/id/",
+  "inLanguage": "id",
+  "description": "Cerminkan layar ponsel Android Anda ke layar Android Auto, dengan dukungan kontrol tombol media.",
+  "operatingSystem": "Android 7.0 or later",
+  "applicationCategory": "UtilitiesApplication",
+  "softwareVersion": "1.9.5",
+  "datePublished": "2026-05-13",
+  "dateModified": "2026-10-15",
+  "downloadUrl": "https://github.com/slzn/ScreenOnAuto-releases/releases/latest",
+  "screenshot": "https://screenonauto.lzn.idv.tw/images/screenshot-legacy-split.png",
+  "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
+  "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "featureList": "Pencerminan layar ke Android Auto, Proksi sesi media, Peredupan otomatis, Mulai pencerminan otomatis, Cegah layar tidur, Luncurkan aplikasi otomatis, Cerminkan aplikasi ini saja, Kontrol eksternal, Paksa lanskap, Pintasan peluncuran, Tombol layar, Penyesuaian pencerminan, Penerusan sentuhan, Cubit untuk zoom, Matikan layar ponsel, Injeksi sentuh nyata, Tombol navigasi ponsel, Samakan layar ponsel dengan mobil, Layar sentuh virtual untuk aplikasi gestur, Mulai pencerminan di latar belakang, Lanskap terbalik"
+}
+</script>
+
+<script>
+/* Apply saved theme before first paint; fall back to the system preference. */
+(function () {
+  var saved = null;
+  try { saved = localStorage.getItem("theme"); } catch (err) {}  /* storage may be blocked */
+  var light = matchMedia("(prefers-color-scheme: light)");
+  document.documentElement.dataset.theme =
+    (saved === "light" || saved === "dark") ? saved : (light.matches ? "light" : "dark");
+  light.addEventListener("change", function (e) {
+    var s = null;
+    try { s = localStorage.getItem("theme"); } catch (err) {}
+    if (!s)
+      document.documentElement.dataset.theme = e.matches ? "light" : "dark";
+  });
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+{% include tools.html lang="id" %}
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">ANDROID · ANDROID AUTO · PENCERMINAN LAYAR</p>
+    <h1><img class="app-icon" src="../images/icon_launcher.png" alt="Ikon aplikasi ScreenOnAuto">ScreenOnAuto</h1>
+    <p class="tagline">Cerminkan layar ponsel Android Anda ke layar Android&nbsp;Auto, dengan dukungan kontrol tombol media.</p>
+    <p class="free">Gratis — tidak ada fitur yang memerlukan pembayaran tambahan.</p>
+    <div class="paths">
+      <a class="path primary" href="https://screenonauto.lzn.idv.tw/join/?lang=id">
+        <span class="k">Android 14 ke atas</span>
+        <b>Instal dari Google&nbsp;Play</b>
+        <span class="d">Daftar di salah satu putaran (setiap setengah jam), lalu instal dalam 25 menit.</span>
+      </a>
+      <a class="path" href="https://github.com/slzn/ScreenOnAuto-releases/releases/latest">
+        <span class="k">Android 13 ke bawah</span>
+        <b>Unduh APK</b>
+        <span class="d">Instal dengan KingInstaller — lihat langkah-langkahnya di bagian bawah halaman ini.</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="carousel wrap" role="region" aria-label="Tangkapan layar" data-dot-label="Tangkapan layar %d">
+  <div class="carousel-track">
+    <figure class="shot">
+      <img src="../images/screenshot-legacy-split.png" alt="Layar ponsel dicerminkan di layar Android Auto, berdampingan dengan peta" width="880">
+      <figcaption>Pencerminan Legacy berjalan berdampingan dengan peta di layar mobil Android Auto.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/screenshot-stocks-split.png" alt="Pemantau saham dicerminkan di layar Android Auto, berdampingan dengan peta" width="880" loading="lazy">
+      <figcaption>Cek pasar sebentar saat parkir — cerminkan aplikasi ponsel yang tidak punya versi untuk mobil.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/how-to-use/nav-fullscreen.png" alt="Pencerminan layar penuh ScreenOnAuto di layar Android Auto" width="880" loading="lazy">
+      <figcaption>Pencerminan layar penuh — layar ponsel memenuhi seluruh layar mobil.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/how-to-use/aa-launcher.png" alt="Peluncur Android Auto yang menampilkan entri ScreenOnAuto" width="880" loading="lazy">
+      <figcaption>Entri ScreenOnAuto di peluncur Android Auto. Gambar ini masih menampilkan Pengontrol Media; Android Auto versi baru tidak lagi memilikinya.</figcaption>
+    </figure>
+  </div>
+  <div class="carousel-nav">
+    <button class="carousel-btn prev" type="button" aria-label="Gambar sebelumnya">&#8249;</button>
+    <span class="carousel-dots"></span>
+    <button class="carousel-btn next" type="button" aria-label="Gambar berikutnya">&#8250;</button>
+  </div>
+</div>
+
+<section class="wrap" id="features">
+  <h2>Fitur</h2>
+  <div class="grid core">
+    <div class="card"><b>Pencerminan layar</b><p>Tampilkan layar ponsel di layar mobil — layar penuh, atau berdampingan dengan peta.</p></div>
+    <div class="card"><b>Kontrol media</b><p>Kendalikan aplikasi media apa pun di ponsel dari panel media milik Android Auto sendiri.</p></div>
+    <div class="card"><b>Mulai otomatis</b><p>Pencerminan dimulai saat mobil terhubung, bisa membuka aplikasi pilihan, dan bisa berjalan di latar belakang tanpa aplikasi muncul di ponsel.</p></div>
+  </div>
+  <div class="grid more">
+    <div class="card"><b>Cerminkan aplikasi ini saja <span class="muted">(Android 15+)</span></b><p>Kirim hanya satu aplikasi ke mobil, bukan seluruh layar.</p></div>
+    <div class="card"><b>Tombol layar</b><p>Pintasan aplikasi di layar mobil, ditambah Paksa lanskap, Peredupan otomatis, dan Kembali / Beranda / Aplikasi terbaru.</p></div>
+    <div class="card"><b>Layar &amp; baterai</b><p>Paksa lanskap (ke kedua arah), redupkan saat tidak digunakan, dan jaga ponsel agar tidak tidur selama pencerminan.</p></div>
+    <div class="card"><b>Pas di layar mobil</b><p>Pangkas tepi yang tertutup layar mobil dan jaga gambar agar tidak terdistorsi dalam tampilan terpisah.</p></div>
+    <div class="card"><b>Kontrol eksternal</b><p>Mulai atau hentikan pencerminan dari Tasker, pintasan, atau ADB. <a href="https://screenonauto.lzn.idv.tw/docs/id/control-mirroring-from-another-app/">Cara kerjanya →</a></p></div>
+    <div class="card"><b>Penerusan sentuhan <span class="muted">(eksperimental)</span></b><p>Ketuk dan gulir di ponsel langsung dari layar mobil.</p></div>
+  </div>
+</section>
+
+<section class="wrap" id="privileged">
+  <h2>Fitur istimewa</h2>
+  <p class="muted">Opsional — memerlukan <a href="https://shizuku.rikka.app/">Shizuku</a> atau Root. Tanpa keduanya, semua fitur lain tetap berjalan sama persis.</p>
+  <div class="grid core priv">
+    <div class="card"><b>Matikan layar ponsel</b><p>Layar ponsel mati sepenuhnya, sementara mobil tetap menampilkan pencerminan.</p></div>
+    <div class="card"><b>Injeksi sentuh nyata</b><p>Tekan lama, seret, dan gestur multi-jari dari layar mobil. Dengan layar sentuh virtual aktif, aplikasi gestur seperti GMD juga menerimanya.</p></div>
+    <div class="card"><b>Tombol navigasi ponsel</b><p>Kembali / Beranda / Aplikasi terbaru tanpa memerlukan Layanan Aksesibilitas.</p></div>
+    <div class="card"><b>Samakan layar ponsel dengan mobil</b><p>Ubah layar ponsel ke rasio aspek mobil selama pencerminan — tanpa bilah hitam maupun distorsi.</p></div>
+  </div>
+  <p class="muted">Shizuku berhenti saat ponsel dicolokkan ke mobil, atau layar tidak mau menyala lagi? Lihat <a href="https://screenonauto.lzn.idv.tw/docs/id/how-to-use/#fitur-istimewa-shizuku--root">Pemecahan masalah</a>.</p>
+</section>
+
+<section class="wrap" id="requirements">
+  <h2>Persyaratan</h2>
+  <ul>
+    <li>Android 7.0 (API 24) atau lebih baru</li>
+    <li>Android Auto terinstal di ponsel</li>
+    <li>Mobil (atau head unit) yang mendukung Android Auto</li>
+    <li>Opsional: <a href="https://shizuku.rikka.app/">Shizuku</a> atau Root — untuk fitur istimewa</li>
+  </ul>
+</section>
+
+<section class="wrap" id="install">
+  <h2>Instalasi</h2>
+
+  <h3>Android 14 ke atas — instal melalui Google Play</h3>
+  <p>Android Auto hanya menjalankan aplikasi yang diinstal dari Play Store, dan Android 14+ memblokir cara KingInstaller — jadi instal melalui pengujian internal Google Play. Ini aplikasi lengkap yang sama seperti di GitHub, tetapi tidak bisa dicari di Play Store: <a href="https://screenonauto.lzn.idv.tw/join/?lang=id"><b>daftar di halaman instal</b></a>. Putaran baru dibuka setiap 30 menit, dan tautan instal Anda muncul saat putaran dimulai. Langkah lengkap: <a href="https://screenonauto.lzn.idv.tw/docs/id/join-the-beta-test/"><b>Instal melalui Program Pengujian Google Play</b></a>.</p>
+
+  <h3>Android 13 ke bawah — pasang manual dengan KingInstaller</h3>
+  <p class="muted">Android Auto mengharuskan aplikasi diinstal dari Google Play. APK yang diinstal langsung akan ditolak; <a href="https://github.com/fcaronte/KingInstaller/releases">KingInstaller</a> menginstal APK sambil melaporkan Google Play Store sebagai sumber instalasi.</p>
+  <ol class="steps">
+    <li><b>Instal KingInstaller</b> — unduh <code>KingInstaller.apk</code> terbaru dari <a href="https://github.com/fcaronte/KingInstaller/releases">halaman rilisnya</a>, izinkan browser atau pengelola file Anda untuk “Instal aplikasi yang tidak dikenal”, lalu instal.</li>
+    <li><b>Instal ScreenOnAuto lewat KingInstaller</b> — unduh <code>ScreenOnAuto-*.apk</code> terbaru dari <a href="https://github.com/slzn/ScreenOnAuto-releases/releases/latest">rilis terbaru</a>, buka KingInstaller, pilih APK-nya, lalu ketuk <b>Install</b>.</li>
+    <li><b>Berikan izin</b> — buka ScreenOnAuto dan ikuti petunjuk di aplikasi.</li>
+  </ol>
+</section>
+
+<section class="wrap" id="verify">
+  <h2>Verifikasi di Android Auto</h2>
+  <p>Langkah ini berlaku bagaimanapun cara Anda menginstal — APK maupun Google Play. Di ponsel, buka <b>Setelan → Perangkat terhubung → Android Auto → Sesuaikan peluncur</b>; Anda seharusnya melihat <b>dua</b> entri ScreenOnAuto berikut:</p>
+  <div class="tablebox">
+    <table>
+      <tr><th></th><th>Nama</th><th>Fungsi</th></tr>
+      <tr><td><img class="mini" src="../images/icon_launcher.png" alt=""></td><td><b>ScreenOnAuto</b></td><td>Mencerminkan layar ponsel dalam layar penuh — menggantikan area peta.</td></tr>
+      <tr><td><img class="mini" src="../images/icon_legacy.png" alt=""></td><td><b>ScreenOnAuto (Legacy)</b></td><td>Mencerminkan melalui jalur proyeksi Legacy — bisa berjalan berdampingan dengan peta.</td></tr>
+    </table>
+  </div>
+  <p>Android Auto versi lama juga menampilkan entri ketiga, <b>Pengontrol Media ScreenOnAuto</b>. Tidak melihatnya itu normal — kontrol media tetap berfungsi.</p>
+  <p>Siap? Lihat <a href="https://screenonauto.lzn.idv.tw/docs/id/how-to-use/"><b>Cara Menggunakan</b></a> untuk memulai pencerminan di mobil.</p>
+</section>
+
+<section class="wrap" id="permissions">
+  <h2>Izin</h2>
+  <div class="tablebox">
+    <table>
+      <tr><th>Izin</th><th>Diperlukan untuk</th></tr>
+      <tr><td>Perekaman layar (MediaProjection)</td><td>Pencerminan layar</td></tr>
+      <tr><td>Akses notifikasi</td><td>Kontrol media</td></tr>
+      <tr><td>Tampilkan di atas aplikasi lain</td><td>Peredupan otomatis &amp; Paksa lanskap</td></tr>
+      <tr><td>Layanan Aksesibilitas</td><td>Penerusan sentuhan &amp; tombol Kembali / Beranda / Aplikasi terbaru (tidak diperlukan dengan fitur istimewa)</td></tr>
+    </table>
+  </div>
+  <p class="muted">Tips: agar dialog Perekaman layar tidak muncul setiap kali aplikasi dibuka, berikan izin itu lebih dulu lewat ADB — lihat <a href="https://screenonauto.lzn.idv.tw/docs/id/grant-mirror-permission-via-adb/">Berikan Izin Pencerminan melalui ADB</a>. Cara ini juga yang membuka fitur <b>Cerminkan aplikasi ini saja</b>.</p>
+</section>
+
+<section class="wrap" id="limitations">
+  <h2>Keterbatasan yang diketahui</h2>
+  <ul>
+    <li><b>Layar ponsel harus tetap menyala selama pencerminan</b> — pencerminan menampilkan apa yang ada di layar ponsel. Pakai <b>Cegah layar tidur</b> agar layar tetap menyala dan <b>Peredupan otomatis</b> untuk menghemat baterai; dengan Shizuku atau Root, Matikan layar ponsel menghapus batasan ini.</li>
+    <li><b>Konten yang dilindungi DRM tidak bisa dicerminkan</b> — aplikasi seperti Netflix atau Disney+ menampilkan layar hitam. Ini adalah batasan platform Android yang tidak bisa diatasi oleh aplikasi.</li>
+    <li><b>Bilah navigasi Android Auto</b> di layar mobil digambar oleh Android Auto sendiri dan tidak bisa disembunyikan.</li>
+  </ul>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Selalu perhatikan jalan — jangan mengoperasikan aplikasi ini saat mengemudi.</p>
+    <p>Proyek ini tidak berafiliasi dengan, tidak didukung oleh, dan tidak disponsori oleh Google. Android Auto adalah merek dagang Google LLC.</p>
+    <p>Bermanfaat? <a href="https://paypal.me/slzn0124">Donasi via PayPal</a> atau <a href="https://www.paypal.com/ncp/payment/NSZL98LMSGYWE">traktir saya bubble tea 🧋</a></p>
+    <p><a href="https://github.com/slzn/ScreenOnAuto-releases">Repositori GitHub</a> · <a href="https://github.com/slzn/ScreenOnAuto-releases/releases">Semua rilis</a> · <a href="https://github.com/slzn/ScreenOnAuto-releases/wiki">Wiki</a></p>
+    <p class="updated">Terakhir diperbarui: <time datetime="2026-10-15">2026-10-15</time></p>
+  </div>
+</footer>
+
+<script src="/assets/carousel.js" defer></script>
+<script>
+document.querySelector(".theme-toggle").addEventListener("click", function () {
+  var next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+  document.documentElement.dataset.theme = next;
+  try { localStorage.setItem("theme", next); } catch (err) {}
+});
+</script>
+</body>
+</html>
