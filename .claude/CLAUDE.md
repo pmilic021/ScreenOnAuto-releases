@@ -6,10 +6,10 @@ Source code is kept private; this repo holds the READMEs, the website, and relea
 
 ## Languages (i18n rule)
 
-The docs/web ecosystem exists in **13 languages: en / zh-TW / pt-BR / es / de / fr / it / tr / ar / ko / ru / vi / id**
+The docs/web ecosystem exists in **14 languages: en / zh-TW / pt-BR / es / de / fr / it / tr / ar / ko / ru / vi / id / ja**
 (fr/it added 2026-07-17; tr added 2026-07-17, ar added 2026-07-20 — both chosen from
-tester-roster language analysis; ko added 2026-08-14; ru added 2026-10-06; vi added 2026-10-15) — READMEs, landing pages, docs, and
-the wiki. **Any content edit must be synced to all thirteen languages.** Never update just one.
+tester-roster language analysis; ko added 2026-08-14; ru added 2026-10-06; vi, id and ja added 2026-10-15) — READMEs, landing pages, docs, and
+the wiki. **Any content edit must be synced to all fourteen languages.** Never update just one.
 
 Korean page names: wiki `Google-Play-테스트-프로그램으로-설치` / `사용-방법` / `ADB로-미러링-권한-부여`;
 site `ko/` + `docs/ko/<slug>`. Terminology follows the app's `values-ko` strings —
@@ -35,11 +35,26 @@ Terminology follows `values-in` — mirroring is `pencerminan (layar)`, the priv
 `Fitur istimewa`, screen-off is `Matikan layar ponsel`, touch forwarding is `Penerusan Sentuhan`;
 the phone's own Settings app is `Setelan`, the app's settings are `Pengaturan`.
 
+Japanese page names: wiki `Google-Play-テストプログラムでインストール` / `使い方` /
+`ADB-でミラーリング権限を付与` / `他のアプリからミラーリングを操作`; site `ja/` + `docs/ja/<slug>`.
+Terminology follows `values-ja` — mirroring is `ミラーリング`, the privileged section is `特権機能`,
+screen-off is `スマホの画面を消灯する`, touch forwarding is `タッチ転送`; the phone is `スマホ` (but `端末`
+for the device ADB sees or "the same device"), prose is です・ます. Android system labels come from AOSP's `values-ja` (e.g. Connected devices = `接続設定`,
+`開発者向けオプション`, `USB デバッグ`, `他のアプリの上に重ねて表示`, the capture dialog's `今すぐ開始`).
+Punctuation is full-width (`：` with no space after it — the only `: ` left is the template-driven
+`最終更新: <date>` stamp; parentheses in prose are full-width even around Latin text — `（実験的）`,
+`（API 24）`, `（Android 15 以上）` — as zh-TW does; only the landing cards' `<span class="muted">(Android 15+)</span>`
+tag stays half-width, the same in every language); katakana compounds are written solid (`テスターリスト`,
+`ダウンロードリンク`) except official spaced names (`ワイヤレス デバッグ`, `コマンド プロンプト`).
+Like zh-TW, keep each paragraph on one line (a soft break renders as a stray space) and run
+`tools/bold_check.py` on the wiki pages and README — `**…）**です` and `*（注）*です` show literal
+asterisks on GitHub (the site's kramdown is more lenient, but the wiki is the source).
+
 The `/join/` sign-up page (`i18n/join/index.html`, copy in `assets/join-strings.js`) is
-also 13-language. It is the only way to become a tester: half-hourly rounds of up to 95,
+also 14-language. It is the only way to become a tester: half-hourly rounds of up to 95,
 run by the rotation backend in the private tooling repo. The old Google Forms + opt-in
 email roster was retired and deleted on 2026-10-01 — don't reintroduce form links.
-The app UI itself has 16 locales (adds ja/ko/zh-CN/pl/ru/in/vi/ar). Doc terminology must
+The app UI itself has 16 locales; all but zh-CN and pl have docs (the app's Indonesian is `values-in`). Doc terminology must
 match the app's `values-<lang>` strings (e.g. fr "duplication", it "mirroring", tr "yansıtma",
 ar "النسخ المطابق").
 
@@ -82,7 +97,7 @@ not restamp the other pages' "last updated" dates.
 ```
 ScreenOnAuto-releases/
 ├── README.md               ← English; the only README at the root (GitHub renders it)
-├── .github/README.<lang>.md← the 12 translated READMEs (zh-TW/pt-BR/es/de/fr/it/tr/ar/ko/ru/vi/id)
+├── .github/README.<lang>.md← the 13 translated READMEs (zh-TW/pt-BR/es/de/fr/it/tr/ar/ko/ru/vi/id/ja)
 ├── CNAME                   ← screenonauto.lzn.idv.tw (GitHub Pages custom domain)
 ├── index.html              ← English landing page (the only page served from the root;
 │                             carries empty `layout: null` front matter so Liquid includes work)
@@ -92,11 +107,11 @@ ScreenOnAuto-releases/
 ├── _includes/hreflang.html ← the landing pages' hreflang alternates, generated from _data/languages.yml
 ├── assets/styles.css       ← shared landing-page stylesheet
 ├── assets/carousel.js      ← shared carousel script
-├── docs/<lang>/<slug>.md   ← on-site copies of the 4 wiki guides × 13 languages
+├── docs/<lang>/<slug>.md   ← on-site copies of the 4 wiki guides × 14 languages
 ├── _config.yml             ← Jekyll config; defaults apply _layouts/doc.html to docs/
 ├── _layouts/doc.html       ← doc layout: SEO head, hreflang (Liquid, from slug+lang), TechArticle JSON-LD
 ├── images/                 ← site images (incl. how-to-use screenshots)
-├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 65 URLs)
+├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 70 URLs)
 ├── tools/                  ← sync-content-dates.py (run by CI) and bold_check.py (lists * / ** that
 │                             GitHub won't render as emphasis — run it on CJK wiki/README copy: `tools/bold_check.py <files>`)
 ├── .claude/CLAUDE.md       ← This file (tracked; Jekyll skips dot-dirs, so it is
@@ -131,10 +146,10 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   asphalt/signal-green/amber). "Screen" surfaces (`--panel*`) stay dark in both themes.
 - **Type:** Chakra Petch (display/H1/H2/buttons) + IBM Plex Mono (eyebrows, captions,
   footer) via Google Fonts `<link>` in every page head; body stays system-ui.
-- **Top-right tools (since 2026-09-30):** `_includes/tools.html`, used by all thirteen landing
+- **Top-right tools (since 2026-09-30):** `_includes/tools.html`, used by all fourteen landing
   pages (`{% include tools.html lang="<code>" %}`) and inside the docbar of
   `_layouts/doc.html` (`lang=page.lang`). It holds a GitHub icon link, a `<details>`
-  language menu, and the light/dark toggle. The menu lists all thirteen languages. The current
+  language menu, and the light/dark toggle. The menu lists all fourteen languages. The current
   one is ticked and not linked. On doc pages it links to the same doc in each language,
   via the layout's `variants`. It replaced the hero's language row, which also carried a
   GitHub link, and the docbar's language list. The cluster is `position: absolute`
@@ -159,7 +174,7 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   it at ≤640px). Each screenshot in it sits in its own `<p>`, so it picks up the same frame
   and crop — keep it that way rather than styling the cells' images separately.
   Troubleshooting is one `####` per problem under two `###` groups, so each is linkable.
-- Any future structural edit to one landing page must still be replicated to all thirteen.
+- Any future structural edit to one landing page must still be replicated to all fourteen.
 
 ## Website (GitHub Pages)
 
@@ -168,12 +183,12 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   github.io URLs 301 here. All internal links use **root-relative paths**.
 - **Landing pages:** `index.html` (en) + one per language dir; SEO head + hreflang +
   JSON-LD (author: Chih-En Liu). **README content edits must be mirrored into the
-  landing pages** (all 13 languages).
+  landing pages** (all 14 languages).
 - **Screenshot carousel** (added 2026-07-17): the hero screenshot is a carousel —
   `.carousel` markup in each landing page + shared `assets/carousel.js` (CSS-scroll-snap
   based, autoplay 6 s, dots/arrows generated by JS). **To add a slide:** append one
   `<figure class="shot"><img …><figcaption>…</figcaption></figure>` inside
-  `.carousel-track` in **all 13 landing pages** with localized alt/caption; dots update
+  `.carousel-track` in **all 14 landing pages** with localized alt/caption; dots update
   automatically. Keep images 1200×450 like the existing ones. og:image and JSON-LD
   screenshot stay a single static image (`screenshot-legacy-split.png`). Slide 2 (market
   dashboard) is a composited mock: brand-free fictional-content page rendered headless
@@ -206,7 +221,7 @@ Remote: `https://github.com/slzn/ScreenOnAuto-releases.wiki.git`
 
 ### Current pages
 
-`Home.md` plus **4 guides × 13 languages** (52 guide pages):
+`Home.md` plus **4 guides × 14 languages** (56 guide pages):
 
 | Lang | `join-the-beta-test` | `how-to-use` | `grant-mirror-permission-via-adb` | `control-mirroring-from-another-app` |
 |---|---|---|---|---|
@@ -223,6 +238,7 @@ Remote: `https://github.com/slzn/ScreenOnAuto-releases.wiki.git`
 | ru | Установка-через-программу-тестирования-Google-Play | Как-пользоваться | Выдача-разрешения-на-дублирование-через-ADB | Управление-дублированием-из-другого-приложения |
 | vi | Cài-đặt-qua-chương-trình-thử-nghiệm-Google-Play | Cách-sử-dụng | Cấp-quyền-phản-chiếu-qua-ADB | Điều-khiển-phản-chiếu-từ-ứng-dụng-khác |
 | id | Instal-melalui-Program-Pengujian-Google-Play | Cara-Menggunakan | Berikan-Izin-Pencerminan-melalui-ADB | Kontrol-Pencerminan-dari-Aplikasi-Lain |
+| ja | Google-Play-テストプログラムでインストール | 使い方 | ADB-でミラーリング権限を付与 | 他のアプリからミラーリングを操作 |
 
 ### Updating the wiki — and syncing the on-site docs copies
 
@@ -252,7 +268,7 @@ conversion rules:
 
 Every wiki guide page carries a localized `*🌐 [Web version …](docs URL)*` line right
 after the language-switcher line — keep it when editing, and add one to any new guide
-page (13 languages).
+page (14 languages).
 
 ```bash
 cd ~/data/workspace/ScreenOnAuto-wiki
@@ -276,7 +292,7 @@ The APK arrives in `release/` already named — this repo never builds it.
 
 ## README Structure Notes
 
-All thirteen READMEs share one structure (en at the root, the other twelve in `.github/`):
+All fourteen READMEs share one structure (en at the root, the other thirteen in `.github/`):
 
 - **Install notice** (IMPORTANT alert under the screenshot):
   - Android 14+ → Google Play only, through the half-hourly sign-up at
@@ -303,7 +319,7 @@ All thirteen READMEs share one structure (en at the root, the other twelve in `.
 - The READMEs keep the full Features list. The landing pages carry the condensed
   9-card version. Keep the two consistent in substance, not in length.
 
-When the install flow changes, update all thirteen READMEs **and** the thirteen landing pages.
+When the install flow changes, update all fourteen READMEs **and** the fourteen landing pages.
 
 ## Publishing a New Release
 
@@ -314,10 +330,10 @@ source-side tag — is **out of scope for this file**; it lives in the private a
 
 ### Step 1 — Update landing pages (EVERY release) + READMEs (usually a no-op)
 
-**1a. Landing-page version bump — required every release (easy to forget):** all 13
+**1a. Landing-page version bump — required every release (easy to forget):** all 14
 landing pages carry `"softwareVersion": "<version>"` in their JSON-LD block — update
-it in `index.html` + `i18n/<lang>/index.html` (all 13 languages), and bump the
-`<lastmod>` of the 13 **landing-page** URL blocks in `sitemap.xml` to today (leave the
+it in `index.html` + `i18n/<lang>/index.html` (all 14 languages), and bump the
+`<lastmod>` of the 14 **landing-page** URL blocks in `sitemap.xml` to today (leave the
 docs blocks alone):
 
 ```bash
@@ -326,7 +342,7 @@ sed -i 's/"softwareVersion": "{prev}"/"softwareVersion": "{versionName}"/' index
 ```
 
 **Do not `sed` the date across `sitemap.xml`.** More URL blocks carry the previous
-release's date than the thirteen landing pages do — `sync-content-dates.yml` stamps that same
+release's date than the fourteen landing pages do — `sync-content-dates.yml` stamps that same
 date onto every doc it touched in the interval, so a blanket replace silently back-dates
 them all. (Concretely, at v1.8.4 fourteen blocks held `2026-09-15`: the ten landing pages
 and four German/Italian docs.) Select on `<loc>` instead, which cannot pick up a doc no
@@ -335,7 +351,7 @@ matter how the dates line up:
 ```bash
 python3 - <<'EOF'
 import re
-LANGS = {'', 'zh-TW/', 'pt-BR/', 'es/', 'de/', 'fr/', 'it/', 'tr/', 'ar/', 'ko/', 'ru/', 'vi/', 'id/'}
+LANGS = {'', 'zh-TW/', 'pt-BR/', 'es/', 'de/', 'fr/', 'it/', 'tr/', 'ar/', 'ko/', 'ru/', 'vi/', 'id/', 'ja/'}
 BASE, NEW = 'https://screenonauto.lzn.idv.tw/', '{new-date}'
 s = open('sitemap.xml').read()
 def fix(m):
@@ -347,12 +363,12 @@ def fix(m):
 open('sitemap.xml', 'w').write(re.sub(r'<url>.*?</url>', fix, s, flags=re.S))
 EOF
 
-# Must print 13, and the XML must still parse
+# Must print 14, and the XML must still parse
 grep -c '<lastmod>{new-date}</lastmod>' sitemap.xml
 python3 -c "import xml.dom.minidom; xml.dom.minidom.parse('sitemap.xml'); print('valid')"
 ```
 
-**Also bump the three date signals in the same 13 files** (added 2026-07-30 so Google can
+**Also bump the three date signals in the same 14 files** (added 2026-07-30 so Google can
 show a date in search results — they must stay mutually consistent or Google ignores them):
 
 - JSON-LD `"dateModified"` → the release date
@@ -371,7 +387,7 @@ sed -i 's/{prev-date}/{new-date}/g' index.html i18n/*/index.html   # hits dateMo
 Android 13 and below install section in every README) — so a routine version bump needs **no README edit**.
 The GitHub Release in Step 3 (`--latest`) is what makes that link resolve to the new build.
 Only edit the READMEs when the install flow itself changes (e.g. the KingInstaller
-sequence or the Android 14+ sign-up) — then update **all thirteen READMEs and the thirteen landing pages**.
+sequence or the Android 14+ sign-up) — then update **all fourteen READMEs and the fourteen landing pages**.
 
 Commit whatever Step 1 touched:
 

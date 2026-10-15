@@ -1,0 +1,227 @@
+---
+layout: null
+permalink: /ja/
+---
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScreenOnAuto — スマホの画面を Android Auto にミラーリング</title>
+<meta name="description" content="ScreenOnAuto は、Android スマホの画面を車の Android Auto ディスプレイにミラーリングします。メディア操作、タッチ転送、自動開始などに対応。無料で、有料機能はありません。">
+<link rel="canonical" href="https://screenonauto.lzn.idv.tw/ja/">
+<link rel="icon" type="image/png" href="../images/icon_launcher.png">
+{% include hreflang.html %}
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://screenonauto.lzn.idv.tw/ja/">
+<meta property="og:title" content="ScreenOnAuto — スマホの画面を Android Auto にミラーリング">
+<meta property="og:description" content="Android スマホの画面を車の Android Auto ディスプレイにミラーリング。メディア操作、タッチ転送、自動開始などに対応。無料。">
+<meta property="og:image" content="https://screenonauto.lzn.idv.tw/images/screenshot-legacy-split.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ScreenOnAuto",
+  "url": "https://screenonauto.lzn.idv.tw/ja/",
+  "inLanguage": "ja",
+  "description": "Android スマホの画面を Android Auto のディスプレイにミラーリングします。メディアボタンでの操作にも対応しています。",
+  "operatingSystem": "Android 7.0 or later",
+  "applicationCategory": "UtilitiesApplication",
+  "softwareVersion": "1.9.5",
+  "datePublished": "2026-05-13",
+  "dateModified": "2026-10-15",
+  "downloadUrl": "https://github.com/slzn/ScreenOnAuto-releases/releases/latest",
+  "screenshot": "https://screenonauto.lzn.idv.tw/images/screenshot-legacy-split.png",
+  "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
+  "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "featureList": "Android Auto への画面ミラーリング, メディアセッションプロキシ, 自動減光, ミラーリングの自動開始, スリープを防止, 自動起動アプリ, このアプリだけをミラーリング, 外部からの操作, 横向きを強制, 起動ショートカット, 画面のボタン, ミラーリングの調整, タッチ転送, ピンチズーム, スマホの画面を消灯する, 実タッチ入力の注入, スマホのナビゲーションボタン, スマホの画面を車の画面比に合わせる, ジェスチャーアプリ向けの仮想タッチスクリーン, バックグラウンドでミラーリングを開始, 横向きを反転"
+}
+</script>
+
+<script>
+/* Apply saved theme before first paint; fall back to the system preference. */
+(function () {
+  var saved = null;
+  try { saved = localStorage.getItem("theme"); } catch (err) {}  /* storage may be blocked */
+  var light = matchMedia("(prefers-color-scheme: light)");
+  document.documentElement.dataset.theme =
+    (saved === "light" || saved === "dark") ? saved : (light.matches ? "light" : "dark");
+  light.addEventListener("change", function (e) {
+    var s = null;
+    try { s = localStorage.getItem("theme"); } catch (err) {}
+    if (!s)
+      document.documentElement.dataset.theme = e.matches ? "light" : "dark";
+  });
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+{% include tools.html lang="ja" %}
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">ANDROID · ANDROID AUTO · 画面ミラーリング</p>
+    <h1><img class="app-icon" src="../images/icon_launcher.png" alt="ScreenOnAuto のアプリアイコン">ScreenOnAuto</h1>
+    <p class="tagline">Android スマホの画面を Android&nbsp;Auto のディスプレイにミラーリング。メディアボタンでの操作にも対応しています。</p>
+    <p class="free">無料 — 追加の支払いが必要な機能はありません。</p>
+    <div class="paths">
+      <a class="path primary" href="https://screenonauto.lzn.idv.tw/join/?lang=ja">
+        <span class="k">Android 14 以上</span>
+        <b>Google&nbsp;Play からインストール</b>
+        <span class="d">30 分ごとのラウンドに登録して、25 分以内にインストール。</span>
+      </a>
+      <a class="path" href="https://github.com/slzn/ScreenOnAuto-releases/releases/latest">
+        <span class="k">Android 13 以下</span>
+        <b>APK をダウンロード</b>
+        <span class="d">KingInstaller でインストール — 手順はこのページの下にあります。</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="carousel wrap" role="region" aria-label="スクリーンショット" data-dot-label="スクリーンショット %d">
+  <div class="carousel-track">
+    <figure class="shot">
+      <img src="../images/screenshot-legacy-split.png" alt="地図と並べて Android Auto のディスプレイにミラーリングされたスマホの画面" width="880">
+      <figcaption>Android Auto の車の画面で、地図と並べて動作する Legacy のミラーリング。</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/screenshot-stocks-split.png" alt="地図と並べて Android Auto のディスプレイにミラーリングされた株価アプリ" width="880" loading="lazy">
+      <figcaption>駐車中に相場をちょっと確認 — 車向け版のないスマホアプリもミラーリングできます。</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/how-to-use/nav-fullscreen.png" alt="Android Auto のディスプレイに表示された ScreenOnAuto の全画面ミラーリング" width="880" loading="lazy">
+      <figcaption>全画面ミラーリング — スマホの画面が車の画面全体に表示されます。</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/how-to-use/aa-launcher.png" alt="ScreenOnAuto の項目が表示された Android Auto のランチャー" width="880" loading="lazy">
+      <figcaption>Android Auto のランチャーに並ぶ ScreenOnAuto の項目。この画像にはメディアコントローラーも写っていますが、新しい Android Auto にはこの項目はありません。</figcaption>
+    </figure>
+  </div>
+  <div class="carousel-nav">
+    <button class="carousel-btn prev" type="button" aria-label="前の画像">&#8249;</button>
+    <span class="carousel-dots"></span>
+    <button class="carousel-btn next" type="button" aria-label="次の画像">&#8250;</button>
+  </div>
+</div>
+
+<section class="wrap" id="features">
+  <h2>機能</h2>
+  <div class="grid core">
+    <div class="card"><b>画面ミラーリング</b><p>スマホの画面を車の画面に表示 — 全画面でも、地図と並べても。</p></div>
+    <div class="card"><b>メディア操作</b><p>Android Auto 標準のメディア画面から、スマホのあらゆるメディアアプリを操作。</p></div>
+    <div class="card"><b>自動開始</b><p>車に接続するとミラーリングを開始。選んだアプリを起動したり、スマホにアプリを表示せずバックグラウンドで始めたりもできます。</p></div>
+  </div>
+  <div class="grid more">
+    <div class="card"><b>このアプリだけをミラーリング <span class="muted">(Android 15+)</span></b><p>画面全体ではなく、1 つのアプリだけを車に送ります。</p></div>
+    <div class="card"><b>画面のボタン</b><p>車の画面にアプリのショートカットと、横向きを強制・自動減光・戻る / ホーム / 最近のアプリのボタン。</p></div>
+    <div class="card"><b>画面とバッテリー</b><p>横向きの強制（左右どちら向きにも）、操作がないときの減光、ミラーリング中のスリープ防止。</p></div>
+    <div class="card"><b>車の画面にぴったり</b><p>車の画面で隠れる端を調整し、分割表示でも映像がゆがまないようにします。</p></div>
+    <div class="card"><b>外部からの操作</b><p>Tasker、ショートカット、ADB からミラーリングを開始・停止。<a href="https://screenonauto.lzn.idv.tw/docs/ja/control-mirroring-from-another-app/">使い方 →</a></p></div>
+    <div class="card"><b>タッチ転送 <span class="muted">（実験的）</span></b><p>車の画面から、スマホをタップしたりスクロールしたりできます。</p></div>
+  </div>
+</section>
+
+<section class="wrap" id="privileged">
+  <h2>特権機能</h2>
+  <p class="muted">任意 — <a href="https://shizuku.rikka.app/">Shizuku</a> または root が必要です。どちらもなくても、ほかの機能はまったく同じように動作します。</p>
+  <div class="grid core priv">
+    <div class="card"><b>スマホの画面を消灯する</b><p>車にミラーリングを表示したまま、スマホの画面を完全に消灯します。</p></div>
+    <div class="card"><b>実タッチ入力の注入</b><p>車の画面から長押し、ドラッグ、マルチタッチ。仮想タッチスクリーンをオンにすれば、GMD などのジェスチャーアプリにも届きます。</p></div>
+    <div class="card"><b>スマホのナビゲーションボタン</b><p>ユーザー補助サービスなしで、戻る / ホーム / 最近のアプリが使えます。</p></div>
+    <div class="card"><b>スマホの画面を車の画面比に合わせる</b><p>ミラーリング中、スマホの画面を車の縦横比に変更 — 黒い帯もゆがみもなくなります。</p></div>
+  </div>
+  <p class="muted">車に接続したら Shizuku が止まった、画面が点灯しない、という場合は<a href="https://screenonauto.lzn.idv.tw/docs/ja/how-to-use/#特権機能shizuku--root">トラブルシューティング</a>を参照してください。</p>
+</section>
+
+<section class="wrap" id="requirements">
+  <h2>動作環境</h2>
+  <ul>
+    <li>Android 7.0（API 24）以上</li>
+    <li>スマホに Android Auto がインストールされていること</li>
+    <li>Android Auto に対応した車（またはヘッドユニット）</li>
+    <li>任意：<a href="https://shizuku.rikka.app/">Shizuku</a> または root — 特権機能を使う場合</li>
+  </ul>
+</section>
+
+<section class="wrap" id="install">
+  <h2>インストール</h2>
+
+  <h3>Android 14 以上 — Google Play からインストール</h3>
+  <p>Android Auto は Play ストアからインストールされたアプリしか実行せず、Android 14 以上では KingInstaller による回避策が使えません。そのため、Google Play の内部テストからインストールしてください。GitHub 版と同じ全機能版ですが、Play ストアの検索には表示されません：<a href="https://screenonauto.lzn.idv.tw/join/?lang=ja"><b>インストールページで登録する</b></a>。30 分ごとに新しいラウンドが始まり、ラウンドの開始時にインストール用のリンクが表示されます。詳しい手順：<a href="https://screenonauto.lzn.idv.tw/docs/ja/join-the-beta-test/"><b>Google Play テストプログラムでインストール</b></a></p>
+
+  <h3>Android 13 以下 — KingInstaller でサイドロード</h3>
+  <p class="muted">Android Auto は、Google Play からインストールされたアプリしか認めません。APK を直接インストールすると拒否されますが、<a href="https://github.com/fcaronte/KingInstaller/releases">KingInstaller</a> はインストール元を Google Play ストアとして報告しながら APK をインストールします。</p>
+  <ol class="steps">
+    <li><b>KingInstaller をインストール</b> — <a href="https://github.com/fcaronte/KingInstaller/releases">リリースページ</a>から最新の <code>KingInstaller.apk</code> をダウンロードし、ブラウザまたはファイルマネージャーに「不明なアプリのインストール」を許可してからインストールします。</li>
+    <li><b>KingInstaller で ScreenOnAuto をインストール</b> — <a href="https://github.com/slzn/ScreenOnAuto-releases/releases/latest">最新リリース</a>から最新の <code>ScreenOnAuto-*.apk</code> をダウンロードし、KingInstaller を開いて APK を選び、<b>Install</b> をタップします。</li>
+    <li><b>権限を許可</b> — ScreenOnAuto を開き、アプリの案内に従います。</li>
+  </ol>
+</section>
+
+<section class="wrap" id="verify">
+  <h2>Android Auto で確認</h2>
+  <p>APK でも Google Play でも、どの方法でインストールした場合も同じです。スマホで <b>設定 → 接続設定 → Android Auto → ランチャーをカスタマイズ</b> を開くと、次の <b>2 つ</b>の ScreenOnAuto の項目が表示されているはずです。</p>
+  <div class="tablebox">
+    <table>
+      <tr><th></th><th>名前</th><th>機能</th></tr>
+      <tr><td><img class="mini" src="../images/icon_launcher.png" alt=""></td><td><b>ScreenOnAuto</b></td><td>スマホの画面を全画面でミラーリング — 地図のエリアを置き換えます。</td></tr>
+      <tr><td><img class="mini" src="../images/icon_legacy.png" alt=""></td><td><b>ScreenOnAuto (Legacy)</b></td><td>Legacy の投影方式でミラーリング — 地図と並べて表示できます。</td></tr>
+    </table>
+  </div>
+  <p>古い Android Auto では、3 つ目の項目 <b>ScreenOnAuto メディアコントローラー</b> も表示されます。表示されなくても正常で、メディアの操作はそのまま使えます。</p>
+  <p>準備ができたら、車でミラーリングを始める方法は <a href="https://screenonauto.lzn.idv.tw/docs/ja/how-to-use/"><b>使い方</b></a> を参照してください。</p>
+</section>
+
+<section class="wrap" id="permissions">
+  <h2>権限</h2>
+  <div class="tablebox">
+    <table>
+      <tr><th>権限</th><th>必要な機能</th></tr>
+      <tr><td>画面キャプチャ（MediaProjection）</td><td>画面ミラーリング</td></tr>
+      <tr><td>通知へのアクセス</td><td>メディア操作</td></tr>
+      <tr><td>他のアプリの上に重ねて表示</td><td>自動減光、横向きを強制</td></tr>
+      <tr><td>ユーザー補助サービス</td><td>タッチ転送、戻る / ホーム / 最近のアプリのボタン（特権機能を使う場合は不要）</td></tr>
+    </table>
+  </div>
+  <p class="muted">ヒント：起動するたびに画面キャプチャのダイアログが出ないようにするには、ADB でこの権限を事前に付与してください。<a href="https://screenonauto.lzn.idv.tw/docs/ja/grant-mirror-permission-via-adb/">ADB でミラーリング権限を付与</a>を参照。<b>このアプリだけをミラーリング</b>を使えるようにするのも、この設定です。</p>
+</section>
+
+<section class="wrap" id="limitations">
+  <h2>既知の制限</h2>
+  <ul>
+    <li><b>ミラーリング中はスマホの画面をオンにしておく必要があります</b> — ミラーリングに映るのはスマホの画面の内容です。<b>スリープを防止</b>で画面をオンのままにし、<b>自動減光</b>でバッテリーを節約してください。Shizuku または root があれば、「スマホの画面を消灯する」でこの制限はなくなります。</li>
+    <li><b>DRM で保護されたコンテンツはミラーリングできません</b> — Netflix や Disney+ などのアプリは黒い画面になります。これは Android プラットフォームの制限で、アプリでは回避できません。</li>
+    <li>車の画面の <b>Android Auto のナビゲーションバー</b> は Android Auto 自身が描画しているため、非表示にできません。</li>
+  </ul>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>運転中は常に前方に注意し、このアプリを操作しないでください。</p>
+    <p>このプロジェクトは Google と提携しておらず、Google による承認や後援を受けていません。Android Auto は Google LLC の商標です。</p>
+    <p>役に立ちましたか？ <a href="https://paypal.me/slzn0124">PayPal で寄付</a>、または<a href="https://www.paypal.com/ncp/payment/NSZL98LMSGYWE">タピオカをおごる 🧋</a></p>
+    <p><a href="https://github.com/slzn/ScreenOnAuto-releases">GitHub リポジトリ</a> · <a href="https://github.com/slzn/ScreenOnAuto-releases/releases">すべてのリリース</a> · <a href="https://github.com/slzn/ScreenOnAuto-releases/wiki">Wiki</a></p>
+    <p class="updated">最終更新: <time datetime="2026-10-15">2026-10-15</time></p>
+  </div>
+</footer>
+
+<script src="/assets/carousel.js" defer></script>
+<script>
+document.querySelector(".theme-toggle").addEventListener("click", function () {
+  var next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+  document.documentElement.dataset.theme = next;
+  try { localStorage.setItem("theme", next); } catch (err) {}
+});
+</script>
+</body>
+</html>
