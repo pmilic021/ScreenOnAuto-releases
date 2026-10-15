@@ -8,3 +8,7 @@ defaults:
       path: "docs"
     values:
       layout: "doc"
+
+# Repo tooling, not site content (tools/ holds the CI date-sync script and bold_check.py).
+exclude:
+  - tools/
