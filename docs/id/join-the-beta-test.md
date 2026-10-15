@@ -10,7 +10,6 @@ last_modified_at: 2026-10-15
 
 # Instal melalui Program Pengujian Google Play
 
-
 Instal ScreenOnAuto melalui daftar penguji beta Google Play — **wajib di Android 14 ke atas**.
 
 > **ℹ️ Catatan**
@@ -30,10 +29,10 @@ Instal ScreenOnAuto melalui daftar penguji beta Google Play — **wajib di Andro
 
 1. Di ponsel, buka halaman pendaftaran lalu **masuk dengan akun Google yang dipakai Play Store di ponsel Anda** — aplikasi hanya terlihat oleh akun tersebut:
 
-   🟢 **[Buka halaman pendaftaran](https://screenonauto.lzn.idv.tw/join/?lang=id)**
+   <a class="formcta join" href="https://screenonauto.lzn.idv.tw/join/?lang=id"><span class="lab">Buka halaman pendaftaran</span><span class="host">screenonauto.lzn.idv.tw</span></a>
 2. Ketuk **Daftarkan saya di putaran ini**. Halaman akan menghitung mundur ke waktu instal Anda — biarkan tetap terbuka; tombol instal akan muncul di sana secara otomatis.
 3. Saat waktu instal Anda dibuka, ketuk **Jadi penguji** dan terima undangannya. Halaman kemudian menampilkan tautan unduhan: ketuk tautan itu dan instal **ScreenOnAuto** seperti biasa. Jika Play Store tidak menampilkan aplikasinya, lihat **Jika Play Store Tidak Menampilkan Aplikasi** di bawah.
-4. **Setelah menginstal**, buka **Android Auto → Sesuaikan peluncur** dan pastikan Anda melihat **dua** entri ScreenOnAuto (layar penuh dan Legacy). Entri ketiga, **Pengontrol Media**, hanya muncul di versi Android Auto yang lama — di versi baru entri ini memang tidak ada, dan itu tidak masalah. Lihat [Verifikasi di Android Auto](https://github.com/slzn/ScreenOnAuto-releases/blob/main/.github/README.id.md#verifikasi-di-android-auto) untuk daftar lengkapnya dan apa yang harus dilakukan jika salah satu dari kedua entri itu tidak ada.
+4. **Setelah menginstal**, buka **Android Auto → Sesuaikan peluncur** dan pastikan Anda melihat **dua** entri ScreenOnAuto (layar penuh dan Legacy). Entri ketiga, **Pengontrol Media**, hanya muncul di versi Android Auto yang lama — di versi baru entri ini memang tidak ada, dan itu tidak masalah. Lihat [Verifikasi di Android Auto](/id/#verify) untuk daftar lengkapnya dan apa yang harus dilakukan jika salah satu dari kedua entri itu tidak ada.
 5. Selesai — lihat **[Cara Menggunakan](/docs/id/how-to-use/)** untuk memulai pencerminan di mobil.
 
 ### Jika Play Store Tidak Menampilkan Aplikasi
@@ -54,7 +53,7 @@ Setelah terinstal, lanjutkan dengan langkah 4 di atas.
 
 ## Catatan
 
-- Di **Android 13 ke bawah**, bergabung dengan beta bersifat opsional — Anda bisa memasang APK secara manual (lihat [README](https://github.com/slzn/ScreenOnAuto-releases/blob/main/.github/README.id.md#instalasi)).
+- Di **Android 13 ke bawah**, bergabung dengan beta bersifat opsional — Anda bisa memasang APK secara manual (lihat [panduan instalasi](/id/#install)).
 - Build yang diinstal dari Play dan APK yang dipasang manual memakai **sertifikat penandatanganan
   yang berbeda**, sehingga tidak bisa saling memperbarui di perangkat yang sama. Untuk berpindah
   saluran, copot dulu yang sudah terpasang.

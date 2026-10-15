@@ -10,7 +10,6 @@ last_modified_at: 2026-10-15
 
 # Cara Menggunakan
 
-
 > **ℹ️ Catatan**
 > **Sebelum mulai**, pastikan:
 > - ScreenOnAuto sudah terinstal dan entrinya muncul di peluncur Android Auto.

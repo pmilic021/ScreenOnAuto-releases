@@ -10,7 +10,6 @@ last_modified_at: 2026-10-15
 
 # Berikan Izin Pencerminan melalui ADB
 
-
 Secara default, Android menampilkan dialog izin setiap kali ScreenOnAuto memulai pencerminan layar.
 Anda bisa memberikan izin **Perekaman layar (MediaProjection)** lebih dulu lewat ADB agar dialog itu tidak pernah muncul lagi.
 
@@ -19,7 +18,7 @@ Izin ini juga diperlukan untuk **Cerminkan aplikasi ini saja** (Android 15+), ya
 ## Prasyarat
 
 - [ADB (Android Debug Bridge)](https://developer.android.com/tools/releases/platform-tools) terinstal di komputer Anda
-- Debugging USB diaktifkan di ponsel (**Setelan → Opsi developer → Debugging USB**)
+- Proses debug USB diaktifkan di ponsel (**Setelan → Opsi developer → Proses debug USB**)
 - Ponsel tersambung lewat USB (atau ADB lewat Wi-Fi)
 
 ## Langkah-langkah
@@ -52,7 +51,7 @@ adb shell appops set idv.lzn.screenonauto android:project_media default
 
 ## Pemecahan Masalah
 
-- **`error: device unauthorized`** — Cari dialog "Izinkan debugging USB?" di ponsel Anda lalu ketuk **Izinkan**.
+- **`error: device unauthorized`** — Cari dialog "Izinkan proses debug USB?" di ponsel Anda lalu ketuk **Izinkan**.
 - **Dialog masih muncul** — Paksa berhenti ScreenOnAuto lalu buka lagi. Jika masih terjadi, cabut lalu berikan lagi izinnya dengan perintah di atas.
 - **Aplikasi diinstal ulang (atau berpindah antara saluran Play dan APK manual)** — mencopot aplikasi menghapus izin ini; jalankan lagi perintah pemberian izin setelah menginstal ulang.
 - **Izin kembali seperti semula setelah ponsel dimulai ulang** — Di beberapa ROM (mis. MIUI/HyperOS), izin `appops` tidak bertahan setelah reboot. Jalankan lagi perintahnya setiap kali ponsel dimulai ulang; ADB lewat Wi-Fi (debugging nirkabel) menghemat Anda dari mencolokkan kabel setiap kali, tetapi tidak mencegah izin direset.

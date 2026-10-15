@@ -10,7 +10,6 @@ last_modified_at: 2026-10-15
 
 # Kontrol Pencerminan dari Aplikasi Lain
 
-
 Sejak **v1.8.4**, ScreenOnAuto menerima tiga intent yang memulai, menghentikan, atau
 mengalihkan pencerminan. Apa pun yang bisa mengirim intent — aplikasi otomatisasi, pintasan di
 layar utama, skrip lewat ADB, aplikasi buatan Anda sendiri — bisa mengendalikan pencerminan
@@ -90,7 +89,7 @@ membawa aksi akan dibuang dan tidak terjadi apa pun, tanpa pesan error di mana p
 > secara default di banyak ponsel:
 >
 > - **Mulai otomatis.** Banyak ponsel dilengkapi manajemen daya yang sama sekali mencegah
->   aplikasi dibangunkan oleh broadcast. Cari pengelola mulai otomatis di pengaturan baterai atau
+>   aplikasi dibangunkan oleh broadcast. Cari pengelola mulai otomatis di setelan baterai atau
 >   pengelola ponsel, lalu izinkan ScreenOnAuto di sana. Ponsel mungkin memperingatkan Anda
 >   agar tidak melakukannya.
 > - **Tampilkan di atas aplikasi lain.** Berikan izin ini untuk ScreenOnAuto di setelan aplikasi
