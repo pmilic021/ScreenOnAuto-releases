@@ -924,7 +924,7 @@ window.JOIN_STRINGS = {
       "installTitle": "Đã đến giờ cài đặt của bạn",
       "installBody": "Còn {mmss} để bắt đầu tải về. Trên điện thoại:",
       "step1": "Trở thành người thử nghiệm",
-      "step1Desc": "Mở lời mời và nhấn “Chấp nhận lời mời”. Trang sẽ hiện một liên kết tải về: nhấn vào đó và cài ScreenOnAuto như bình thường. Nếu trang đã báo bạn là người thử nghiệm, chỉ cần nhấn liên kết tải về.",
+      "step1Desc": "Mở lời mời và chấp nhận lời mời. Trang sẽ hiện một liên kết tải về: nhấn vào đó và cài ScreenOnAuto như bình thường. Nếu trang đã báo bạn là người thử nghiệm, chỉ cần nhấn liên kết tải về.",
       "installHint": "Ứng dụng chưa hiện trên Cửa hàng Play? Đóng Cửa hàng Play rồi nhấn lại liên kết ở trên — thường thử vài lần là ứng dụng hiện ra. Nếu vẫn không thấy, Cửa hàng Play có thể cần 5–10 phút để cập nhật: hãy đợi vài phút (trong thời gian cài đặt của bạn) rồi thử lại. Sau khi cài xong, ứng dụng vẫn hoạt động khi thời gian cài đặt kết thúc.",
       "installDone": "Đã cài rồi? Tiếp theo: Cách sử dụng",
       "failedTitle": "Không kích hoạt được lượt này",
