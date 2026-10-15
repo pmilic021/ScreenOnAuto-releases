@@ -130,9 +130,7 @@ possono risolverlo:
   lasciarne il ridimensionamento al sistema, così non si distorce più nella vista
   divisa, e le regolazioni di larghezza/altezza hanno lo stesso effetto sia impostate
   prima sia durante la connessione. Consuma un po' più di batteria e ha effetto al
-  prossimo avvio del mirroring. Non può essere attiva insieme ad **Adattare lo schermo
-  del telefono a quello dell'auto** (Funzioni privilegiate), che risolve lo stesso
-  problema in un altro modo.
+  prossimo avvio del mirroring. **Adattare lo schermo del telefono a quello dell'auto** (Funzioni privilegiate) risolve lo stesso problema in un altro modo, e le due funzioni possono essere attive insieme.
 
 #### La barra di navigazione di Android Auto resta visibile
 

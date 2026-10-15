@@ -132,8 +132,7 @@ Zwei Einstellungen können helfen:
   System skalieren zu lassen, sodass es in der geteilten Ansicht nicht mehr verzerrt;
   die Breiten-/Höhenanpassung wirkt zudem gleich, ob vor oder während der Verbindung
   eingestellt. Das kostet etwas mehr Akku und greift beim nächsten Start der Spiegelung.
-  Sie kann nicht zusammen mit **Telefonbildschirm an das Auto anpassen** (Privilegierte
-  Funktionen) aktiv sein, das dasselbe Problem auf andere Weise löst.
+  **Telefonbildschirm an das Auto anpassen** (Privilegierte Funktionen) löst dasselbe Problem auf andere Weise; beide können gleichzeitig aktiv sein.
 
 #### Die Android-Auto-Navigationsleiste bleibt sichtbar
 

@@ -132,9 +132,7 @@ peuvent corriger cela :
   système la redimensionner : elle ne se déforme plus en vue partagée, et les réglages
   de largeur/hauteur donnent le même résultat, qu'ils soient définis avant ou pendant la
   connexion. Cela consomme un peu plus de batterie et prend effet au prochain démarrage
-  de la duplication. Elle ne peut pas être activée en même temps que **Adapter l'écran
-  du téléphone à celui de la voiture** (Fonctions privilégiées), qui résout le même
-  problème autrement.
+  de la duplication. **Adapter l'écran du téléphone à celui de la voiture** (Fonctions privilégiées) résout le même problème autrement, et les deux peuvent être activées en même temps.
 
 #### La barre de navigation Android Auto reste affichée
 

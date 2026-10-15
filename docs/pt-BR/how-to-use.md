@@ -130,9 +130,7 @@ configurações podem resolver:
   app passa a desenhar a imagem do espelhamento em vez de deixar o sistema
   redimensioná-la, então ela não distorce mais na vista dividida, e os ajustes de
   largura/altura funcionam igual, definidos antes ou durante a conexão. Consome um pouco
-  mais de bateria e passa a valer no próximo início do espelhamento. Não pode ficar
-  ativo junto com **Ajustar a tela do telefone à do carro** (Recursos privilegiados),
-  que resolve o mesmo problema de outro jeito.
+  mais de bateria e passa a valer no próximo início do espelhamento. **Ajustar a tela do telefone à do carro** (Recursos privilegiados) resolve o mesmo problema de outro jeito, e os dois podem ficar ativos juntos.
 
 #### A barra de navegação do Android Auto continua na tela
 

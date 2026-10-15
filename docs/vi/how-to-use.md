@@ -124,8 +124,7 @@ có thể khắc phục:
   hình phản chiếu thay vì để hệ thống co giãn, nên hình không còn bị méo khi chia đôi
   màn hình, và các mức điều chỉnh chiều rộng/chiều cao hoạt động giống nhau dù bạn đặt
   trước hay trong khi kết nối. Tính năng này tốn pin hơn một chút và có hiệu lực
-  vào lần bắt đầu phản chiếu tiếp theo. Không thể bật cùng lúc với **Khớp màn hình điện thoại
-  với xe** (Tính năng đặc quyền), vốn khắc phục cùng vấn đề này theo cách khác.
+  vào lần bắt đầu phản chiếu tiếp theo. **Khớp màn hình điện thoại với xe** (Tính năng đặc quyền) khắc phục cùng vấn đề này theo cách khác, và có thể bật cả hai cùng lúc.
 
 #### Thanh điều hướng Android Auto luôn hiện trên màn hình
 

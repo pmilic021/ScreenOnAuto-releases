@@ -130,9 +130,7 @@ solucionarlo:
   dibuja entonces la imagen de la duplicación en lugar de dejar que el sistema la
   escale, así que ya no se distorsiona en la vista dividida, y los ajustes de ancho/alto
   funcionan igual tanto si los configuras antes de conectar como durante la conexión.
-  Consume algo más de batería y se aplica la próxima vez que empiece la duplicación. No
-  puede estar activada a la vez que **Ajustar la pantalla del teléfono a la del coche**
-  (Funciones con privilegios), que resuelve el mismo problema de otra forma.
+  Consume algo más de batería y se aplica la próxima vez que empiece la duplicación. **Ajustar la pantalla del teléfono a la del coche** (Funciones con privilegios) resuelve el mismo problema de otra forma, y ambas pueden estar activadas a la vez.
 
 #### La barra de navegación de Android Auto sigue en pantalla
 

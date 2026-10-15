@@ -126,8 +126,7 @@ it:
   the mirror image itself instead of letting the system scale it, so the image no longer
   distorts in split view, and the width/height adjustments behave the same whether you
   set them before or during a connection. It uses slightly more battery and takes effect
-  the next time mirroring starts. It cannot be on together with **Match the phone screen
-  to the car** (Privileged Features), which fixes the same problem a different way.
+  the next time mirroring starts. **Match the phone screen to the car** (Privileged Features) fixes the same problem a different way, and the two can be on together.
 
 #### The Android Auto navigation bar stays on screen
 

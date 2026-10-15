@@ -130,9 +130,7 @@ düzeltebilir:
   Uygulama bu durumda ölçeklendirmeyi sisteme bırakmak yerine yansıtma görüntüsünü
   kendisi çizer; böylece görüntü bölünmüş görünümde artık bozulmaz ve genişlik/yükseklik
   ayarları bağlantıdan önce de bağlantı sırasında da aynı şekilde çalışır. Biraz daha
-  fazla pil tüketir ve yansıtma bir sonraki başlatılışında etkinleşir. Aynı sorunu
-  farklı bir yolla çözen **Telefon ekranını arabaya uydur** (Ayrıcalıklı özellikler) ile
-  birlikte açık olamaz.
+  fazla pil tüketir ve yansıtma bir sonraki başlatılışında etkinleşir. **Telefon ekranını arabaya uydur** (Ayrıcalıklı özellikler) aynı sorunu farklı bir yolla çözer ve ikisi birlikte açık olabilir.
 
 #### Android Auto gezinme çubuğu ekranda kalıyor
 
