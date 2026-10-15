@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang }}"{% if page.lang == "ar" %} dir="rtl"{% endif %}>
+{% assign me = site.data.languages | where: "code", page.lang | first -%}
+<html lang="{{ page.lang }}"{% if me.rtl %} dir="rtl"{% endif %}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,7 +67,7 @@
 {{ content }}
 
 {%- assign updated = page.last_modified_at | default: page.date %}
-<p class="updated">{% case page.lang %}{% when "en" %}Last updated{% when "zh-TW" %}最後更新{% when "pt-BR" %}Última atualização{% when "es" %}Última actualización{% when "de" %}Zuletzt aktualisiert{% when "fr" %}Dernière mise à jour{% when "it" %}Ultimo aggiornamento{% when "tr" %}Son güncelleme{% when "ar" %}آخر تحديث{% when "ko" %}마지막 업데이트{% when "ru" %}Последнее обновление{% when "vi" %}Cập nhật lần cuối{% endcase %}: <time datetime="{{ updated | date: '%Y-%m-%d' }}">{{ updated | date: '%Y-%m-%d' }}</time></p>
+<p class="updated">{{ me.updated }}: <time datetime="{{ updated | date: '%Y-%m-%d' }}">{{ updated | date: '%Y-%m-%d' }}</time></p>
 </main>
 
 <footer>

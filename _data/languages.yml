@@ -1,0 +1,62 @@
+# Every language the site is published in, in menu order. Read as site.data.languages by
+# _includes/tools.html (language menu), _includes/hreflang.html (landing-page alternates)
+# and _layouts/doc.html ("last updated" label, RTL).
+#
+# Adding a language: add a row here, then the parts Jekyll cannot reach — README
+# switchers, sitemap.xml, the wiki, and assets/join-strings.js. See .claude/CLAUDE.md.
+#
+#   code    — hreflang / URL segment (/<code>/, /docs/<code>/…); "en" lives at the root
+#   name    — the language's own name, shown in the menu
+#   label   — the menu's "Language" label, in that language
+#   updated — the "Last updated" stamp on doc pages, in that language
+#   rtl     — true for right-to-left scripts (the doc layout sets dir="rtl")
+
+- code: en
+  name: English
+  label: Language
+  updated: Last updated
+- code: zh-TW
+  name: 繁體中文
+  label: 語言
+  updated: 最後更新
+- code: pt-BR
+  name: Português (Brasil)
+  label: Idioma
+  updated: Última atualização
+- code: es
+  name: Español
+  label: Idioma
+  updated: Última actualización
+- code: de
+  name: Deutsch
+  label: Sprache
+  updated: Zuletzt aktualisiert
+- code: fr
+  name: Français
+  label: Langue
+  updated: Dernière mise à jour
+- code: it
+  name: Italiano
+  label: Lingua
+  updated: Ultimo aggiornamento
+- code: tr
+  name: Türkçe
+  label: Dil
+  updated: Son güncelleme
+- code: ar
+  name: العربية
+  label: اللغة
+  updated: آخر تحديث
+  rtl: true
+- code: ko
+  name: 한국어
+  label: 언어
+  updated: 마지막 업데이트
+- code: ru
+  name: Русский
+  label: Язык
+  updated: Последнее обновление
+- code: vi
+  name: Tiếng Việt
+  label: Ngôn ngữ
+  updated: Cập nhật lần cuối

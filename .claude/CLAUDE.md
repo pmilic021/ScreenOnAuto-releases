@@ -43,10 +43,32 @@ Turkish page names: wiki `Google-Play-Test-Programı-Üzerinden-Yükleme` / `Nas
 `التثبيت-عبر-برنامج-اختبار-Google-Play` / `طريقة-الاستخدام` / `منح-إذن-النسخ-المطابق-عبر-ADB`;
 site `ar/` + `docs/ar/<slug>`. RTL plumbing: `i18n/ar/index.html` sets
 `<html lang="ar" dir="rtl">` (its carousel is pinned `dir="ltr"` — carousel.js
-scrollLeft math breaks under RTL); `_layouts/doc.html` emits `dir="rtl"` when
-`page.lang == "ar"`; `assets/styles.css` ends with a `[dir="rtl"]` override block for the
+scrollLeft math breaks under RTL); `_layouts/doc.html` emits `dir="rtl"` for
+languages marked `rtl: true` in `_data/languages.yml` (only ar); `assets/styles.css` ends with a `[dir="rtl"]` override block for the
 physical left/right rules (table alignment, steps counter, blockquote accent border,
 docbar spacing). Keep those overrides in sync when adding direction-dependent CSS.
+
+### Adding a language
+
+`_data/languages.yml` is the single list the build reads: one row there gives the new
+language its entry in every language menu, its hreflang alternate on every landing page
+(`_includes/hreflang.html`), and its "last updated" label and text direction on doc
+pages. Since 2026-10-15 nothing about the language list is hard-coded in a template —
+do not reintroduce per-language `case`/`when` branches or hand-written hreflang lines.
+
+What Jekyll cannot reach still has to be added by hand:
+
+- the landing page `i18n/<code>/index.html` (copy one; keep its `permalink` front matter)
+  and the four `docs/<code>/<slug>.md` guides;
+- `.github/README.<code>.md`, plus the switcher line in every other README (GitHub
+  renders READMEs directly, without Jekyll);
+- `sitemap.xml`: the new URLs, and a `hreflang` alternate in every existing block;
+- a block in `assets/join-strings.js` with the same keys as `en`;
+- the wiki: four pages, every guide's switcher line, and `Home.md`;
+- the language counts in this file, and the release step's `LANGS` set.
+
+`tools/sync-content-dates.py` ignores hreflang-only diffs, so registering a language does
+not restamp the other pages' "last updated" dates.
 
 ## Repository Structure
 
@@ -58,7 +80,9 @@ ScreenOnAuto-releases/
 ├── index.html              ← English landing page (the only page served from the root;
 │                             carries empty `layout: null` front matter so Liquid includes work)
 ├── i18n/<lang>/index.html  ← translated landing pages, one dir per language
+├── _data/languages.yml     ← the language list: code, own name, menu label, "last updated" label, rtl
 ├── _includes/tools.html    ← shared top-right cluster: GitHub icon · language menu · theme toggle
+├── _includes/hreflang.html ← the landing pages' hreflang alternates, generated from _data/languages.yml
 ├── assets/styles.css       ← shared landing-page stylesheet
 ├── assets/carousel.js      ← shared carousel script
 ├── docs/<lang>/<slug>.md   ← on-site copies of the 4 wiki guides × 12 languages

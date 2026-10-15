@@ -1,0 +1,8 @@
+{%- comment -%}
+The landing pages' hreflang alternates: one per language in _data/languages.yml, plus
+x-default → the English page at the root. Doc pages build theirs in _layouts/doc.html.
+{%- endcomment -%}
+{%- for lg in site.data.languages %}
+<link rel="alternate" hreflang="{{ lg.code }}" href="https://screenonauto.lzn.idv.tw/{% unless lg.code == "en" %}{{ lg.code }}/{% endunless %}">
+{%- endfor %}
+<link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/">

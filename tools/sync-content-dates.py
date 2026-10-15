@@ -44,9 +44,11 @@ DATE_LINE = re.compile(
 
 # A changed hreflang alternate — the page gained or lost a sibling language, which
 # changes nothing a reader of *this* page sees. Adding a language adds one of these
-# to every landing page; counting it restamped all of them (vi, 2026-10-15).
+# to every landing page; counting it restamped all of them (vi, 2026-10-15). The
+# include that replaced the hand-written lines renders the very same tags.
 HREFLANG_LINE = re.compile(
-    r'^[+-]\s*<link rel="alternate" hreflang="[^"]+" href="[^"]+">\s*$'
+    r'^[+-]\s*(<link rel="alternate" hreflang="[^"]+" href="[^"]+">'
+    r'|\{% include hreflang\.html %\})\s*$'      # the same alternates, generated
 )
 
 
@@ -66,6 +68,8 @@ def last_commit_date(path):
         patch = _git('show', '--format=', '--unified=0', sha, '--', path)
         for line in patch.splitlines():
             if not line.startswith(('+', '-')) or line.startswith(('+++', '---')):
+                continue
+            if not line[1:].strip():          # a blank line added or removed
                 continue
             if DATE_LINE.match(line) or HREFLANG_LINE.match(line):
                 continue
