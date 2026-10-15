@@ -125,7 +125,7 @@ Dự án này không liên kết với, không được Google xác nhận hay t
 
 ## Lời cảm ơn đặc biệt
 
-- **Jurek Harla** — thiết kế lại biểu tượng ScreenOnAuto, ScreenOnAuto (Legacy) và Media Controller để vừa với hình dạng biểu tượng tròn của Android (v1.9.2).
+- **Jurek Harla** — thiết kế lại biểu tượng ScreenOnAuto, ScreenOnAuto (Legacy) và Trình điều khiển đa phương tiện để vừa với hình dạng biểu tượng tròn của Android (v1.9.2).
 
 ## Ủng hộ
 

@@ -280,7 +280,7 @@ source-side tag — is **out of scope for this file**; it lives in the private a
 
 ### Step 1 — Update landing pages (EVERY release) + READMEs (usually a no-op)
 
-**1a. Landing-page version bump — required every release (easy to forget):** all 11
+**1a. Landing-page version bump — required every release (easy to forget):** all 12
 landing pages carry `"softwareVersion": "<version>"` in their JSON-LD block — update
 it in `index.html` + `i18n/<lang>/index.html` (all 12 languages), and bump the
 `<lastmod>` of the 12 **landing-page** URL blocks in `sitemap.xml` to today (leave the
@@ -313,7 +313,7 @@ def fix(m):
 open('sitemap.xml', 'w').write(re.sub(r'<url>.*?</url>', fix, s, flags=re.S))
 EOF
 
-# Must print 11, and the XML must still parse
+# Must print 12, and the XML must still parse
 grep -c '<lastmod>{new-date}</lastmod>' sitemap.xml
 python3 -c "import xml.dom.minidom; xml.dom.minidom.parse('sitemap.xml'); print('valid')"
 ```
