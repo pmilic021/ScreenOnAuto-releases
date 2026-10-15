@@ -11,7 +11,8 @@ that misses one leaves the page claiming it is older than it is:
 
 Source of truth is the last commit that changed the file's *content*, read in
 Asia/Taipei so a late-evening push does not land on the previous UTC day.
-Commits that only rewrite the date fields are skipped deliberately: this
+Commits that only rewrite the date fields (or only add/remove hreflang
+alternates, i.e. register another language) are skipped deliberately: this
 script's own commits are exactly that shape, and so was 6ff0cdc, which merely
 introduced the front-matter fields and would otherwise have restamped nine
 untouched pages with its own date. Skipping them also makes the script
@@ -41,6 +42,13 @@ DATE_LINE = re.compile(
     r'|<p class="updated">.*<time datetime="\d{4}-\d{2}-\d{2}">.*</time></p>)\s*$'
 )
 
+# A changed hreflang alternate — the page gained or lost a sibling language, which
+# changes nothing a reader of *this* page sees. Adding a language adds one of these
+# to every landing page; counting it restamped all of them (vi, 2026-10-15).
+HREFLANG_LINE = re.compile(
+    r'^[+-]\s*<link rel="alternate" hreflang="[^"]+" href="[^"]+">\s*$'
+)
+
 
 def _git(*args):
     return subprocess.run(['git', *args], capture_output=True, text=True,
@@ -59,7 +67,7 @@ def last_commit_date(path):
         for line in patch.splitlines():
             if not line.startswith(('+', '-')) or line.startswith(('+++', '---')):
                 continue
-            if DATE_LINE.match(line):
+            if DATE_LINE.match(line) or HREFLANG_LINE.match(line):
                 continue
             # Something other than a date stamp changed here.
             return _git('log', '-1', '--date=format-local:%Y-%m-%d',
