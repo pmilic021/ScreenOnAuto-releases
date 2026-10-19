@@ -20,6 +20,7 @@
 - **Mirroring schermo** — Cattura e duplica lo schermo del telefono sull'unità Android Auto in tempo reale
 - **Proxy sessione multimediale** — Controlla qualsiasi app multimediale del telefono dall'interfaccia multimediale nativa di Android Auto
 - **Oscuramento automatico** — Riduce automaticamente la luminosità del telefono durante il mirroring inattivo (ritardo di 15/30/60/120 s)
+- **Oscuramento notturno** — Scurisce il mirroring sullo schermo dell'auto di notte, seguendo la modalità giorno/notte dell'auto (o sempre), con intensità regolabile e un pulsante opzionale sullo schermo. Si attiva nelle impostazioni avanzate; con il mirroring «ScreenOnAuto» si scurisce anche lo schermo del telefono, a meno che l'immagine del mirroring disegnata dall'app sia attiva
 - **Avvio automatico** — Avvia il mirroring automaticamente alla connessione di Android Auto
 - **Controllo esterno** — Avvia, ferma o commuta il mirroring con un intent, da un'app di automazione, una scorciatoia o ADB — [Controllare il mirroring da altre app](https://github.com/slzn/ScreenOnAuto-releases/wiki/Controllare-il-mirroring-da-altre-app)
 - **Impedisci sospensione** — Impedisce allo schermo del telefono di sospendersi durante il mirroring
@@ -28,7 +29,7 @@
 - **Esegui il mirroring solo di questa app** *(Android 15+)* — Invia all'auto solo l'app ad avvio automatico invece dell'intero schermo, lasciando privato il resto del telefono. Richiede l'autorizzazione di Cattura schermo [concessa in anticipo via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Concedere-il-permesso-di-mirroring-via-ADB); lo schermo dell'auto resta vuoto mentre sei fuori da quell'app
 - **Forza orizzontale** — Forza il telefono in orizzontale durante il mirroring; si attiva alla connessione, con un pulsante sullo schermo
 - **Scorciatoie di avvio** — Aggiungi fino a 4 pulsanti di avvio rapido delle app sulla schermata di mirroring di Android Auto
-- **Pulsanti sullo schermo** — Mostra o nascondi singolarmente i pulsanti della schermata di mirroring nella pagina Pulsanti sullo schermo: Forza orizzontale, Oscura, e Indietro / Home / App recenti del telefono (massimo 4 alla volta)
+- **Pulsanti sullo schermo** — Mostra o nascondi singolarmente i pulsanti della schermata di mirroring nella pagina Pulsanti sullo schermo: Forza orizzontale, Oscura, Oscuramento notturno, e Indietro / Home / App recenti del telefono (massimo 4 alla volta)
 - **Posizione dei pulsanti** — Nel mirroring Legacy, allinea i pulsanti a sinistra o evita automaticamente la barra di navigazione del telefono
 - **Regolazione del mirroring** — Ritaglia larghezza/altezza dell'immagine nelle impostazioni avanzate per le unità che tagliano i bordi; lì, l'**Immagine del mirroring disegnata dall'app** (sperimentale) evita anche la distorsione nella vista divisa
 - **Inoltro tocco** *(sperimentale)* — Tocca, scorri, fai swipe e pizzica per lo zoom sul display Android Auto per controllare il telefono
@@ -106,7 +107,7 @@ Pronto? Consulta **[Come si usa](https://github.com/slzn/ScreenOnAuto-releases/w
 |---|---|
 | Cattura schermo (MediaProjection) | Mirroring schermo |
 | Accesso alle notifiche | Proxy sessione multimediale |
-| Mostra sopra le altre app | Oscuramento automatico e Forza orizzontale |
+| Mostra sopra le altre app | Oscuramento automatico, Forza orizzontale e Oscuramento notturno |
 | Servizio di accessibilità | Inoltro tocco e pulsanti Indietro / Home / Recenti (non serve con le funzioni privilegiate) |
 
 > **Suggerimento:** per evitare la finestra di richiesta di cattura schermo a ogni avvio, puoi pre-concedere l'autorizzazione via ADB — vedi [Concedere il permesso di mirroring via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Concedere-il-permesso-di-mirroring-via-ADB). È anche ciò che sblocca **Esegui il mirroring solo di questa app**.

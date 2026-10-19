@@ -20,6 +20,7 @@
 - **Espelhamento de tela** — Captura e espelha a tela do celular na central multimídia do Android Auto em tempo real
 - **Proxy de sessão de mídia** — Controle qualquer app de mídia do celular pela interface de mídia nativa do Android Auto
 - **Escurecimento automático** — Reduz automaticamente o brilho da tela do celular durante o espelhamento ocioso (atraso de 15/30/60/120 s)
+- **Escurecimento noturno** — Escurece o espelhamento na tela do carro à noite, seguindo o modo dia/noite do carro (ou sempre), com intensidade ajustável e um botão opcional na tela. Ative nas configurações avançadas; no espelhamento “ScreenOnAuto”, a tela do celular também escurece, a menos que o espelhamento desenhado pelo app esteja ativado
 - **Início automático** — Começa a espelhar automaticamente quando o Android Auto conecta
 - **Controle Externo** — Inicie, pare ou alterne o espelhamento com um intent, de um app de automação, um atalho ou ADB — [Controlar o Espelhamento a partir de Outro App](https://github.com/slzn/ScreenOnAuto-releases/wiki/Controlar-o-Espelhamento-a-partir-de-Outro-App)
 - **Impedir suspensão** — Impede que a tela do celular apague durante o espelhamento
@@ -28,7 +29,7 @@
 - **Espelhar apenas este app** *(Android 15+)* — Envia ao carro somente o app de abertura automática, em vez da tela inteira, mantendo o resto do celular privado. Requer a permissão de Captura de tela [concedida previamente via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permissão-de-Espelhamento-via-ADB); a tela do carro fica em branco enquanto você está fora desse app
 - **Forçar paisagem** — Força o celular para o modo paisagem durante o espelhamento; ativa automaticamente ao conectar, com botão de alternância na tela
 - **Atalhos de apps** — Adicione até 4 botões de acesso rápido a apps na tela de espelhamento do Android Auto
-- **Botões na tela** — Mostre ou oculte individualmente os botões da tela de espelhamento na página Botões na tela: Forçar paisagem, Escurecimento automático e Voltar / Início / Apps recentes do celular (até 4 ao mesmo tempo)
+- **Botões na tela** — Mostre ou oculte individualmente os botões da tela de espelhamento na página Botões na tela: Forçar paisagem, Escurecimento automático, Escurecimento noturno e Voltar / Início / Apps recentes do celular (até 4 ao mesmo tempo)
 - **Posição dos botões** — No espelhamento Legacy, alinhe os botões à esquerda ou desvie automaticamente da barra de navegação do celular
 - **Ajuste do espelhamento** — Ajuste a largura/altura do espelhamento nas configurações avançadas para centrais que cortam as bordas; lá, o **Espelhamento desenhado pelo app** (experimental) também evita a distorção na vista dividida
 - **Encaminhamento de toque** *(experimental)* — Toque, role, deslize e use o gesto de pinça para ampliar na tela do Android Auto para controlar o celular
@@ -106,7 +107,7 @@ Tudo pronto? Veja **[Como Usar](https://github.com/slzn/ScreenOnAuto-releases/wi
 |---|---|
 | Captura de tela (MediaProjection) | Espelhamento de tela |
 | Acesso às notificações | Proxy de sessão de mídia |
-| Sobrepor a outros apps | Escurecimento automático e Forçar paisagem |
+| Sobrepor a outros apps | Escurecimento automático, Forçar paisagem e Escurecimento noturno |
 | Serviço de acessibilidade | Encaminhamento de toque e botões Voltar / Início / Recentes (desnecessário com os recursos privilegiados) |
 
 > **Dica:** para evitar o diálogo de permissão de captura de tela a cada início, você pode conceder a permissão uma única vez via ADB — veja [Conceder Permissão de Espelhamento via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permissão-de-Espelhamento-via-ADB). Isso também é o que libera **Espelhar apenas este app**.

@@ -20,6 +20,7 @@
 - **Screen Mirroring** — Capture and mirror your phone screen to the Android Auto head unit in real time
 - **Media Session Proxy** — Control any phone media app from Android Auto's native media UI
 - **Auto Dim** — Automatically dim phone screen brightness during idle mirroring (15/30/60/120 s delay)
+- **Night Dim** — Darken the mirror on the car screen at night, following the car's day/night mode (or always), with adjustable strength and an optional on-screen toggle. Turn it on in Advanced settings; on the "ScreenOnAuto" mirror the phone screen darkens too, unless the Self-drawn mirror is on
 - **Auto Start** — Begin mirroring automatically when Android Auto connects
 - **External Control** — Start, stop or toggle mirroring with an intent, from an automation app, a home-screen shortcut or ADB — see [Control Mirroring from Another App](https://github.com/slzn/ScreenOnAuto-releases/wiki/Control-Mirroring-from-Another-App)
 - **Prevent Sleep** — Prevent the phone screen from sleeping during mirroring
@@ -28,7 +29,7 @@
 - **Mirror Only This App** *(Android 15+)* — Send just the auto-launch app to the car instead of the whole screen, leaving the rest of the phone private. Needs the Screen Capture permission [pre-granted via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB); the car screen blanks while you are away from that app
 - **Force Landscape** — Force the phone into landscape while mirroring; auto-starts on connect, with an on-screen toggle
 - **Launch Shortcuts** — Add up to 4 app quick-launch buttons to the Android Auto mirror screen
-- **On-screen Buttons** — Show or hide the mirror-screen buttons individually on the On-screen buttons page: Force Landscape, Auto Dim, and phone Back / Home / Recent apps (up to 4 at once)
+- **On-screen Buttons** — Show or hide the mirror-screen buttons individually on the On-screen buttons page: Force Landscape, Auto Dim, Night Dim, and phone Back / Home / Recent apps (up to 4 at once)
 - **Button Placement** — On the Legacy mirror, left-align the on-screen buttons or automatically avoid the phone's navigation bar
 - **Mirror Adjustment** — Trim the mirror width/height in Advanced settings for head units that crop the edges; the experimental **Self-drawn mirror** there also prevents split-view distortion
 - **Touch Forwarding** *(Experimental)* — Tap, scroll, fling and pinch-to-zoom on the Android Auto display to control your phone
@@ -106,7 +107,7 @@ Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wi
 |---|---|
 | Screen Capture (MediaProjection) | Screen Mirroring |
 | Notification Listener | Media Session Proxy |
-| Display Over Other Apps | Auto Dim & Force Landscape |
+| Display Over Other Apps | Auto Dim, Force Landscape & Night Dim |
 | Accessibility Service | Touch Forwarding & the Back / Home / Recent apps buttons (not needed with the privileged features) |
 
 > **Tip:** To avoid the Screen Capture permission dialog on every launch, you can pre-grant it via ADB — see [Grant Mirror Permission via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB). This is also what unlocks **Mirror only this app**.

@@ -20,6 +20,7 @@
 - **Duplication d'écran** — Capture et duplique l'écran du téléphone sur l'unité principale Android Auto en temps réel
 - **Proxy de session multimédia** — Contrôlez n'importe quelle app multimédia du téléphone depuis l'interface multimédia native d'Android Auto
 - **Atténuation automatique** — Réduit automatiquement la luminosité du téléphone pendant la duplication inactive (délai de 15/30/60/120 s)
+- **Atténuation de nuit** — Assombrit la duplication sur l'écran de la voiture la nuit, selon le mode jour/nuit de la voiture (ou en permanence), avec une intensité réglable et un bouton à l'écran facultatif. À activer dans les réglages avancés ; avec la duplication « ScreenOnAuto », l'écran du téléphone s'assombrit aussi, sauf si la duplication dessinée par l'application est activée
 - **Démarrage automatique** — Démarre la duplication automatiquement à la connexion d'Android Auto
 - **Contrôle externe** — Démarrez, arrêtez ou basculez la duplication avec un intent, depuis une application d'automatisation, un raccourci ou ADB — [Contrôler la duplication depuis une autre application](https://github.com/slzn/ScreenOnAuto-releases/wiki/Contrôler-la-duplication-depuis-une-autre-application)
 - **Empêcher la mise en veille** — Empêche l'écran du téléphone de se mettre en veille pendant la duplication
@@ -28,7 +29,7 @@
 - **Dupliquer seulement cette application** *(Android 15+)* — Envoie à la voiture uniquement l'application lancée automatiquement au lieu de tout l'écran, le reste du téléphone reste privé. Nécessite la permission de capture d'écran [accordée au préalable via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB) ; l'écran de la voiture reste vide tant que vous quittez cette application
 - **Forcer le paysage** — Force le téléphone en mode paysage pendant la duplication ; s'active à la connexion, avec un bouton à l'écran
 - **Raccourcis de lancement** — Ajoutez jusqu'à 4 boutons de lancement rapide d'apps sur l'écran de duplication Android Auto
-- **Boutons à l'écran** — Affichez ou masquez individuellement les boutons de l'écran de duplication sur la page Boutons à l'écran : Forcer paysage, Atténuer, et Retour / Accueil / Apps récentes du téléphone (4 au maximum)
+- **Boutons à l'écran** — Affichez ou masquez individuellement les boutons de l'écran de duplication sur la page Boutons à l'écran : Forcer paysage, Atténuer, Atténuation de nuit, et Retour / Accueil / Apps récentes du téléphone (4 au maximum)
 - **Position des boutons** — Sur la duplication Legacy, alignez les boutons à gauche ou évitez automatiquement la barre de navigation du téléphone
 - **Réglage de la duplication** — Rognez la largeur/hauteur de l'image dans les réglages avancés pour les unités qui coupent les bords ; la **Duplication dessinée par l'application** (expérimental), au même endroit, évite aussi la déformation en vue partagée
 - **Transfert tactile** *(Expérimental)* — Touchez, faites défiler, balayez et pincez pour zoomer sur l'affichage Android Auto afin de contrôler votre téléphone
@@ -106,7 +107,7 @@ Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-rele
 |---|---|
 | Capture d'écran (MediaProjection) | Duplication d'écran |
 | Accès aux notifications | Proxy de session multimédia |
-| Afficher par-dessus les autres apps | Atténuation automatique et Forcer le paysage |
+| Afficher par-dessus les autres apps | Atténuation automatique, Forcer le paysage et Atténuation de nuit |
 | Service d'accessibilité | Transfert tactile et boutons Retour / Accueil / Récents (inutile avec les fonctions privilégiées) |
 
 > **Astuce :** pour éviter la boîte de dialogue de capture d'écran à chaque lancement, vous pouvez pré-accorder la permission via ADB — voir [Accorder la permission de duplication via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB). C'est aussi ce qui débloque **Dupliquer seulement cette application**.

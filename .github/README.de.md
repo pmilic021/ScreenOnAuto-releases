@@ -20,6 +20,7 @@
 - **Bildschirmspiegelung** – Überträgt den Telefonbildschirm in Echtzeit auf die Android-Auto-Head-Unit
 - **Mediensitzungs-Proxy** – Steuere jede Medien-App des Telefons über die native Medienoberfläche von Android Auto
 - **Automatisches Abdunkeln** – Dunkelt den Telefonbildschirm bei inaktiver Spiegelung automatisch ab (Verzögerung 15/30/60/120 s)
+- **Nachtdimmen** – Dunkelt die Spiegelung auf dem Autobildschirm nachts ab, passend zum Tag-/Nachtmodus des Autos (oder immer), mit einstellbarer Stärke und optionaler Bildschirmschaltfläche. Einschalten in den erweiterten Einstellungen; bei der Spiegelung „ScreenOnAuto“ wird auch der Telefonbildschirm dunkler, außer die selbstgezeichnete Spiegelung ist aktiv
 - **Autostart** – Startet die Spiegelung automatisch, sobald Android Auto verbunden ist
 - **Externe Steuerung** – Spiegelung per Intent starten, stoppen oder umschalten, aus einer Automatisierungs-App, einer Verknüpfung oder per ADB – [Spiegelung aus einer anderen App steuern](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelung-aus-einer-anderen-App-steuern)
 - **Ruhezustand verhindern** – Verhindert, dass sich der Telefonbildschirm während der Spiegelung abschaltet
@@ -28,7 +29,7 @@
 - **Nur diese App spiegeln** *(Android 15+)* – Sendet nur die automatisch gestartete App ans Auto statt des ganzen Bildschirms, der Rest des Telefons bleibt privat. Erfordert die Bildschirmaufnahme-Berechtigung, [vorab per ADB erteilt](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen); der Autobildschirm bleibt leer, solange du diese App verlässt
 - **Querformat erzwingen** – Erzwingt während der Spiegelung das Querformat; startet automatisch beim Verbinden, mit Umschalter auf dem Bildschirm
 - **App-Verknüpfungen** – Füge dem Android-Auto-Spiegelbildschirm bis zu 4 Schnellstart-Tasten hinzu
-- **Bildschirmtasten** – Blende die Tasten des Spiegelbildschirms auf der Seite Bildschirm-Schaltflächen einzeln ein oder aus: Querformat erzwingen, Automatisches Abdunkeln sowie Zurück / Startbildschirm / Letzte Apps (bis zu 4 gleichzeitig)
+- **Bildschirmtasten** – Blende die Tasten des Spiegelbildschirms auf der Seite Bildschirm-Schaltflächen einzeln ein oder aus: Querformat erzwingen, Automatisches Abdunkeln, Nachtdimmen sowie Zurück / Startbildschirm / Letzte Apps (bis zu 4 gleichzeitig)
 - **Tastenposition** – Richte die Bildschirmtasten auf dem Legacy-Spiegel links aus oder weiche der Navigationsleiste des Telefons automatisch aus
 - **Spiegelungsanpassung** – Passe Breite/Höhe der Spiegelung in den erweiterten Einstellungen an, falls die Head-Unit die Ränder abschneidet; die dortige **Selbstgezeichnete Spiegelung** (experimentell) verhindert außerdem die Verzerrung in der geteilten Ansicht
 - **Touch-Weiterleitung** *(experimentell)* – Tippe, scrolle, wische und zoome mit zwei Fingern auf dem Android-Auto-Display, um das Telefon zu steuern
@@ -106,7 +107,7 @@ Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wi
 |---|---|
 | Bildschirmaufnahme (MediaProjection) | Bildschirmspiegelung |
 | Benachrichtigungszugriff | Mediensitzungs-Proxy |
-| Über anderen Apps einblenden | Automatisches Abdunkeln & Querformat erzwingen |
+| Über anderen Apps einblenden | Automatisches Abdunkeln, Querformat erzwingen & Nachtdimmen |
 | Bedienungshilfen-Dienst | Touch-Weiterleitung und die Tasten Zurück / Startseite / Letzte Apps (mit den privilegierten Funktionen nicht nötig) |
 
 > **Tipp:** Um den Berechtigungsdialog für die Bildschirmaufnahme nicht bei jedem Start zu sehen, kannst du die Berechtigung einmalig per ADB erteilen – siehe [Spiegelungsberechtigung per ADB erteilen](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen). Damit wird auch **Nur diese App spiegeln** freigeschaltet.

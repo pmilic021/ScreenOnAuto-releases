@@ -20,6 +20,7 @@
 - **Phản chiếu màn hình** — Ghi lại và phản chiếu màn hình điện thoại lên màn hình xe Android Auto theo thời gian thực
 - **Proxy phiên đa phương tiện** — Điều khiển bất kỳ ứng dụng đa phương tiện nào trên điện thoại từ giao diện đa phương tiện gốc của Android Auto
 - **Tự động làm tối** — Tự động giảm độ sáng màn hình điện thoại khi không hoạt động trong lúc phản chiếu (sau 15/30/60/120 giây)
+- **Làm tối ban đêm** — Làm tối hình phản chiếu trên màn hình xe vào ban đêm, theo chế độ ngày/đêm của xe (hoặc luôn luôn), có thể chỉnh mức độ và tùy chọn nút bật/tắt trên màn hình. Bật trong cài đặt Nâng cao; với phản chiếu “ScreenOnAuto”, màn hình điện thoại cũng tối theo, trừ khi đã bật tự vẽ hình phản chiếu
 - **Tự động bắt đầu** — Tự động bắt đầu phản chiếu khi Android Auto kết nối
 - **Điều khiển từ bên ngoài** — Bắt đầu, dừng hoặc bật/tắt phản chiếu bằng một intent, từ ứng dụng tự động hóa, lối tắt trên màn hình chính hoặc ADB — xem [Điều khiển phản chiếu từ ứng dụng khác](https://github.com/slzn/ScreenOnAuto-releases/wiki/Điều-khiển-phản-chiếu-từ-ứng-dụng-khác)
 - **Ngăn màn hình tắt** — Ngăn màn hình điện thoại vào chế độ ngủ trong khi phản chiếu
@@ -28,7 +29,7 @@
 - **Chỉ phản chiếu ứng dụng này** *(Android 15+)* — Chỉ gửi lên xe ứng dụng tự động mở thay vì toàn bộ màn hình, phần còn lại của điện thoại vẫn được giữ riêng tư. Cần quyền Ghi màn hình được [cấp trước qua ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cấp-quyền-phản-chiếu-qua-ADB); màn hình xe sẽ trống khi bạn rời khỏi ứng dụng đó
 - **Buộc xoay ngang** — Buộc điện thoại xoay ngang trong khi phản chiếu; tự động bật khi kết nối, kèm nút bật/tắt trên màn hình
 - **Lối tắt khởi chạy** — Thêm tối đa 4 nút mở nhanh ứng dụng vào màn hình phản chiếu Android Auto
-- **Nút trên màn hình** — Hiện hoặc ẩn từng nút trên màn hình phản chiếu ở trang Nút trên màn hình: Buộc xoay ngang, Tự động làm tối, và Quay lại / Màn hình chính / Ứng dụng gần đây của điện thoại (tối đa 4 nút cùng lúc)
+- **Nút trên màn hình** — Hiện hoặc ẩn từng nút trên màn hình phản chiếu ở trang Nút trên màn hình: Buộc xoay ngang, Tự động làm tối, Làm tối ban đêm, và Quay lại / Màn hình chính / Ứng dụng gần đây của điện thoại (tối đa 4 nút cùng lúc)
 - **Vị trí nút** — Trên phản chiếu Legacy, căn các nút trên màn hình sang trái hoặc tự động tránh thanh điều hướng của điện thoại
 - **Điều chỉnh phản chiếu** — Cắt bớt chiều rộng/chiều cao phản chiếu trong cài đặt Nâng cao cho những màn hình xe bị cắt mép; tùy chọn thử nghiệm **Tự vẽ hình phản chiếu** ở đó còn giúp tránh méo hình khi chia đôi màn hình
 - **Chuyển tiếp cảm ứng** *(Thử nghiệm)* — Chạm, cuộn, vuốt nhanh và chụm để thu phóng trên màn hình Android Auto để điều khiển điện thoại
@@ -106,7 +107,7 @@ Sẵn sàng rồi? Xem **[Cách sử dụng](https://github.com/slzn/ScreenOnAut
 |---|---|
 | Ghi màn hình (MediaProjection) | Phản chiếu màn hình |
 | Quyền truy cập thông báo | Proxy phiên đa phương tiện |
-| Hiển thị trên các ứng dụng khác | Tự động làm tối & Buộc xoay ngang |
+| Hiển thị trên các ứng dụng khác | Tự động làm tối, Buộc xoay ngang & Làm tối ban đêm |
 | Dịch vụ hỗ trợ tiếp cận | Chuyển tiếp cảm ứng & các nút Quay lại / Màn hình chính / Ứng dụng gần đây (không cần khi dùng tính năng đặc quyền) |
 
 > **Mẹo:** Để hộp thoại xin quyền Ghi màn hình không hiện ra mỗi lần mở, bạn có thể cấp trước quyền này qua ADB — xem [Cấp quyền phản chiếu qua ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cấp-quyền-phản-chiếu-qua-ADB). Đây cũng là điều kiện để dùng **Chỉ phản chiếu ứng dụng này**.

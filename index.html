@@ -36,7 +36,7 @@ layout: null
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Night dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
 }
 </script>
 
@@ -122,8 +122,8 @@ layout: null
   </div>
   <div class="grid more">
     <div class="card"><b>Mirror Only This App <span class="muted">(Android 15+)</span></b><p>Send just one app to the car instead of the whole screen.</p></div>
-    <div class="card"><b>On-screen Buttons</b><p>App shortcuts on the car screen, plus Force Landscape, Auto Dim and Back / Home / Recents.</p></div>
-    <div class="card"><b>Screen &amp; Battery</b><p>Force landscape (either way round), dim when idle, and keep the phone awake while mirroring.</p></div>
+    <div class="card"><b>On-screen Buttons</b><p>App shortcuts on the car screen, plus Force Landscape, Auto Dim, Night Dim and Back / Home / Recents.</p></div>
+    <div class="card"><b>Screen &amp; Battery</b><p>Force landscape (either way round), dim the phone when idle and the car screen at night, and keep the phone awake while mirroring.</p></div>
     <div class="card"><b>Fit the Car Screen</b><p>Trim edges the head unit crops, and keep the picture undistorted in split view.</p></div>
     <div class="card"><b>External Control</b><p>Start or stop mirroring from Tasker, a shortcut or ADB. <a href="https://screenonauto.lzn.idv.tw/docs/en/control-mirroring-from-another-app/">How it works →</a></p></div>
     <div class="card"><b>Touch Forwarding <span class="muted">(experimental)</span></b><p>Tap and scroll the phone from the car screen.</p></div>
@@ -188,7 +188,7 @@ layout: null
       <tr><th>Permission</th><th>Required for</th></tr>
       <tr><td>Screen Capture (MediaProjection)</td><td>Screen Mirroring</td></tr>
       <tr><td>Notification Listener</td><td>Media controls</td></tr>
-      <tr><td>Display Over Other Apps</td><td>Auto Dim &amp; Force Landscape</td></tr>
+      <tr><td>Display Over Other Apps</td><td>Auto Dim, Force Landscape &amp; Night Dim</td></tr>
       <tr><td>Accessibility Service</td><td>Touch Forwarding &amp; the Back / Home / Recents buttons (not needed with the privileged features)</td></tr>
     </table>
   </div>

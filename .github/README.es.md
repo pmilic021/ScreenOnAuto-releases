@@ -20,6 +20,7 @@
 - **Duplicación de pantalla** — Captura y duplica la pantalla del teléfono en la unidad principal de Android Auto en tiempo real
 - **Proxy de sesión de medios** — Controla cualquier app de medios del teléfono desde la interfaz de medios nativa de Android Auto
 - **Atenuación automática** — Atenúa automáticamente el brillo del teléfono durante la duplicación inactiva (retardo de 15/30/60/120 s)
+- **Atenuación nocturna** — Oscurece la duplicación en la pantalla del coche por la noche, siguiendo el modo día/noche del coche (o siempre), con intensidad ajustable y un botón opcional en pantalla. Se activa en los ajustes avanzados; en la duplicación «ScreenOnAuto» también se oscurece la pantalla del teléfono, salvo que esté activada la duplicación dibujada por la app
 - **Inicio automático** — Comienza a duplicar automáticamente cuando Android Auto se conecta
 - **Control Externo** — Inicia, detén o alterna la duplicación con un intent, desde una app de automatización, un acceso directo o ADB — [Controlar la Duplicación desde Otra App](https://github.com/slzn/ScreenOnAuto-releases/wiki/Controlar-la-Duplicación-desde-Otra-App)
 - **Evitar suspensión** — Evita que la pantalla del teléfono se apague durante la duplicación
@@ -28,7 +29,7 @@
 - **Duplicar solo esta app** *(Android 15+)* — Envía al coche solo la app de inicio automático en lugar de toda la pantalla, manteniendo privado el resto del teléfono. Necesita el permiso de Captura de pantalla [concedido previamente por ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permiso-de-Duplicación-por-ADB); la pantalla del coche queda en blanco mientras estás fuera de esa app
 - **Forzar horizontal** — Fuerza el teléfono a modo horizontal durante la duplicación; se activa al conectar, con botón en pantalla
 - **Atajos de apps** — Añade hasta 4 botones de acceso rápido a apps en la pantalla de duplicación de Android Auto
-- **Botones en pantalla** — Muestra u oculta individualmente los botones de la pantalla de duplicación en la página Botones en pantalla: Forzar horizontal, Atenuación automática y Atrás / Inicio / Apps recientes del teléfono (hasta 4 a la vez)
+- **Botones en pantalla** — Muestra u oculta individualmente los botones de la pantalla de duplicación en la página Botones en pantalla: Forzar horizontal, Atenuación automática, Atenuación nocturna y Atrás / Inicio / Apps recientes del teléfono (hasta 4 a la vez)
 - **Posición de los botones** — En la duplicación Legacy, alinea los botones a la izquierda o esquiva automáticamente la barra de navegación del teléfono
 - **Ajuste de la duplicación** — Recorta el ancho/alto de la duplicación en los ajustes avanzados para unidades que cortan los bordes; allí, la **Duplicación dibujada por la app** (experimental) también evita la distorsión en la vista dividida
 - **Reenvío táctil** *(experimental)* — Toca, desplaza, desliza y pellizca para hacer zoom en la pantalla de Android Auto para controlar el teléfono
@@ -106,7 +107,7 @@ Si falta cualquiera de las **dos** entradas anteriores, reinstala — con KingIn
 |---|---|
 | Captura de pantalla (MediaProjection) | Duplicación de pantalla |
 | Acceso a notificaciones | Proxy de sesión de medios |
-| Mostrar sobre otras apps | Atenuación automática y Forzar horizontal |
+| Mostrar sobre otras apps | Atenuación automática, Forzar horizontal y Atenuación nocturna |
 | Servicio de accesibilidad | Reenvío táctil y botones Atrás / Inicio / Recientes (no hace falta con las funciones privilegiadas) |
 
 > **Consejo:** para evitar el diálogo de permiso de captura de pantalla en cada inicio, puedes concederlo una sola vez vía ADB — consulta [Conceder Permiso de Duplicación por ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permiso-de-Duplicación-por-ADB). Esto es también lo que habilita **Duplicar solo esta app**.

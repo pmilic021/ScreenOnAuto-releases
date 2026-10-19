@@ -20,6 +20,7 @@
 - **Pencerminan layar** — Merekam dan mencerminkan layar ponsel ke head unit Android Auto secara real time
 - **Proksi sesi media** — Kendalikan aplikasi media apa pun di ponsel dari UI media bawaan Android Auto
 - **Peredupan otomatis** — Meredupkan kecerahan layar ponsel secara otomatis saat pencerminan tidak digunakan (jeda 15/30/60/120 dtk)
+- **Peredupan malam** — Meredupkan pencerminan di layar mobil pada malam hari, mengikuti mode siang/malam mobil (atau selalu), dengan kekuatan yang dapat diatur dan tombol layar opsional. Aktifkan di pengaturan Lanjutan; pada pencerminan “ScreenOnAuto”, layar ponsel juga ikut redup, kecuali pencerminan digambar aplikasi aktif
 - **Mulai otomatis** — Mulai pencerminan secara otomatis saat Android Auto terhubung
 - **Kontrol eksternal** — Mulai, hentikan, atau alihkan pencerminan dengan intent, dari aplikasi otomatisasi, pintasan di layar utama, atau ADB — lihat [Kontrol Pencerminan dari Aplikasi Lain](https://github.com/slzn/ScreenOnAuto-releases/wiki/Kontrol-Pencerminan-dari-Aplikasi-Lain)
 - **Cegah layar tidur** — Mencegah layar ponsel tidur selama pencerminan
@@ -28,7 +29,7 @@
 - **Cerminkan aplikasi ini saja** *(Android 15+)* — Hanya mengirim aplikasi yang diluncurkan otomatis ke mobil, bukan seluruh layar, sehingga bagian lain ponsel tetap privat. Memerlukan izin Perekaman layar yang [diberikan lebih dulu lewat ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Berikan-Izin-Pencerminan-melalui-ADB); layar mobil menjadi kosong selama Anda meninggalkan aplikasi tersebut
 - **Paksa lanskap** — Memaksa ponsel ke orientasi lanskap selama pencerminan; dimulai otomatis saat terhubung, dengan sakelar di layar
 - **Pintasan peluncuran** — Tambahkan hingga 4 tombol peluncur aplikasi ke layar pencerminan Android Auto
-- **Tombol layar** — Tampilkan atau sembunyikan tombol di layar pencerminan satu per satu di halaman Tombol layar: Paksa lanskap, Peredupan otomatis, serta Kembali / Beranda / Aplikasi terbaru ponsel (hingga 4 sekaligus)
+- **Tombol layar** — Tampilkan atau sembunyikan tombol di layar pencerminan satu per satu di halaman Tombol layar: Paksa lanskap, Peredupan otomatis, Peredupan malam, serta Kembali / Beranda / Aplikasi terbaru ponsel (hingga 4 sekaligus)
 - **Penempatan tombol** — Pada pencerminan Legacy, ratakan tombol layar ke kiri atau hindari bilah navigasi ponsel secara otomatis
 - **Penyesuaian pencerminan** — Pangkas lebar/tinggi pencerminan di pengaturan Lanjutan untuk head unit yang memotong tepinya; **Pencerminan digambar aplikasi** yang eksperimental di sana juga mencegah distorsi tampilan terpisah
 - **Penerusan sentuhan** *(Eksperimental)* — Ketuk, gulir, sentak, dan cubit untuk zoom di layar Android Auto untuk mengendalikan ponsel
@@ -106,7 +107,7 @@ Siap? Lihat **[Cara Menggunakan](https://github.com/slzn/ScreenOnAuto-releases/w
 |---|---|
 | Perekaman layar (MediaProjection) | Pencerminan layar |
 | Akses notifikasi | Proksi sesi media |
-| Tampilkan di atas aplikasi lain | Peredupan otomatis & Paksa lanskap |
+| Tampilkan di atas aplikasi lain | Peredupan otomatis, Paksa lanskap & Peredupan malam |
 | Layanan Aksesibilitas | Penerusan sentuhan & tombol Kembali / Beranda / Aplikasi terbaru (tidak diperlukan dengan fitur istimewa) |
 
 > **Tips:** Agar dialog izin Perekaman layar tidak muncul setiap kali aplikasi dibuka, Anda bisa memberikan izin itu lebih dulu lewat ADB — lihat [Berikan Izin Pencerminan melalui ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Berikan-Izin-Pencerminan-melalui-ADB). Cara ini juga yang membuka fitur **Cerminkan aplikasi ini saja**.

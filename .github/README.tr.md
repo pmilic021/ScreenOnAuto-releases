@@ -20,6 +20,7 @@
 - **Ekran Yansıtma** — Telefon ekranınızı gerçek zamanlı olarak Android Auto araç ekranına yansıtın
 - **Medya Oturumu Aracısı** — Telefondaki herhangi bir medya uygulamasını Android Auto'nun yerleşik medya arayüzünden kontrol edin
 - **Otomatik Karartma** — Yansıtma boştayken telefon ekranı parlaklığını otomatik olarak düşürün (15/30/60/120 sn gecikme)
+- **Gece Karartması** — Aracın gündüz/gece moduna göre (veya her zaman) geceleri araç ekranındaki yansıtmayı karartır; gücü ayarlanabilir, isteğe bağlı bir ekran düğmesi vardır. Gelişmiş ayarlardan açılır; “ScreenOnAuto” yansıtmasında, uygulamanın çizdiği yansıtma açık değilse telefon ekranı da kararır
 - **Otomatik Başlatma** — Android Auto bağlandığında yansıtmayı otomatik olarak başlatın
 - **Harici Kontrol** — Yansıtmayı bir intent ile başlatın, durdurun veya değiştirin; otomasyon uygulamasından, kısayoldan veya ADB'den — [Yansıtmayı Başka Bir Uygulamadan Kontrol Etme](https://github.com/slzn/ScreenOnAuto-releases/wiki/Yansıtmayı-Başka-Bir-Uygulamadan-Kontrol-Etme)
 - **Uykuyu Engelleme** — Yansıtma sırasında telefon ekranının uykuya geçmesini engelleyin
@@ -28,7 +29,7 @@
 - **Yalnızca bu uygulamayı yansıt** *(Android 15+)* — Tüm ekran yerine yalnızca otomatik başlatılan uygulamayı arabaya gönderir, telefonun geri kalanı gizli kalır. Ekran Kaydı izninin [ADB ile önceden verilmiş olmasını](https://github.com/slzn/ScreenOnAuto-releases/wiki/ADB-ile-Yansıtma-İzni-Verme) gerektirir; o uygulamadan ayrıldığınızda araba ekranı boş kalır
 - **Yatay Modu Zorlama** — Yansıtma sırasında telefonu yatay moda zorlayın; bağlantıda otomatik başlar, ekranda aç/kapat düğmesi vardır
 - **Başlatma Kısayolları** — Android Auto yansıtma ekranına en fazla 4 hızlı uygulama başlatma düğmesi ekleyin
-- **Ekran Düğmeleri** — Yansıtma ekranındaki düğmeleri Ekran düğmeleri sayfasından tek tek gösterin veya gizleyin: Yatay modu zorla, Otomatik karartma ve telefonun Geri / Ana ekran / Son uygulamalar düğmeleri (aynı anda en fazla 4)
+- **Ekran Düğmeleri** — Yansıtma ekranındaki düğmeleri Ekran düğmeleri sayfasından tek tek gösterin veya gizleyin: Yatay modu zorla, Otomatik karartma, Gece karartması ve telefonun Geri / Ana ekran / Son uygulamalar düğmeleri (aynı anda en fazla 4)
 - **Düğme Konumu** — Legacy yansıtmada düğmeleri sola hizalayın veya telefonun gezinme çubuğundan otomatik olarak kaçının
 - **Yansıtma Ayarı** — Kenarları kesen araç ekranları için Gelişmiş ayarlardan yansıtma genişliğini/yüksekliğini kırpın; aynı yerdeki deneysel **Uygulamanın çizdiği yansıtma** da bölünmüş görünümdeki bozulmayı önler
 - **Dokunma Aktarımı** *(deneysel)* — Telefonunuzu kontrol etmek için Android Auto ekranına dokunun, kaydırın, savurun ve iki parmakla yakınlaştırın
@@ -106,7 +107,7 @@ Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır]
 |---|---|
 | Ekran Kaydı (MediaProjection) | Ekran Yansıtma |
 | Bildirim Dinleyici | Medya Oturumu Aracısı |
-| Diğer uygulamaların üzerinde göster | Otomatik Karartma ve Yatay Modu Zorlama |
+| Diğer uygulamaların üzerinde göster | Otomatik Karartma, Yatay Modu Zorlama ve Gece Karartması |
 | Erişilebilirlik Hizmeti | Dokunma aktarımı ve Geri / Ana ekran / Son uygulamalar düğmeleri (ayrıcalıklı özelliklerle gerekmez) |
 
 > **İpucu:** Her başlatmada Ekran Kaydı izin penceresiyle karşılaşmamak için izni ADB ile önceden verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](https://github.com/slzn/ScreenOnAuto-releases/wiki/ADB-ile-Yansıtma-İzni-Verme). Bu aynı zamanda **Yalnızca bu uygulamayı yansıt** özelliğini de açar.
