@@ -64,7 +64,7 @@ execução, abrir a outra entrada o exibe na hora, sem pedir permissão de novo.
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Diálogo de permissão de captura de tela no celular">
 
-   Se o celular estava em repouso, a tela acende sozinha. Se ele estiver bloqueado com PIN, padrão ou impressão digital, desbloqueie primeiro; o diálogo aparece em seguida.
+   Se o celular estava em repouso, a tela acende sozinha. Se ele estiver bloqueado com PIN, padrão ou impressão digital, desbloqueie primeiro; o diálogo aparece em seguida (se você concedeu a permissão antes pelo ADB, o espelhamento começa direto).
 
 4. A tela do seu celular aparece na central:
 
