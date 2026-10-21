@@ -58,7 +58,7 @@ Shizuku dừng lại khi bạn cắm cáp vào xe, hoặc màn hình không sán
 
 ### Android 14 trở lên — cài qua Google Play
 
-Android Auto chỉ chạy những ứng dụng được cài từ Cửa hàng Play, và Android 14+ chặn cách cài vòng qua KingInstaller — vì vậy hãy cài qua chương trình thử nghiệm nội bộ của Google Play. Đây vẫn là ứng dụng đầy đủ giống như trên GitHub, nhưng không tìm thấy được bằng tìm kiếm trên Cửa hàng Play: [**đăng ký trên trang cài đặt**](https://screenonauto.lzn.idv.tw/join/?lang=vi). Cứ 30 phút lại mở một lượt mới, và liên kết cài đặt của bạn xuất hiện vài phút sau khi lượt đó đóng đăng ký. Các bước chi tiết: [**Cài đặt qua chương trình thử nghiệm Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cài-đặt-qua-chương-trình-thử-nghiệm-Google-Play).
+Android Auto chỉ chạy những ứng dụng được cài từ Cửa hàng Play, và Android 14+ chặn cách cài vòng qua KingInstaller — vì vậy hãy cài qua chương trình thử nghiệm nội bộ của Google Play. Đây vẫn là ứng dụng đầy đủ giống như trên GitHub, nhưng không tìm thấy được bằng tìm kiếm trên Cửa hàng Play: [**đăng ký trên trang cài đặt**](https://screenonauto.lzn.idv.tw/join/?lang=vi). Cứ 30 phút lại mở một lượt mới, và liên kết cài đặt của bạn xuất hiện vài phút sau khi lượt của bạn đóng đăng ký. Các bước chi tiết: [**Cài đặt qua chương trình thử nghiệm Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cài-đặt-qua-chương-trình-thử-nghiệm-Google-Play).
 
 ### Android 13 trở xuống — cài bằng KingInstaller
 
