@@ -21,7 +21,7 @@
 - **Proxy de sesión de medios** — Controla cualquier app de medios del teléfono desde la interfaz de medios nativa de Android Auto
 - **Atenuación automática** — Atenúa automáticamente el brillo del teléfono durante la duplicación inactiva (retardo de 15/30/60/120 s)
 - **Atenuación nocturna** — Oscurece la duplicación en la pantalla del coche por la noche, siguiendo el modo día/noche del coche (o siempre), con intensidad ajustable y un botón opcional en pantalla. Se activa en los ajustes avanzados; en la duplicación «ScreenOnAuto» también se oscurece la pantalla del teléfono, salvo que esté activada la duplicación dibujada por la app
-- **Inicio automático** — Comienza a duplicar automáticamente cuando abres ScreenOnAuto en la pantalla del coche
+- **Inicio automático** — Comienza a duplicar automáticamente cuando abres ScreenOnAuto o ScreenOnAuto (Legacy) en la pantalla del coche
 - **Control Externo** — Inicia, detén o alterna la duplicación con un intent, desde una app de automatización, un acceso directo o ADB — [Controlar la Duplicación desde Otra App](https://github.com/slzn/ScreenOnAuto-releases/wiki/Controlar-la-Duplicación-desde-Otra-App)
 - **Evitar suspensión** — Evita que la pantalla del teléfono se apague durante la duplicación
 - **Detener al desconectar** — Detiene la duplicación automáticamente cuando Android Auto se desconecta

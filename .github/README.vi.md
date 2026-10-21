@@ -21,7 +21,7 @@
 - **Proxy phiên đa phương tiện** — Điều khiển bất kỳ ứng dụng đa phương tiện nào trên điện thoại từ giao diện đa phương tiện gốc của Android Auto
 - **Tự động làm tối** — Tự động giảm độ sáng màn hình điện thoại khi không hoạt động trong lúc phản chiếu (sau 15/30/60/120 giây)
 - **Làm tối ban đêm** — Làm tối hình phản chiếu trên màn hình xe vào ban đêm, theo chế độ ngày/đêm của xe (hoặc luôn luôn), có thể chỉnh mức độ và tùy chọn nút bật/tắt trên màn hình. Bật trong cài đặt Nâng cao; với phản chiếu “ScreenOnAuto”, màn hình điện thoại cũng tối theo, trừ khi đã bật tự vẽ hình phản chiếu
-- **Tự động bắt đầu** — Tự động bắt đầu phản chiếu khi bạn mở ScreenOnAuto trên màn hình xe
+- **Tự động bắt đầu** — Tự động bắt đầu phản chiếu khi bạn mở ScreenOnAuto hoặc ScreenOnAuto (Legacy) trên màn hình xe
 - **Điều khiển từ bên ngoài** — Bắt đầu, dừng hoặc bật/tắt phản chiếu bằng một intent, từ ứng dụng tự động hóa, lối tắt trên màn hình chính hoặc ADB — xem [Điều khiển phản chiếu từ ứng dụng khác](https://github.com/slzn/ScreenOnAuto-releases/wiki/Điều-khiển-phản-chiếu-từ-ứng-dụng-khác)
 - **Ngăn màn hình tắt** — Ngăn màn hình điện thoại vào chế độ ngủ trong khi phản chiếu
 - **Dừng khi ngắt kết nối** — Tự động dừng phản chiếu khi Android Auto ngắt kết nối

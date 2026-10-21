@@ -21,7 +21,7 @@
 - **Proxy de session multimédia** — Contrôlez n'importe quelle app multimédia du téléphone depuis l'interface multimédia native d'Android Auto
 - **Atténuation automatique** — Réduit automatiquement la luminosité du téléphone pendant la duplication inactive (délai de 15/30/60/120 s)
 - **Atténuation de nuit** — Assombrit la duplication sur l'écran de la voiture la nuit, selon le mode jour/nuit de la voiture (ou en permanence), avec une intensité réglable et un bouton à l'écran facultatif. À activer dans les réglages avancés ; avec la duplication « ScreenOnAuto », l'écran du téléphone s'assombrit aussi, sauf si la duplication dessinée par l'application est activée
-- **Démarrage automatique** — Démarre la duplication automatiquement quand vous ouvrez ScreenOnAuto sur l'écran de la voiture
+- **Démarrage automatique** — Démarre la duplication automatiquement quand vous ouvrez ScreenOnAuto ou ScreenOnAuto (Legacy) sur l'écran de la voiture
 - **Contrôle externe** — Démarrez, arrêtez ou basculez la duplication avec un intent, depuis une application d'automatisation, un raccourci ou ADB — [Contrôler la duplication depuis une autre application](https://github.com/slzn/ScreenOnAuto-releases/wiki/Contrôler-la-duplication-depuis-une-autre-application)
 - **Empêcher la mise en veille** — Empêche l'écran du téléphone de se mettre en veille pendant la duplication
 - **Arrêter à la déconnexion** — Arrête automatiquement la duplication à la déconnexion d'Android Auto
