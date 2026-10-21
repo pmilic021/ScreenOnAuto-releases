@@ -21,7 +21,7 @@
 - **Medya Oturumu Aracısı** — Telefondaki herhangi bir medya uygulamasını Android Auto'nun yerleşik medya arayüzünden kontrol edin
 - **Otomatik Karartma** — Yansıtma boştayken telefon ekranı parlaklığını otomatik olarak düşürün (15/30/60/120 sn gecikme)
 - **Gece Karartması** — Aracın gündüz/gece moduna göre (veya her zaman) geceleri araç ekranındaki yansıtmayı karartır; gücü ayarlanabilir, isteğe bağlı bir ekran düğmesi vardır. Gelişmiş ayarlardan açılır; “ScreenOnAuto” yansıtmasında, uygulamanın çizdiği yansıtma açık değilse telefon ekranı da kararır
-- **Otomatik Başlatma** — Android Auto bağlandığında yansıtmayı otomatik olarak başlatın
+- **Otomatik Başlatma** — Araç ekranında ScreenOnAuto'yu açtığınızda yansıtmayı otomatik olarak başlatın
 - **Harici Kontrol** — Yansıtmayı bir intent ile başlatın, durdurun veya değiştirin; otomasyon uygulamasından, kısayoldan veya ADB'den — [Yansıtmayı Başka Bir Uygulamadan Kontrol Etme](https://github.com/slzn/ScreenOnAuto-releases/wiki/Yansıtmayı-Başka-Bir-Uygulamadan-Kontrol-Etme)
 - **Uykuyu Engelleme** — Yansıtma sırasında telefon ekranının uykuya geçmesini engelleyin
 - **Bağlantı Kesilince Durdurma** — Android Auto bağlantısı kesildiğinde yansıtmayı otomatik olarak durdurun

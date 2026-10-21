@@ -21,7 +21,7 @@
 - **Proxy sessione multimediale** — Controlla qualsiasi app multimediale del telefono dall'interfaccia multimediale nativa di Android Auto
 - **Oscuramento automatico** — Riduce automaticamente la luminosità del telefono durante il mirroring inattivo (ritardo di 15/30/60/120 s)
 - **Oscuramento notturno** — Scurisce il mirroring sullo schermo dell'auto di notte, seguendo la modalità giorno/notte dell'auto (o sempre), con intensità regolabile e un pulsante opzionale sullo schermo. Si attiva nelle impostazioni avanzate; con il mirroring «ScreenOnAuto» si scurisce anche lo schermo del telefono, a meno che l'immagine del mirroring disegnata dall'app sia attiva
-- **Avvio automatico** — Avvia il mirroring automaticamente alla connessione di Android Auto
+- **Avvio automatico** — Avvia il mirroring automaticamente quando apri ScreenOnAuto sullo schermo dell'auto
 - **Controllo esterno** — Avvia, ferma o commuta il mirroring con un intent, da un'app di automazione, una scorciatoia o ADB — [Controllare il mirroring da altre app](https://github.com/slzn/ScreenOnAuto-releases/wiki/Controllare-il-mirroring-da-altre-app)
 - **Impedisci sospensione** — Impedisce allo schermo del telefono di sospendersi durante il mirroring
 - **Interrompi alla disconnessione** — Interrompe automaticamente il mirroring alla disconnessione di Android Auto

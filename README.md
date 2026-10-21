@@ -21,7 +21,7 @@
 - **Media Session Proxy** — Control any phone media app from Android Auto's native media UI
 - **Auto Dim** — Automatically dim phone screen brightness during idle mirroring (15/30/60/120 s delay)
 - **Night Dim** — Darken the mirror on the car screen at night, following the car's day/night mode (or always), with adjustable strength and an optional on-screen toggle. Turn it on in Advanced settings; on the "ScreenOnAuto" mirror the phone screen darkens too, unless the Self-drawn mirror is on
-- **Auto Start** — Begin mirroring automatically when Android Auto connects
+- **Auto Start** — Begin mirroring automatically when you open ScreenOnAuto on the car screen
 - **External Control** — Start, stop or toggle mirroring with an intent, from an automation app, a home-screen shortcut or ADB — see [Control Mirroring from Another App](https://github.com/slzn/ScreenOnAuto-releases/wiki/Control-Mirroring-from-Another-App)
 - **Prevent Sleep** — Prevent the phone screen from sleeping during mirroring
 - **Stop on Disconnect** — Automatically stop mirroring when Android Auto disconnects

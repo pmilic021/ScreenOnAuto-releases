@@ -21,7 +21,7 @@
 - **Proksi sesi media** — Kendalikan aplikasi media apa pun di ponsel dari UI media bawaan Android Auto
 - **Peredupan otomatis** — Meredupkan kecerahan layar ponsel secara otomatis saat pencerminan tidak digunakan (jeda 15/30/60/120 dtk)
 - **Peredupan malam** — Meredupkan pencerminan di layar mobil pada malam hari, mengikuti mode siang/malam mobil (atau selalu), dengan kekuatan yang dapat diatur dan tombol layar opsional. Aktifkan di pengaturan Lanjutan; pada pencerminan “ScreenOnAuto”, layar ponsel juga ikut redup, kecuali pencerminan digambar aplikasi aktif
-- **Mulai otomatis** — Mulai pencerminan secara otomatis saat Android Auto terhubung
+- **Mulai otomatis** — Mulai pencerminan secara otomatis saat Anda membuka ScreenOnAuto di layar mobil
 - **Kontrol eksternal** — Mulai, hentikan, atau alihkan pencerminan dengan intent, dari aplikasi otomatisasi, pintasan di layar utama, atau ADB — lihat [Kontrol Pencerminan dari Aplikasi Lain](https://github.com/slzn/ScreenOnAuto-releases/wiki/Kontrol-Pencerminan-dari-Aplikasi-Lain)
 - **Cegah layar tidur** — Mencegah layar ponsel tidur selama pencerminan
 - **Hentikan saat terputus** — Menghentikan pencerminan secara otomatis saat Android Auto terputus

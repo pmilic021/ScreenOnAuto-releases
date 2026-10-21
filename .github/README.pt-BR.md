@@ -21,7 +21,7 @@
 - **Proxy de sessão de mídia** — Controle qualquer app de mídia do celular pela interface de mídia nativa do Android Auto
 - **Escurecimento automático** — Reduz automaticamente o brilho da tela do celular durante o espelhamento ocioso (atraso de 15/30/60/120 s)
 - **Escurecimento noturno** — Escurece o espelhamento na tela do carro à noite, seguindo o modo dia/noite do carro (ou sempre), com intensidade ajustável e um botão opcional na tela. Ative nas configurações avançadas; no espelhamento “ScreenOnAuto”, a tela do celular também escurece, a menos que o espelhamento desenhado pelo app esteja ativado
-- **Início automático** — Começa a espelhar automaticamente quando o Android Auto conecta
+- **Início automático** — Começa a espelhar automaticamente quando você abre o ScreenOnAuto na tela do carro
 - **Controle Externo** — Inicie, pare ou alterne o espelhamento com um intent, de um app de automação, um atalho ou ADB — [Controlar o Espelhamento a partir de Outro App](https://github.com/slzn/ScreenOnAuto-releases/wiki/Controlar-o-Espelhamento-a-partir-de-Outro-App)
 - **Impedir suspensão** — Impede que a tela do celular apague durante o espelhamento
 - **Parar ao desconectar** — Para o espelhamento automaticamente quando o Android Auto desconecta
