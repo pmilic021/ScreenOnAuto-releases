@@ -316,6 +316,12 @@ All fourteen READMEs share one structure (en at the root, the other thirteen in 
   and its counterpart in each language, generated from the heading text by both GitHub and
   Jekyll. **Rewording that heading in any language breaks its two links** (README +
   landing page); read the new anchor from a local build before changing them.
+- **Known limitations → Google Maps black screen** (Android 15+): the README bullet and
+  the landing `<li>` link to the How to Use troubleshooting heading "Android Auto's Google
+  Maps turns black while mirroring" — `#android-autos-google-maps-turns-black-while-mirroring`
+  and its counterpart in each language. The same rule applies: rewording that heading in
+  any language breaks its two links. The landing `<li>` stays at the cause plus the link;
+  the fix steps, the restart note and the one-time-code caveat live in How to Use.
 - The READMEs keep the full Features list. The landing pages carry the condensed
   9-card version. Keep the two consistent in substance, not in length.
 
