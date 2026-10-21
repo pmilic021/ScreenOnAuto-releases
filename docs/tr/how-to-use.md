@@ -136,7 +136,7 @@ düzeltebilir:
 
 #### Yansıtma sırasında Android Auto'daki Google Haritalar siyah ekrana dönüyor
 
-Android 15 ve sonrasında, bir uygulama ekranı kaydederken (her yansıtma uygulaması bunu yapmak zorundadır) Android hassas saydığı uygulamaları gizler ve Google Haritalar bu listeye girebilir. Bu durumda Android Auto'daki harita, yansıtma durana kadar siyah kalır; başka yansıtma ve harita uygulamalarında da aynısı olur. Düzeltmek için **Ayarlar → Geliştirici seçenekleri → Ekran paylaşımı korumalarını devre dışı bırak** seçeneğini açın. Geliştirici seçenekleri görünmüyorsa Ayarlar'da **Derleme numarası**'nı aratıp 7 kez dokunun. Bu, ekranınızı paylaşırken Android'in tek kullanımlık kod içeren bildirimleri gizlemesini de durdurur; bu sizin için önemliyse seçeneği kapalı bırakın.
+Android 15 ve sonrasında, bir uygulama ekranı kaydederken (her yansıtma uygulaması bunu yapmak zorundadır) Android hassas saydığı uygulamaları gizler ve Google Haritalar bu listeye girebilir. Bu durumda Android Auto'daki harita, yansıtma durana kadar siyah kalır; başka yansıtma ve harita uygulamalarında da aynısı olur. Düzeltmek için **Ayarlar → Geliştirici seçenekleri → Ekran paylaşımı korumalarını devre dışı bırak** seçeneğini açın. Geliştirici seçenekleri görünmüyorsa Ayarlar'da **Derleme numarası**'nı aratıp 7 kez dokunun. Bu, ekranınızı paylaşırken Android'in tek kullanımlık kod içeren bildirimleri gizlemesini de durdurur; bu sizin için önemliyse seçeneği kapalı bırakın. Seçeneği açtıktan sonra yansıtmayı durdurup yeniden başlatın; ayar yalnızca yansıtma başlarken etkili olur.
 
 #### Android Auto gezinme çubuğu ekranda kalıyor
 

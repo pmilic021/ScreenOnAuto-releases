@@ -134,7 +134,7 @@ pengaturan bisa memperbaikinya:
 
 #### Google Maps di Android Auto menjadi hitam selama pencerminan
 
-Di Android 15 dan yang lebih baru, selama ada aplikasi yang merekam layar (yang memang harus dilakukan setiap aplikasi pencerminan), Android menyembunyikan aplikasi yang dianggapnya sensitif, dan Google Maps bisa masuk daftar itu. Peta Android Auto lalu tetap hitam sampai pencerminan dihentikan, dan hal yang sama terjadi dengan aplikasi pencerminan dan peta lain. Untuk memperbaikinya, aktifkan **Setelan → Opsi developer → Nonaktifkan perlindungan berbagi layar**. Jika Opsi developer tidak muncul, cari **Nomor build** di Setelan lalu ketuk 7 kali. Dengan begitu Android juga tidak lagi menyembunyikan notifikasi berisi kode sekali pakai saat Anda berbagi layar; jika itu penting bagi Anda, biarkan nonaktif.
+Di Android 15 dan yang lebih baru, selama ada aplikasi yang merekam layar (yang memang harus dilakukan setiap aplikasi pencerminan), Android menyembunyikan aplikasi yang dianggapnya sensitif, dan Google Maps bisa masuk daftar itu. Peta Android Auto lalu tetap hitam sampai pencerminan dihentikan, dan hal yang sama terjadi dengan aplikasi pencerminan dan peta lain. Untuk memperbaikinya, aktifkan **Setelan → Opsi developer → Nonaktifkan perlindungan berbagi layar**. Jika Opsi developer tidak muncul, cari **Nomor build** di Setelan lalu ketuk 7 kali. Dengan begitu Android juga tidak lagi menyembunyikan notifikasi berisi kode sekali pakai saat Anda berbagi layar; jika itu penting bagi Anda, biarkan nonaktif. Setelah mengaktifkannya, hentikan pencerminan lalu mulai lagi: setelan ini baru berlaku saat pencerminan dimulai.
 
 #### Bilah navigasi Android Auto tetap tampil di layar
 

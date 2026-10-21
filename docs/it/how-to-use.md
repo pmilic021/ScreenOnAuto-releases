@@ -136,7 +136,7 @@ possono risolverlo:
 
 #### Google Maps di Android Auto diventa nero durante il mirroring
 
-Da Android 15 in poi, mentre un'app cattura lo schermo (come deve fare ogni app di mirroring), Android nasconde le app che considera sensibili, e Google Maps può finire in quell'elenco. La mappa di Android Auto resta quindi nera finché il mirroring non si ferma, e lo stesso succede con altre app di mirroring e di mappe. Per risolvere, attiva **Impostazioni → Opzioni sviluppatore → Disattiva protezioni condivisione schermo**. Se le Opzioni sviluppatore non compaiono, cerca **Numero build** nelle Impostazioni e toccalo 7 volte. Così Android smette anche di nascondere le notifiche con codici monouso mentre condividi lo schermo; se per te è importante, lascia l'opzione disattivata.
+Da Android 15 in poi, mentre un'app cattura lo schermo (come deve fare ogni app di mirroring), Android nasconde le app che considera sensibili, e Google Maps può finire in quell'elenco. La mappa di Android Auto resta quindi nera finché il mirroring non si ferma, e lo stesso succede con altre app di mirroring e di mappe. Per risolvere, attiva **Impostazioni → Opzioni sviluppatore → Disattiva protezioni condivisione schermo**. Se le Opzioni sviluppatore non compaiono, cerca **Numero build** nelle Impostazioni e toccalo 7 volte. Così Android smette anche di nascondere le notifiche con codici monouso mentre condividi lo schermo; se per te è importante, lascia l'opzione disattivata. Dopo averla attivata, interrompi il mirroring e riavvialo: l'impostazione ha effetto solo all'avvio del mirroring.
 
 #### La barra di navigazione di Android Auto resta visibile
 

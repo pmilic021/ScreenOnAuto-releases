@@ -132,7 +132,7 @@ it:
 
 #### Android Auto's Google Maps turns black while mirroring
 
-On Android 15 and newer, while any app is capturing the screen (as every mirroring app must), Android hides apps it considers sensitive, and it can put Google Maps on that list. Android Auto's map then stays black until mirroring stops, and other mirroring apps and map apps are affected the same way. To fix it, turn on **Settings → Developer options → Disable screen share protections**. If Developer options isn't shown, search Settings for **Build number** and tap it 7 times. This also stops Android hiding notifications with one-time codes while you share your screen, so leave it off if that matters to you.
+On Android 15 and newer, while any app is capturing the screen (as every mirroring app must), Android hides apps it considers sensitive, and it can put Google Maps on that list. Android Auto's map then stays black until mirroring stops, and other mirroring apps and map apps are affected the same way. To fix it, turn on **Settings → Developer options → Disable screen share protections**. If Developer options isn't shown, search Settings for **Build number** and tap it 7 times. This also stops Android hiding notifications with one-time codes while you share your screen, so leave it off if that matters to you. After turning it on, stop mirroring and start it again: the setting only takes effect when mirroring starts.
 
 #### The Android Auto navigation bar stays on screen
 

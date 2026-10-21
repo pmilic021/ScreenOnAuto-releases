@@ -111,7 +111,7 @@ Android Auto 只接受從 Play 商店安裝的 App，而 Android 14 起 KingInst
 
 - **鏡像期間手機螢幕必須開著**——鏡像的就是手機當下的畫面。可用**防止進入休眠**保持喚醒、用**自動調暗**省電；有 Shizuku 或 root 時，可改用「關閉手機螢幕」。
 - **受 DRM 保護的內容無法鏡像** — Netflix、Disney+ 等 app 在鏡像畫面上會顯示黑畫面。這是 Android 平台的限制，app 無法繞過。
-- **鏡像時 Android Auto 的 Google 地圖可能變黑（Android 15 以上）** — 只要有 app 在擷取螢幕，Android 就會隱藏它認為含有敏感內容的 app，Google 地圖可能被列入其中。開啟**開發人員選項 → 停用螢幕畫面分享防護**即可解決；開啟後，分享螢幕時 Android 也不會再隱藏含有一次性驗證碼的通知。
+- **鏡像時 Android Auto 的 Google 地圖可能變黑（Android 15 以上）** — 只要有 app 在擷取螢幕，Android 就會隱藏它認為含有敏感內容的 app，Google 地圖可能被列入其中。開啟**開發人員選項 → 停用螢幕畫面分享防護**即可解決；開啟後，分享螢幕時 Android 也不會再隱藏含有一次性驗證碼的通知。這個設定要等下次開始鏡像才會生效，完整步驟請見 [如何使用](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用#鏡像時-android-auto-的-google-地圖變黑)。
 - 車機畫面上的 **Android Auto 導覽列**由 Android Auto 自行繪製，無法隱藏。
 
 ## 免責聲明

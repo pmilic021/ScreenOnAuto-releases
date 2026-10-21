@@ -136,7 +136,7 @@ solucionarlo:
 
 #### El Google Maps de Android Auto se pone negro durante la duplicación
 
-En Android 15 y posteriores, mientras alguna app captura la pantalla (como debe hacer toda app de duplicación), Android oculta las apps que considera sensibles, y Google Maps puede entrar en esa lista. El mapa de Android Auto se queda entonces en negro hasta que se detiene la duplicación, y lo mismo ocurre con otras apps de duplicación y de mapas. Para solucionarlo, activa **Ajustes → Opciones de desarrollador → Inhabilitar protecciones de pantalla compartida**. Si no aparecen las Opciones de desarrollador, busca **Número de compilación** en Ajustes y tócalo 7 veces. Así Android tampoco ocultará las notificaciones con códigos de un solo uso mientras compartes la pantalla; si eso te importa, déjalo desactivado.
+En Android 15 y posteriores, mientras alguna app captura la pantalla (como debe hacer toda app de duplicación), Android oculta las apps que considera sensibles, y Google Maps puede entrar en esa lista. El mapa de Android Auto se queda entonces en negro hasta que se detiene la duplicación, y lo mismo ocurre con otras apps de duplicación y de mapas. Para solucionarlo, activa **Ajustes → Opciones de desarrollador → Inhabilitar protecciones de pantalla compartida**. Si no aparecen las Opciones de desarrollador, busca **Número de compilación** en Ajustes y tócalo 7 veces. Así Android tampoco ocultará las notificaciones con códigos de un solo uso mientras compartes la pantalla; si eso te importa, déjalo desactivado. Después de activarlo, detén la duplicación y vuelve a iniciarla: el ajuste solo se aplica al iniciar la duplicación.
 
 #### La barra de navegación de Android Auto sigue en pantalla
 

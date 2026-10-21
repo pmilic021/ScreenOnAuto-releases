@@ -138,7 +138,7 @@ Zwei Einstellungen können helfen:
 
 #### Google Maps in Android Auto wird während der Spiegelung schwarz
 
-Ab Android 15 blendet Android, solange eine App den Bildschirm aufnimmt (was jede Spiegelungs-App tun muss), Apps aus, die es für sensibel hält – und Google Maps kann auf dieser Liste landen. Die Karte in Android Auto bleibt dann schwarz, bis die Spiegelung endet, und mit anderen Spiegelungs- oder Karten-Apps passiert dasselbe. Abhilfe: Schalte **Einstellungen → Entwickleroptionen → Schutzmaßnahmen für Bildschirmfreigabe deaktivieren** ein. Fehlen die Entwickleroptionen, suche in den Einstellungen nach **Build-Nummer** und tippe 7-mal darauf. Damit blendet Android während einer Bildschirmfreigabe auch Benachrichtigungen mit Einmalcodes nicht mehr aus; ist dir das wichtig, lass die Option aus.
+Ab Android 15 blendet Android, solange eine App den Bildschirm aufnimmt (was jede Spiegelungs-App tun muss), Apps aus, die es für sensibel hält – und Google Maps kann auf dieser Liste landen. Die Karte in Android Auto bleibt dann schwarz, bis die Spiegelung endet, und mit anderen Spiegelungs- oder Karten-Apps passiert dasselbe. Abhilfe: Schalte **Einstellungen → Entwickleroptionen → Schutzmaßnahmen für Bildschirmfreigabe deaktivieren** ein. Fehlen die Entwickleroptionen, suche in den Einstellungen nach **Build-Nummer** und tippe 7-mal darauf. Damit blendet Android während einer Bildschirmfreigabe auch Benachrichtigungen mit Einmalcodes nicht mehr aus; ist dir das wichtig, lass die Option aus. Beende danach die Spiegelung und starte sie neu – die Einstellung greift erst beim Start der Spiegelung.
 
 #### Die Android-Auto-Navigationsleiste bleibt sichtbar
 

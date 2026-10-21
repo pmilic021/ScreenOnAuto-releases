@@ -130,7 +130,7 @@ có thể khắc phục:
 
 #### Google Maps của Android Auto bị đen khi đang phản chiếu
 
-Trên Android 15 trở lên, trong lúc có ứng dụng ghi màn hình (mọi ứng dụng phản chiếu đều phải làm vậy), Android sẽ ẩn những ứng dụng mà nó cho là nhạy cảm, và Google Maps có thể nằm trong danh sách đó. Khi đó bản đồ của Android Auto sẽ đen cho đến khi dừng phản chiếu, và các ứng dụng phản chiếu hay bản đồ khác cũng bị như vậy. Để khắc phục, hãy bật **Cài đặt → Tùy chọn cho nhà phát triển → Tắt tính năng bảo vệ khi chia sẻ màn hình**. Nếu không thấy Tùy chọn cho nhà phát triển, hãy tìm **Số bản dựng** trong Cài đặt và nhấn vào đó 7 lần. Khi bật tùy chọn này, Android cũng sẽ không ẩn các thông báo chứa mã dùng một lần trong lúc bạn chia sẻ màn hình nữa; nếu điều đó quan trọng với bạn, hãy để tắt.
+Trên Android 15 trở lên, trong lúc có ứng dụng ghi màn hình (mọi ứng dụng phản chiếu đều phải làm vậy), Android sẽ ẩn những ứng dụng mà nó cho là nhạy cảm, và Google Maps có thể nằm trong danh sách đó. Khi đó bản đồ của Android Auto sẽ đen cho đến khi dừng phản chiếu, và các ứng dụng phản chiếu hay bản đồ khác cũng bị như vậy. Để khắc phục, hãy bật **Cài đặt → Tùy chọn cho nhà phát triển → Tắt tính năng bảo vệ khi chia sẻ màn hình**. Nếu không thấy Tùy chọn cho nhà phát triển, hãy tìm **Số bản dựng** trong Cài đặt và nhấn vào đó 7 lần. Khi bật tùy chọn này, Android cũng sẽ không ẩn các thông báo chứa mã dùng một lần trong lúc bạn chia sẻ màn hình nữa; nếu điều đó quan trọng với bạn, hãy để tắt. Sau khi bật, hãy dừng phản chiếu rồi bắt đầu lại: cài đặt này chỉ có hiệu lực khi bắt đầu phản chiếu.
 
 #### Thanh điều hướng Android Auto luôn hiện trên màn hình
 

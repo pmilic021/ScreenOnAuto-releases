@@ -136,7 +136,7 @@ configurações podem resolver:
 
 #### O Google Maps do Android Auto fica preto durante o espelhamento
 
-No Android 15 e mais recentes, enquanto algum app captura a tela (como todo app de espelhamento precisa fazer), o Android oculta apps que considera sensíveis, e o Google Maps pode entrar nessa lista. O mapa do Android Auto então fica preto até o espelhamento parar, e outros apps de espelhamento e de mapas são afetados da mesma forma. Para resolver, ative **Configurações → Opções do desenvolvedor → Desativar as proteções do compartilhamento de tela**. Se as Opções do desenvolvedor não aparecerem, pesquise **Número da versão** nas Configurações e toque nele 7 vezes. Isso também faz o Android deixar de ocultar notificações com códigos de uso único enquanto você compartilha a tela; se isso importa para você, deixe desativado.
+No Android 15 e mais recentes, enquanto algum app captura a tela (como todo app de espelhamento precisa fazer), o Android oculta apps que considera sensíveis, e o Google Maps pode entrar nessa lista. O mapa do Android Auto então fica preto até o espelhamento parar, e outros apps de espelhamento e de mapas são afetados da mesma forma. Para resolver, ative **Configurações → Opções do desenvolvedor → Desativar as proteções do compartilhamento de tela**. Se as Opções do desenvolvedor não aparecerem, pesquise **Número da versão** nas Configurações e toque nele 7 vezes. Isso também faz o Android deixar de ocultar notificações com códigos de uso único enquanto você compartilha a tela; se isso importa para você, deixe desativado. Depois de ativar, pare o espelhamento e inicie de novo: a configuração só vale quando o espelhamento começa.
 
 #### A barra de navegação do Android Auto continua na tela
 
