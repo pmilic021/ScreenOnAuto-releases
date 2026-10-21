@@ -58,7 +58,7 @@ Shizuku s'est arrêté au branchement dans la voiture, ou l'écran ne se réveil
 
 ### Android 14 et plus — installation via Google Play
 
-Android Auto n'exécute que les apps installées depuis le Play Store, et Android 14+ bloque la méthode KingInstaller — installez donc via les tests internes de Google Play. C'est la même app complète que sur GitHub, mais elle n'apparaît pas dans les recherches du Play Store : [**inscrivez-vous sur la page d'installation**](https://screenonauto.lzn.idv.tw/join/?lang=fr). Un nouveau tour s'ouvre toutes les 30 minutes, et votre lien d'installation apparaît au début du tour. Toutes les étapes : [**Installer via le programme de test Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Installer-via-le-programme-de-test-Google-Play).
+Android Auto n'exécute que les apps installées depuis le Play Store, et Android 14+ bloque la méthode KingInstaller — installez donc via les tests internes de Google Play. C'est la même app complète que sur GitHub, mais elle n'apparaît pas dans les recherches du Play Store : [**inscrivez-vous sur la page d'installation**](https://screenonauto.lzn.idv.tw/join/?lang=fr). Un nouveau tour s'ouvre toutes les 30 minutes, et votre lien d'installation apparaît quelques minutes après la clôture des inscriptions de ce tour. Toutes les étapes : [**Installer via le programme de test Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Installer-via-le-programme-de-test-Google-Play).
 
 ### Android 13 et moins — installation avec KingInstaller
 

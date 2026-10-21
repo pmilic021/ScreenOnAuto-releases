@@ -58,7 +58,7 @@
 
 ### Android 14 以上 — Google Play からインストール
 
-Android Auto は Play ストアからインストールされたアプリしか実行せず、Android 14 以上では KingInstaller による回避策が使えません。そのため、Google Play の内部テストからインストールしてください。GitHub 版と同じ全機能版ですが、Play ストアの検索には表示されません：[**インストールページで登録する**](https://screenonauto.lzn.idv.tw/join/?lang=ja)。30 分ごとに新しいラウンドが始まり、ラウンドの開始時にインストール用のリンクが表示されます。詳しい手順：[**Google Play テストプログラムでインストール**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Google-Play-テストプログラムでインストール)
+Android Auto は Play ストアからインストールされたアプリしか実行せず、Android 14 以上では KingInstaller による回避策が使えません。そのため、Google Play の内部テストからインストールしてください。GitHub 版と同じ全機能版ですが、Play ストアの検索には表示されません：[**インストールページで登録する**](https://screenonauto.lzn.idv.tw/join/?lang=ja)。30 分ごとに新しいラウンドが始まり、そのラウンドの登録が締め切られた数分後にインストール用のリンクが表示されます。詳しい手順：[**Google Play テストプログラムでインストール**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Google-Play-テストプログラムでインストール)
 
 ### Android 13 以下 — KingInstaller でサイドロード
 

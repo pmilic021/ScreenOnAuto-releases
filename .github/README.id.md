@@ -58,7 +58,7 @@ Shizuku berhenti saat ponsel dicolokkan, atau layar tidak mau menyala lagi? Liha
 
 ### Android 14 ke atas — instal melalui Google Play
 
-Android Auto hanya menjalankan aplikasi yang diinstal dari Play Store, dan Android 14+ memblokir cara KingInstaller — jadi instal melalui pengujian internal Google Play. Ini aplikasi lengkap yang sama seperti di GitHub, tetapi tidak bisa dicari di Play Store: [**daftar di halaman instal**](https://screenonauto.lzn.idv.tw/join/?lang=id). Putaran baru dibuka setiap 30 menit, dan tautan instal Anda muncul saat putaran dimulai. Langkah lengkap: [**Instal melalui Program Pengujian Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Instal-melalui-Program-Pengujian-Google-Play).
+Android Auto hanya menjalankan aplikasi yang diinstal dari Play Store, dan Android 14+ memblokir cara KingInstaller — jadi instal melalui pengujian internal Google Play. Ini aplikasi lengkap yang sama seperti di GitHub, tetapi tidak bisa dicari di Play Store: [**daftar di halaman instal**](https://screenonauto.lzn.idv.tw/join/?lang=id). Putaran baru dibuka setiap 30 menit, dan tautan instal Anda muncul beberapa menit setelah pendaftaran putaran itu ditutup. Langkah lengkap: [**Instal melalui Program Pengujian Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Instal-melalui-Program-Pengujian-Google-Play).
 
 ### Android 13 ke bawah — pasang manual dengan KingInstaller
 
