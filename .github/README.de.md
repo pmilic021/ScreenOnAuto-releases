@@ -116,6 +116,7 @@ Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wi
 
 - **Der Telefonbildschirm muss während der Spiegelung eingeschaltet bleiben** – die Spiegelung zeigt, was auf dem Telefonbildschirm zu sehen ist. Nutze **Ruhezustand verhindern**, um ihn wach zu halten, und **Automatisches Abdunkeln**, um Akku zu sparen; mit Shizuku oder Root hebt Telefonbildschirm ausschalten dies auf.
 - **DRM-geschützte Inhalte können nicht gespiegelt werden** – Apps wie Netflix oder Disney+ zeigen im Spiegel ein schwarzes Bild. Das ist eine Einschränkung der Android-Plattform, die die App nicht umgehen kann.
+- **Google Maps in Android Auto kann während der Spiegelung schwarz werden (Android 15+)** – solange eine App den Bildschirm aufnimmt, blendet Android Apps aus, die es für sensibel hält – und Google Maps kann auf dieser Liste landen. Abhilfe: **Entwickleroptionen → Schutzmaßnahmen für Bildschirmfreigabe deaktivieren** einschalten; dann blendet Android während einer Bildschirmfreigabe auch Benachrichtigungen mit Einmalcodes nicht mehr aus.
 - Die **Android-Auto-Navigationsleiste** auf dem Fahrzeugbildschirm wird von Android Auto selbst gezeichnet und lässt sich nicht ausblenden.
 
 ## Haftungsausschluss

@@ -116,6 +116,7 @@ Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-rele
 
 - **L'écran du téléphone doit rester allumé pendant la duplication** — la duplication montre ce qui s'affiche sur le téléphone. Utilisez **Empêcher la mise en veille** pour le garder actif et **Atténuation automatique** pour économiser la batterie ; avec Shizuku ou root, Éteindre l'écran du téléphone lève cette limite.
 - **Les contenus protégés par DRM ne peuvent pas être dupliqués** — les apps comme Netflix ou Disney+ affichent un écran noir. C'est une restriction de la plateforme Android que l'app ne peut pas contourner.
+- **Google Maps dans Android Auto peut devenir noir pendant la duplication (Android 15+)** — tant qu'une app capture l'écran, Android masque les apps qu'il juge sensibles, et Google Maps peut figurer dans cette liste. Pour corriger cela, activez **Options pour les développeurs → Désactiver les protections lors du partage d'écran** ; Android cesse alors aussi de masquer les notifications contenant des codes à usage unique pendant le partage d'écran.
 - La **barre de navigation Android Auto** sur l'écran de la voiture est dessinée par Android Auto lui-même et ne peut pas être masquée.
 
 ## Avertissement

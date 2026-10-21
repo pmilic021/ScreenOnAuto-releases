@@ -130,6 +130,10 @@ pengaturan bisa memperbaikinya:
   bekerja sama saja baik diatur sebelum maupun selama tersambung. Fitur ini memakai sedikit
   lebih banyak baterai dan berlaku saat pencerminan dimulai berikutnya. **Samakan layar ponsel dengan mobil** (Fitur istimewa) memperbaiki masalah yang sama dengan cara lain, dan keduanya bisa aktif bersamaan.
 
+#### Google Maps di Android Auto menjadi hitam selama pencerminan
+
+Di Android 15 dan yang lebih baru, selama ada aplikasi yang merekam layar (yang memang harus dilakukan setiap aplikasi pencerminan), Android menyembunyikan aplikasi yang dianggapnya sensitif, dan Google Maps bisa masuk daftar itu. Peta Android Auto lalu tetap hitam sampai pencerminan dihentikan, dan hal yang sama terjadi dengan aplikasi pencerminan dan peta lain. Untuk memperbaikinya, aktifkan **Setelan → Opsi developer → Nonaktifkan perlindungan berbagi layar**. Jika Opsi developer tidak muncul, cari **Nomor build** di Setelan lalu ketuk 7 kali. Dengan begitu Android juga tidak lagi menyembunyikan notifikasi berisi kode sekali pakai saat Anda berbagi layar; jika itu penting bagi Anda, biarkan nonaktif.
+
 #### Bilah navigasi Android Auto tetap tampil di layar
 
 **Bilah navigasi Android Auto** di layar mobil digambar oleh Android Auto sendiri dan tidak

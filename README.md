@@ -116,6 +116,7 @@ Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wi
 
 - **The phone screen must stay on while mirroring** — the mirror shows what's on the phone screen. Use **Prevent Sleep** to keep it awake and **Auto Dim** to save battery; with Shizuku or root, Turn the Phone Screen Off lifts this.
 - **DRM-protected content cannot be mirrored** — apps such as Netflix or Disney+ show a black screen on the mirror. This is an Android platform restriction that the app cannot work around.
+- **Android Auto's Google Maps can turn black while mirroring (Android 15+)** — while any app is capturing the screen, Android hides apps it considers sensitive, and it can put Google Maps on that list. Turn on **Developer options → Disable screen share protections** to fix it; this also stops Android hiding notifications with one-time codes while you share your screen.
 - The **Android Auto navigation bar** on the car screen is drawn by Android Auto itself and cannot be hidden.
 
 ## Disclaimer

@@ -132,6 +132,10 @@ configurações podem resolver:
   largura/altura funcionam igual, definidos antes ou durante a conexão. Consome um pouco
   mais de bateria e passa a valer no próximo início do espelhamento. **Ajustar a tela do telefone à do carro** (Recursos privilegiados) resolve o mesmo problema de outro jeito, e os dois podem ficar ativos juntos.
 
+#### O Google Maps do Android Auto fica preto durante o espelhamento
+
+No Android 15 e mais recentes, enquanto algum app captura a tela (como todo app de espelhamento precisa fazer), o Android oculta apps que considera sensíveis, e o Google Maps pode entrar nessa lista. O mapa do Android Auto então fica preto até o espelhamento parar, e outros apps de espelhamento e de mapas são afetados da mesma forma. Para resolver, ative **Configurações → Opções do desenvolvedor → Desativar as proteções do compartilhamento de tela**. Se as Opções do desenvolvedor não aparecerem, pesquise **Número da versão** nas Configurações e toque nele 7 vezes. Isso também faz o Android deixar de ocultar notificações com códigos de uso único enquanto você compartilha a tela; se isso importa para você, deixe desativado.
+
 #### A barra de navegação do Android Auto continua na tela
 
 A **barra de navegação do Android Auto** na tela do carro é desenhada pelo próprio

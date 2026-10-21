@@ -116,6 +116,7 @@ Siap? Lihat **[Cara Menggunakan](https://github.com/slzn/ScreenOnAuto-releases/w
 
 - **Layar ponsel harus tetap menyala selama pencerminan** — pencerminan menampilkan apa yang ada di layar ponsel. Pakai **Cegah layar tidur** agar layar tetap menyala dan **Peredupan otomatis** untuk menghemat baterai; dengan Shizuku atau Root, Matikan layar ponsel menghapus batasan ini.
 - **Konten yang dilindungi DRM tidak bisa dicerminkan** — aplikasi seperti Netflix atau Disney+ menampilkan layar hitam pada pencerminan. Ini adalah batasan platform Android yang tidak bisa diatasi oleh aplikasi.
+- **Google Maps di Android Auto bisa menjadi hitam selama pencerminan (Android 15+)** — selama ada aplikasi yang merekam layar, Android menyembunyikan aplikasi yang dianggapnya sensitif, dan Google Maps bisa masuk daftar itu. Untuk memperbaikinya, aktifkan **Opsi developer → Nonaktifkan perlindungan berbagi layar**; dengan begitu Android juga tidak lagi menyembunyikan notifikasi berisi kode sekali pakai saat Anda berbagi layar.
 - **Bilah navigasi Android Auto** di layar mobil digambar oleh Android Auto sendiri dan tidak bisa disembunyikan.
 
 ## Penafian

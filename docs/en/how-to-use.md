@@ -128,6 +128,10 @@ it:
   set them before or during a connection. It uses slightly more battery and takes effect
   the next time mirroring starts. **Match the phone screen to the car** (Privileged Features) fixes the same problem a different way, and the two can be on together.
 
+#### Android Auto's Google Maps turns black while mirroring
+
+On Android 15 and newer, while any app is capturing the screen (as every mirroring app must), Android hides apps it considers sensitive, and it can put Google Maps on that list. Android Auto's map then stays black until mirroring stops, and other mirroring apps and map apps are affected the same way. To fix it, turn on **Settings → Developer options → Disable screen share protections**. If Developer options isn't shown, search Settings for **Build number** and tap it 7 times. This also stops Android hiding notifications with one-time codes while you share your screen, so leave it off if that matters to you.
+
 #### The Android Auto navigation bar stays on screen
 
 The **Android Auto navigation bar** on the car screen is drawn by Android Auto itself

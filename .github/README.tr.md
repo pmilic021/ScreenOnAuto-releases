@@ -116,6 +116,7 @@ Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır]
 
 - **Yansıtma sırasında telefon ekranı açık kalmalıdır** — yansıtma telefon ekranında görüneni gösterir. Ekranı açık tutmak için **Uykuyu engelle**'yi, pil tasarrufu için **Otomatik karartma**'yı kullanın; Shizuku veya root ile Telefon ekranını kapat bu sınırlamayı kaldırır.
 - **DRM korumalı içerik yansıtılamaz** — Netflix veya Disney+ gibi uygulamalar yansıtmada siyah ekran gösterir. Bu, uygulamanın aşamayacağı bir Android platform kısıtlamasıdır.
+- **Yansıtma sırasında Android Auto'daki Google Haritalar siyah ekrana dönebilir (Android 15+)** — bir uygulama ekranı kaydederken Android, hassas saydığı uygulamaları gizler ve Google Haritalar bu listeye girebilir. Düzeltmek için **Geliştirici seçenekleri → Ekran paylaşımı korumalarını devre dışı bırak** seçeneğini açın; bu, ekranınızı paylaşırken Android'in tek kullanımlık kod içeren bildirimleri gizlemesini de durdurur.
 - Araç ekranındaki **Android Auto gezinme çubuğu** Android Auto'nun kendisi tarafından çizilir ve gizlenemez.
 
 ## Sorumluluk Reddi

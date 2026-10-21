@@ -132,6 +132,10 @@ düzeltebilir:
   ayarları bağlantıdan önce de bağlantı sırasında da aynı şekilde çalışır. Biraz daha
   fazla pil tüketir ve yansıtma bir sonraki başlatılışında etkinleşir. **Telefon ekranını arabaya uydur** (Ayrıcalıklı özellikler) aynı sorunu farklı bir yolla çözer ve ikisi birlikte açık olabilir.
 
+#### Yansıtma sırasında Android Auto'daki Google Haritalar siyah ekrana dönüyor
+
+Android 15 ve sonrasında, bir uygulama ekranı kaydederken (her yansıtma uygulaması bunu yapmak zorundadır) Android hassas saydığı uygulamaları gizler ve Google Haritalar bu listeye girebilir. Bu durumda Android Auto'daki harita, yansıtma durana kadar siyah kalır; başka yansıtma ve harita uygulamalarında da aynısı olur. Düzeltmek için **Ayarlar → Geliştirici seçenekleri → Ekran paylaşımı korumalarını devre dışı bırak** seçeneğini açın. Geliştirici seçenekleri görünmüyorsa Ayarlar'da **Derleme numarası**'nı aratıp 7 kez dokunun. Bu, ekranınızı paylaşırken Android'in tek kullanımlık kod içeren bildirimleri gizlemesini de durdurur; bu sizin için önemliyse seçeneği kapalı bırakın.
+
 #### Android Auto gezinme çubuğu ekranda kalıyor
 
 Araç ekranındaki **Android Auto gezinme çubuğu** Android Auto'nun kendisi tarafından

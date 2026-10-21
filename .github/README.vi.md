@@ -116,6 +116,7 @@ Sẵn sàng rồi? Xem **[Cách sử dụng](https://github.com/slzn/ScreenOnAut
 
 - **Màn hình điện thoại phải luôn bật trong khi phản chiếu** — hình phản chiếu chính là những gì đang hiện trên màn hình điện thoại. Dùng **Ngăn màn hình tắt** để giữ màn hình sáng và **Tự động làm tối** để tiết kiệm pin; với Shizuku hoặc Root, Tắt màn hình điện thoại sẽ gỡ bỏ hạn chế này.
 - **Không thể phản chiếu nội dung được bảo vệ bằng DRM** — các ứng dụng như Netflix hay Disney+ sẽ hiện màn hình đen trong hình phản chiếu. Đây là giới hạn của nền tảng Android mà ứng dụng không thể vượt qua.
+- **Google Maps của Android Auto có thể bị đen khi đang phản chiếu (Android 15+)** — trong lúc có ứng dụng ghi màn hình, Android sẽ ẩn những ứng dụng mà nó cho là nhạy cảm, và Google Maps có thể nằm trong danh sách đó. Để khắc phục, hãy bật **Tùy chọn cho nhà phát triển → Tắt tính năng bảo vệ khi chia sẻ màn hình**; khi đó Android cũng sẽ không ẩn các thông báo chứa mã dùng một lần trong lúc bạn chia sẻ màn hình nữa.
 - **Thanh điều hướng Android Auto** trên màn hình xe do chính Android Auto vẽ ra và không thể ẩn đi.
 
 ## Tuyên bố miễn trừ

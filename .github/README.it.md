@@ -116,6 +116,7 @@ Pronto? Consulta **[Come si usa](https://github.com/slzn/ScreenOnAuto-releases/w
 
 - **Lo schermo del telefono deve restare acceso durante il mirroring** — il mirroring mostra ciò che è sullo schermo del telefono. Usa **Impedisci sospensione** per tenerlo attivo e **Oscuramento automatico** per risparmiare batteria; con Shizuku o root, Spegni lo schermo del telefono rimuove questo limite.
 - **I contenuti protetti da DRM non possono essere trasmessi in mirroring** — app come Netflix o Disney+ mostrano una schermata nera. È una restrizione della piattaforma Android che l'app non può aggirare.
+- **Google Maps di Android Auto può diventare nero durante il mirroring (Android 15+)** — mentre un'app cattura lo schermo, Android nasconde le app che considera sensibili, e Google Maps può finire in quell'elenco. Per risolvere, attiva **Opzioni sviluppatore → Disattiva protezioni condivisione schermo**; così Android smette anche di nascondere le notifiche con codici monouso mentre condividi lo schermo.
 - La **barra di navigazione di Android Auto** sullo schermo dell'auto è disegnata da Android Auto stesso e non può essere nascosta.
 
 ## Avvertenza

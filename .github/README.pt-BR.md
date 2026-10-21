@@ -116,6 +116,7 @@ Tudo pronto? Veja **[Como Usar](https://github.com/slzn/ScreenOnAuto-releases/wi
 
 - **A tela do celular precisa ficar ligada durante o espelhamento** — o espelhamento mostra o que está na tela do celular. Use **Impedir suspensão** para mantê-la acesa e **Escurecimento automático** para economizar bateria; com Shizuku ou root, Desligar a tela do telefone remove essa limitação.
 - **Conteúdo protegido por DRM não pode ser espelhado** — apps como Netflix ou Disney+ mostram uma tela preta no espelhamento. É uma restrição da plataforma Android que o app não tem como contornar.
+- **O Google Maps do Android Auto pode ficar preto durante o espelhamento (Android 15+)** — enquanto algum app captura a tela, o Android oculta apps que considera sensíveis, e o Google Maps pode entrar nessa lista. Para resolver, ative **Opções do desenvolvedor → Desativar as proteções do compartilhamento de tela**; isso também faz o Android deixar de ocultar notificações com códigos de uso único enquanto você compartilha a tela.
 - A **barra de navegação do Android Auto** na tela do carro é desenhada pelo próprio Android Auto e não pode ser ocultada.
 
 ## Aviso legal

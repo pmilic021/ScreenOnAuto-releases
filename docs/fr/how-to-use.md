@@ -134,6 +134,10 @@ peuvent corriger cela :
   connexion. Cela consomme un peu plus de batterie et prend effet au prochain démarrage
   de la duplication. **Adapter l'écran du téléphone à celui de la voiture** (Fonctions privilégiées) résout le même problème autrement, et les deux peuvent être activées en même temps.
 
+#### Google Maps dans Android Auto devient noir pendant la duplication
+
+Sur Android 15 et versions ultérieures, tant qu'une app capture l'écran (ce que toute app de duplication doit faire), Android masque les apps qu'il juge sensibles, et Google Maps peut figurer dans cette liste. La carte d'Android Auto reste alors noire jusqu'à l'arrêt de la duplication, et il en va de même avec d'autres apps de duplication ou de cartographie. Pour corriger cela, activez **Paramètres → Options pour les développeurs → Désactiver les protections lors du partage d'écran**. Si les Options pour les développeurs n'apparaissent pas, recherchez **Numéro de build** dans les Paramètres et touchez-le 7 fois. Android cesse alors aussi de masquer les notifications contenant des codes à usage unique pendant le partage d'écran ; si cela compte pour vous, laissez l'option désactivée.
+
 #### La barre de navigation Android Auto reste affichée
 
 La **barre de navigation Android Auto** sur l'écran de la voiture est dessinée par
