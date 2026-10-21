@@ -65,7 +65,7 @@ redemander de permission.
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Boîte de dialogue de capture d'écran sur le téléphone">
 
-   Si le téléphone était en veille, l'écran s'allume tout seul. S'il est verrouillé par un code, un schéma ou une empreinte, déverrouillez-le d'abord ; la boîte de dialogue apparaît ensuite (si vous avez accordé l'autorisation à l'avance via ADB, la duplication démarre directement).
+   Si le téléphone était en veille, l'écran s'allume tout seul. S'il est verrouillé par un code, un schéma ou une empreinte, déverrouillez-le d'abord ; la boîte de dialogue apparaît ensuite. Si vous avez accordé l'autorisation à l'avance via ADB, il n'y a pas de boîte de dialogue : la duplication démarre directement, et la voiture affiche l'écran de verrouillage jusqu'à ce que vous déverrouilliez le téléphone.
 
 4. L'écran de votre téléphone apparaît sur l'unité :
 

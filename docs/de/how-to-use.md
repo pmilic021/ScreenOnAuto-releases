@@ -65,7 +65,7 @@ fragen.
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Berechtigungsdialog für die Bildschirmaufnahme auf dem Telefon">
 
-   War das Telefon im Ruhezustand, schaltet sich der Bildschirm von selbst ein. Ist es mit PIN, Muster oder Fingerabdruck gesperrt, entsperre es zuerst – danach erscheint der Dialog (hast du die Berechtigung vorab per ADB erteilt, startet die Spiegelung stattdessen sofort).
+   War das Telefon im Ruhezustand, schaltet sich der Bildschirm von selbst ein. Ist es mit PIN, Muster oder Fingerabdruck gesperrt, entsperre es zuerst – danach erscheint der Dialog. Hast du die Berechtigung vorab per ADB erteilt, gibt es keinen Dialog: Die Spiegelung startet sofort, und das Auto zeigt den Sperrbildschirm, bis du das Telefon entsperrst.
 
 4. Dein Telefonbildschirm erscheint auf der Head-Unit:
 

@@ -62,7 +62,7 @@ other entry shows it right away without asking for permission again.
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Screen-capture permission dialog on the phone">
 
-   If the phone was asleep, its screen turns on by itself. If it is locked with a PIN, pattern or fingerprint, unlock it first; the dialog then appears (if you pre-granted the permission with ADB, mirroring starts right away instead).
+   If the phone was asleep, its screen turns on by itself. If it is locked with a PIN, pattern or fingerprint, unlock it first; the dialog then appears. If you pre-granted the permission with ADB, there is no dialog: mirroring starts right away, and the car shows your lock screen until you unlock the phone.
 
 4. Your phone screen appears on the head unit:
 

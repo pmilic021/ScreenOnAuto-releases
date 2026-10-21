@@ -64,7 +64,7 @@ attivo, aprire l'altra voce lo mostra subito senza richiedere di nuovo l'autoriz
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Finestra di autorizzazione alla cattura dello schermo sul telefono">
 
-   Se il telefono era in standby, lo schermo si accende da solo. Se è bloccato con PIN, sequenza o impronta, sbloccalo prima: la finestra compare subito dopo (se hai concesso il permesso in anticipo con ADB, il mirroring parte direttamente).
+   Se il telefono era in standby, lo schermo si accende da solo. Se è bloccato con PIN, sequenza o impronta, sbloccalo prima: la finestra compare subito dopo. Se hai concesso il permesso in anticipo con ADB, non compare nessuna finestra: il mirroring parte subito e l'auto mostra la schermata di blocco finché non sblocchi il telefono.
 
 4. Lo schermo del telefono compare sull'unità:
 

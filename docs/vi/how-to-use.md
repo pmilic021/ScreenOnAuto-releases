@@ -61,7 +61,7 @@ mục còn lại sẽ hiện hình ngay mà không cần xin lại quyền.
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Hộp thoại xin quyền ghi màn hình trên điện thoại">
 
-   Nếu điện thoại đang ngủ, màn hình sẽ tự sáng lên. Nếu điện thoại khóa bằng mã PIN, hình mở khóa hoặc vân tay, hãy mở khóa trước; sau đó hộp thoại sẽ hiện ra (nếu bạn đã cấp quyền trước bằng ADB, phản chiếu sẽ bắt đầu ngay).
+   Nếu điện thoại đang ngủ, màn hình sẽ tự sáng lên. Nếu điện thoại khóa bằng mã PIN, hình mở khóa hoặc vân tay, hãy mở khóa trước; sau đó hộp thoại sẽ hiện ra. Nếu bạn đã cấp quyền trước bằng ADB, sẽ không có hộp thoại: phản chiếu bắt đầu ngay, và xe sẽ hiển thị màn hình khóa cho đến khi bạn mở khóa điện thoại.
 
 4. Màn hình điện thoại của bạn xuất hiện trên màn hình xe:
 

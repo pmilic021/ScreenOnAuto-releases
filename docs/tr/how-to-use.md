@@ -64,7 +64,7 @@ gösterir.
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Telefondaki ekran kaydı izin penceresi">
 
-   Telefon uyku modundaysa ekran kendiliğinden açılır. PIN, desen veya parmak iziyle kilitliyse önce kilidi açın; ardından izin penceresi görünür (izni ADB ile önceden verdiyseniz yansıtma doğrudan başlar).
+   Telefon uyku modundaysa ekran kendiliğinden açılır. PIN, desen veya parmak iziyle kilitliyse önce kilidi açın; ardından izin penceresi görünür. İzni ADB ile önceden verdiyseniz pencere çıkmaz: yansıtma hemen başlar ve telefonun kilidini açana kadar araç ekranında kilit ekranı görünür.
 
 4. Telefon ekranınız araç ekranında görünür:
 

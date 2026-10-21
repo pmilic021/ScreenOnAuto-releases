@@ -62,7 +62,7 @@ membuka entri yang lain langsung menampilkannya tanpa meminta izin lagi.
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Dialog izin perekaman layar di ponsel">
 
-   Jika ponsel sedang tidur, layarnya menyala sendiri. Jika ponsel dikunci dengan PIN, pola, atau sidik jari, buka kuncinya dulu; setelah itu dialog akan muncul (jika izin sudah diberikan lewat ADB, pencerminan langsung dimulai).
+   Jika ponsel sedang tidur, layarnya menyala sendiri. Jika ponsel dikunci dengan PIN, pola, atau sidik jari, buka kuncinya dulu; setelah itu dialog akan muncul. Jika izin sudah diberikan lewat ADB, tidak ada dialog: pencerminan langsung dimulai, dan mobil menampilkan layar kunci sampai Anda membuka kunci ponsel.
 
 4. Layar ponsel Anda muncul di head unit:
 
