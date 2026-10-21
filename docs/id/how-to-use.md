@@ -62,6 +62,8 @@ membuka entri yang lain langsung menampilkannya tanpa meminta izin lagi.
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Dialog izin perekaman layar di ponsel">
 
+   Jika ponsel sedang tidur, layarnya menyala sendiri. Jika ponsel dikunci dengan PIN, pola, atau sidik jari, buka kuncinya dulu; setelah itu dialog akan muncul.
+
 4. Layar ponsel Anda muncul di head unit:
 
    ![Layar ponsel dicerminkan di head unit](/images/how-to-use/mirror-active.png)

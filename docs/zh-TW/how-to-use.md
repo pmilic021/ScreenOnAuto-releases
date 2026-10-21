@@ -52,6 +52,8 @@ Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都�
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="手機上的螢幕擷取權限對話框">
 
+   如果手機原本在休眠，螢幕會自己亮起；如果設有 PIN、圖形或指紋鎖，請先解鎖，對話框就會出現。
+
 4. 手機畫面出現在車機上：
 
    ![手機畫面鏡像到車機](/images/how-to-use/mirror-active.png)

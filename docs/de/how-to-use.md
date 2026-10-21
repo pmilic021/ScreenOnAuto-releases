@@ -65,6 +65,8 @@ fragen.
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Berechtigungsdialog für die Bildschirmaufnahme auf dem Telefon">
 
+   War das Telefon im Ruhezustand, schaltet sich der Bildschirm von selbst ein. Ist es mit PIN, Muster oder Fingerabdruck gesperrt, entsperre es zuerst – danach erscheint der Dialog.
+
 4. Dein Telefonbildschirm erscheint auf der Head-Unit:
 
    ![Telefonbildschirm auf der Head-Unit gespiegelt](/images/how-to-use/mirror-active.png)

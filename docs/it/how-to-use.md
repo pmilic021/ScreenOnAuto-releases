@@ -64,6 +64,8 @@ attivo, aprire l'altra voce lo mostra subito senza richiedere di nuovo l'autoriz
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Finestra di autorizzazione alla cattura dello schermo sul telefono">
 
+   Se il telefono era in standby, lo schermo si accende da solo. Se è bloccato con PIN, sequenza o impronta, sbloccalo prima: la finestra compare subito dopo.
+
 4. Lo schermo del telefono compare sull'unità:
 
    ![Schermo del telefono in mirroring sull'unità](/images/how-to-use/mirror-active.png)

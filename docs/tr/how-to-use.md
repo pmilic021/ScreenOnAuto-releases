@@ -64,6 +64,8 @@ gösterir.
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Telefondaki ekran kaydı izin penceresi">
 
+   Telefon uyku modundaysa ekran kendiliğinden açılır. PIN, desen veya parmak iziyle kilitliyse önce kilidi açın; ardından izin penceresi görünür.
+
 4. Telefon ekranınız araç ekranında görünür:
 
    ![Araç ekranına yansıtılan telefon ekranı](/images/how-to-use/mirror-active.png)

@@ -62,6 +62,8 @@ other entry shows it right away without asking for permission again.
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Screen-capture permission dialog on the phone">
 
+   If the phone was asleep, its screen turns on by itself. If it is locked with a PIN, pattern or fingerprint, unlock it first; the dialog then appears.
+
 4. Your phone screen appears on the head unit:
 
    ![Phone screen mirrored on the head unit](/images/how-to-use/mirror-active.png)

@@ -64,6 +64,8 @@ la otra entrada la muestra al instante sin volver a pedir permiso.
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Diálogo de permiso de captura de pantalla en el teléfono">
 
+   Si el teléfono estaba en reposo, la pantalla se enciende sola. Si está bloqueado con PIN, patrón o huella, desbloquéalo primero; después aparece el diálogo.
+
 4. La pantalla de tu teléfono aparece en la unidad:
 
    ![Pantalla del teléfono duplicada en la unidad](/images/how-to-use/mirror-active.png)

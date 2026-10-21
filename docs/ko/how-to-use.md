@@ -61,6 +61,8 @@ Android Auto의 앱 런처에는 미러링 항목이 **두 개** 표시됩니다
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="휴대전화에 표시된 화면 캡처 권한 대화상자">
 
+   휴대전화가 절전 상태였다면 화면이 저절로 켜집니다. PIN, 패턴 또는 지문으로 잠겨 있다면 먼저 잠금을 해제하세요. 그러면 대화상자가 나타납니다.
+
 4. 휴대전화 화면이 헤드유닛에 나타납니다:
 
    ![헤드유닛에 미러링된 휴대전화 화면](/images/how-to-use/mirror-active.png)
