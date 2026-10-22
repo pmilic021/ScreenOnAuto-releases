@@ -84,6 +84,21 @@ Android Auto only runs apps installed from the Play Store, and Android 14+ block
 
 Launch **ScreenOnAuto** and follow the in-app prompts to grant required permissions.
 
+### Alternative using AAWireless — for GrapheneOS, or when Google Play install fails
+
+> **Why this route?**  
+> GrapheneOS is de-Googled. If you have Google Play sandboxed the install using the test dev route ends with "Failed to install" message.
+> Directly installed APK is not shown in Android Auto. You can get it working with an **AAWireless** dongle in Developer Mode.
+
+1. Download the latest `ScreenOnAuto-*.apk` from the [latest release](https://github.com/slzn/ScreenOnAuto-releases/releases/latest), install it and open it once on the phone
+2. Install the **AAWireless** companion app on the phone
+3. Connect the phone to the car through the dongle (otherwise you can't open settings in AAWireless)
+4. In the AAWireless app, turn **Passthrough mode** off and turn **Developer Mode** on
+5. In the Android Auto settings on the phone, open **Developer settings**. Set **Application mode** to **Developer** and turn on **Unknown sources**
+   - Developer settings might be hidden at first: tap **Version and permission info** 10 times, then open the overflow menu
+6. Reboot the phone
+7. In the Android Auto launcher, open **ScreenOnAuto** or **ScreenOnAuto (Legacy)** — not **ScreenOnAuto Media Controller**, which shows "No items" when nothing is playing (this is normal)
+
 ## Verify in Android Auto
 
 This works **however you installed** — KingInstaller sideload *or* Google Play.
